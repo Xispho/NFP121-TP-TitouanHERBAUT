@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/NFP121-TP-TitouanHERBAUT.iml" filepath="$PROJECT_DIR$/.idea/NFP121-TP-TitouanHERBAUT.iml" />
       <module fileurl="file://$PROJECT_DIR$/TP01/TP01.iml" filepath="$PROJECT_DIR$/TP01/TP01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP03/TP03.iml" filepath="$PROJECT_DIR$/TP03/TP03.iml" />
     </modules>
   </component>
 </project>
