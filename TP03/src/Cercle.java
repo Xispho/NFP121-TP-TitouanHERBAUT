@@ -52,6 +52,8 @@ public class Cercle implements Mesurable2D{
      * @return le cercle construit
      */
     public static Cercle creerCercle(Point centre, Point p) {
+        assert centre != null : "Centre du cercle null";
+        assert p != null : "Point du cercle null";
         return new Cercle(centre, centre.distance(p));
     }
 
@@ -113,10 +115,10 @@ public class Cercle implements Mesurable2D{
     }
 
     /** Modifier le diamètre
-     * @param i nouveau diamètre du cercle
+     * @param d nouveau diamètre du cercle
      */
-    public void setDiametre(int i) {
-        this.rayon = i/2.0;
+    public void setDiametre(int d) {
+        this.rayon = d/2.0;
     }
 
     /** Vérifie si un point est contenu dans le cercle
@@ -124,12 +126,18 @@ public class Cercle implements Mesurable2D{
      * @return true si le point est dans le cercle, false sinon
      */
     public boolean contient(Point a) {
+        assert a != null;
         return this.centre.distance(a) <= this.rayon;
     }
 
-    /** Afficher le cercle */
+    /** Afficher le cercle dans la console */
     public void afficher() {
-        System.out.println("C" + this.rayon + "@(" + this.centre.getX() + ", " + this.centre.getY() + ")" );
+        System.out.println(this);
+    }
+
+    @Override
+    public String toString() {
+        return "C" + this.rayon + "@(" + this.centre.getX() + ", " + this.centre.getY() + ")" ;
     }
 
     @Override
