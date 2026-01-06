@@ -1,6 +1,6 @@
-Nom       : 
-Prénom    : 
-Groupe TP : 
+Nom       : HERBAUT
+Prénom    : Titouan
+Groupe TP : i1
 
 
 Consigne :  Ci-dessous, répondre à la place des « ... ».
@@ -9,7 +9,7 @@ Consigne :  Ci-dessous, répondre à la place des « ... ».
 =====[ Temps ]==================================================================
 
 Temps passé sur la V1 : ... heures ... minutes
-Temps passé sur la V2 : ... heures ... minutes
+Temps passé sur la V2 : 2 heures 00 minutes
 Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
 Bien sûr, les temps renseignés ici ne sont pas pris en compte dans la notation.
 
@@ -18,13 +18,13 @@ Bien sûr, les temps renseignés ici ne sont pas pris en compte dans la notation
 
 Indiquer la relation UML entre Cercle et le Point centre du cercle.
 -------------------------------------------------------------------
-
+Cela correspond au pattern "Composite" donc Cercle est composé d'un Point.
 ...
 
 
 Comment est réalisée l'exigence E18 ?
 -------------------------------------
-
+En mettant les attributs en private.
 ...
 
 
