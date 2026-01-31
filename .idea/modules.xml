@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/NFP121-TP-TitouanHERBAUT.iml" filepath="$PROJECT_DIR$/.idea/NFP121-TP-TitouanHERBAUT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PR01/PR01.iml" filepath="$PROJECT_DIR$/PR01/PR01.iml" />
       <module fileurl="file://$PROJECT_DIR$/TP01/TP01.iml" filepath="$PROJECT_DIR$/TP01/TP01.iml" />
       <module fileurl="file://$PROJECT_DIR$/TP03/TP03.iml" filepath="$PROJECT_DIR$/TP03/TP03.iml" />
       <module fileurl="file://$PROJECT_DIR$/TP04/TP04.iml" filepath="$PROJECT_DIR$/TP04/TP04.iml" />
