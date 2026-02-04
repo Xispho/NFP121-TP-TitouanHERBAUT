@@ -1,8 +1,8 @@
-Date de l'évaluation : mar. 03 févr. 2026 21:45:04 CET
+Date de l'évaluation : mer. 04 févr. 2026 16:03:40 CET
 
 Compilation de Cercle.java : OK.
 
-Types d'erreurs checkstyle : 10	(voir evaluation1/Cercle.checkstyle)
+Types d'erreurs checkstyle : 12	(voir evaluation1/Cercle.checkstyle)
 
 Résultat de recherche de similitudes sur Cercle.java dans evaluation1/Cercle.sim
 
@@ -30,38 +30,10 @@ Test SujetCercleTest : Tests run: 14,  Failures: 4	(voir evaluation1/SujetCercle
     4) testerE1negatifs(SujetCercleTest)
         NoSuchMethodError: 'void Cercle.translater(double, double)'
 
-Test RobustesseCercleTest : Tests run: 20,  Failures: 16	(voir evaluation1/RobustesseCercleTest.txt)
-    1) testerE10a(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    2) testerE11a(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    3) testerE11b(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    4) testerE11c(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    5) testerE12a(RobustesseCercleTest)
-        Exception: Unexpected exception, expected<AssertionError> but was<NullPointerException>
-    6) testerE12b(RobustesseCercleTest)
-        Exception: Unexpected exception, expected<AssertionError> but was<NullPointerException>
-    7) testerE12c(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    8) testerE13a(RobustesseCercleTest)
-        Exception: Unexpected exception, expected<AssertionError> but was<NullPointerException>
-    9) testerE13b(RobustesseCercleTest)
-        Exception: Unexpected exception, expected<AssertionError> but was<NullPointerException>
-    10) testerE13c(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    11) testerE13d(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    12) testerE14c(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    13) testerE16a(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    14) testerE16b(RobustesseCercleTest)
-        AssertionError: Expected exception: AssertionError
-    15) testerE17a(RobustesseCercleTest)
+Test RobustesseCercleTest : Tests run: 20,  Failures: 2	(voir evaluation1/RobustesseCercleTest.txt)
+    1) testerE17a(RobustesseCercleTest)
         Exception: Unexpected exception, expected<AssertionError> but was<NoSuchMethodError>
-    16) testerE17b(RobustesseCercleTest)
+    2) testerE17b(RobustesseCercleTest)
         Exception: Unexpected exception, expected<AssertionError> but was<NoSuchMethodError>
 
 Test FormeCercleTest : OK (12 tests)	(voir evaluation1/FormeCercleTest.txt)
