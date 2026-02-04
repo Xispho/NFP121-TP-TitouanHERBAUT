@@ -1,2 +1,2 @@
-public class OccupeException {
+public class OccupeException extends Exception {
 }

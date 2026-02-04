@@ -1,2 +1,2 @@
-public class LibreException {
+public class LibreException extends Exception {
 }

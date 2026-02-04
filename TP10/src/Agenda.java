@@ -21,7 +21,7 @@ public interface Agenda {
 	 * @throws IllegalArgumentException si nom vaut null
 	 * @throws OccupeException si le créneau n'est pas libre
 	 */
-	void enregistrer(int creneau, String rdv);
+	void enregistrer(int creneau, String rdv) throws OccupeException;
 
 	/**
 	 * Annuler le rendez-vous pris à une creneau donnée.
@@ -42,6 +42,6 @@ public interface Agenda {
 	 * @return le rendez-vous à le créneau donnée
 	 * @throw LibreException si pas de rendez-vous à ce créneau
 	 */
-	String getRendezVous(int creneau);
+	String getRendezVous(int creneau) throws LibreException;
 
 }
