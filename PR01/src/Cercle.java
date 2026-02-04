@@ -12,8 +12,14 @@ public class Cercle implements Mesurable2D{
     /** Construire un cercle à partir de son centre et de son rayon.
      * @param p centre du cercle
      * @param r rayon du cercle
+     * @throws AssertionError si le rayon n'est pas strictement positif ou si le centre est null
      */
-    public Cercle(Point p, double r) {
+    public Cercle(Point p, double r) throws AssertionError {
+        if (r <= 0)
+            throw new AssertionError("Le rayon doit être strictement positif");
+        if (p == null)
+            throw new AssertionError("Le centre du cercle ne peut pas être null");
+
         this.centre = p;
         this.rayon = r;
         this.couleur = Color.blue;
@@ -23,8 +29,13 @@ public class Cercle implements Mesurable2D{
      * Le cercle est de couleur bleue par défaut.
      * @param p un point du cercle
      * @param p1 un point diamétralement opposé au premier
+     * @throws AssertionError si les points sont nuls ou identiques
      */
-    public Cercle(Point p, Point p1) {
+    public Cercle(Point p, Point p1) throws AssertionError {
+        if (p == null || p1 == null)
+            throw new AssertionError("Les points ne peuvent pas être nuls");
+        if (p.getX() == p1.getX() && p.getY() == p1.getY())
+            throw new AssertionError("Les points doivent être différents");
         double x = (p.getX() + p1.getX()) / 2;
         double y = (p.getY() + p1.getY()) / 2;
         this.centre = new Point(x, y);
@@ -36,8 +47,13 @@ public class Cercle implements Mesurable2D{
      * @param p un point du cercle
      * @param p1 un point diamétralement opposé au premier
      * @param c la couleur du cercle
+     * @throws AssertionError si les points sont nuls ou identiques, ou si la couleur est nulle
      */
-    public Cercle(Point p, Point p1, Color c) {
+    public Cercle(Point p, Point p1, Color c) throws AssertionError {
+        if (p == null || p1 == null)
+            throw new AssertionError("Les points ne peuvent pas être nuls");
+        if (p.getX() == p1.getX() && p.getY() == p1.getY())
+            throw new AssertionError("Les points doivent être différents");
         double x = (p.getX() + p1.getX()) / 2;
         double y = (p.getY() + p1.getY()) / 2;
         this.centre = new Point(x, y);
@@ -80,8 +96,11 @@ public class Cercle implements Mesurable2D{
 
     /** Modifier le rayon
      * @param rayon nouveau rayon du cercle
+     * @throws AssertionError si le rayon n'est pas strictement positif
      */
-    public void setRayon(double rayon) {
+    public void setRayon(double rayon) throws AssertionError {
+        if (rayon <= 0)
+            throw new AssertionError("Le rayon doit être strictement positif");
         this.rayon = rayon;
     }
 
@@ -94,8 +113,12 @@ public class Cercle implements Mesurable2D{
 
     /** Modifier la couleur
      * @param couleur nouvelle couleur du cercle
+     * @throws AssertionError si la couleur est nulle
      */
-    public void setCouleur(Color couleur) {
+    public void setCouleur(Color couleur) throws AssertionError {
+        if (couleur == null) {
+            throw new AssertionError("La couleur ne peut pas être nulle");
+        }
         this.couleur = couleur;
     }
 
@@ -116,8 +139,11 @@ public class Cercle implements Mesurable2D{
 
     /** Modifier le diamètre
      * @param d nouveau diamètre du cercle
+     * @throws AssertionError si le diamètre n'est pas strictement positif
      */
-    public void setDiametre(int d) {
+    public void setDiametre(int d) throws AssertionError {
+        if (d <= 0)
+            throw new AssertionError("Le diamètre doit être strictement positif");
         this.rayon = d/2.0;
     }
 
