@@ -1,3 +1,98 @@
-Date de l'évaluation : lun. 26 janv. 2026 20:52:17 CET
+Date de l'évaluation : mar. 03 févr. 2026 21:45:04 CET
 
-Pas de mise à jour sur le Gitlab ! (git push manquant ?)
+Compilation de Cercle.java : OK.
+
+Types d'erreurs checkstyle : 10	(voir evaluation1/Cercle.checkstyle)
+
+Résultat de recherche de similitudes sur Cercle.java dans evaluation1/Cercle.sim
+
+JavaDoc automatique de Cercle : ko	(voir evaluation1/Cercle.javadoc)
+
+Un constructeur devrait appeler l'autre.
+
+Test SujetCercleTest : Tests run: 14,  Failures: 4	(voir evaluation1/SujetCercleTest.txt)
+    1) testerE17(SujetCercleTest)
+        NoSuchMethodError: 'void Cercle.setDiametre(double)'
+    2) testerE18(SujetCercleTest)
+        AssertionError: E18 : erreur si translation du centre (x) expected:<1.0> but was:<11.0>
+    3) testerE1(SujetCercleTest)
+        NoSuchMethodError: 'void Cercle.translater(double, double)'
+    4) testerE1negatifs(SujetCercleTest)
+        NoSuchMethodError: 'void Cercle.translater(double, double)'
+
+Test SujetCercleTest : Tests run: 14,  Failures: 4	(voir evaluation1/SujetCercleTest.txt)
+    1) testerE17(SujetCercleTest)
+        NoSuchMethodError: 'void Cercle.setDiametre(double)'
+    2) testerE18(SujetCercleTest)
+        AssertionError: E18 : erreur si translation du centre (x) expected:<1.0> but was:<11.0>
+    3) testerE1(SujetCercleTest)
+        NoSuchMethodError: 'void Cercle.translater(double, double)'
+    4) testerE1negatifs(SujetCercleTest)
+        NoSuchMethodError: 'void Cercle.translater(double, double)'
+
+Test RobustesseCercleTest : Tests run: 20,  Failures: 16	(voir evaluation1/RobustesseCercleTest.txt)
+    1) testerE10a(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    2) testerE11a(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    3) testerE11b(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    4) testerE11c(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    5) testerE12a(RobustesseCercleTest)
+        Exception: Unexpected exception, expected<AssertionError> but was<NullPointerException>
+    6) testerE12b(RobustesseCercleTest)
+        Exception: Unexpected exception, expected<AssertionError> but was<NullPointerException>
+    7) testerE12c(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    8) testerE13a(RobustesseCercleTest)
+        Exception: Unexpected exception, expected<AssertionError> but was<NullPointerException>
+    9) testerE13b(RobustesseCercleTest)
+        Exception: Unexpected exception, expected<AssertionError> but was<NullPointerException>
+    10) testerE13c(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    11) testerE13d(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    12) testerE14c(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    13) testerE16a(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    14) testerE16b(RobustesseCercleTest)
+        AssertionError: Expected exception: AssertionError
+    15) testerE17a(RobustesseCercleTest)
+        Exception: Unexpected exception, expected<AssertionError> but was<NoSuchMethodError>
+    16) testerE17b(RobustesseCercleTest)
+        Exception: Unexpected exception, expected<AssertionError> but was<NoSuchMethodError>
+
+Test FormeCercleTest : OK (12 tests)	(voir evaluation1/FormeCercleTest.txt)
+Test Forme2CercleTest : Tests run: 9,  Failures: 3	(voir evaluation1/Forme2CercleTest.txt)
+    1) testTranslaterCreationPoint(Forme2CercleTest)
+        NoSuchMethodError: 'void Cercle.translater(double, double)'
+    2) testToString(Forme2CercleTest)
+        AssertionError: toString de Cercle doit utiliser toString de Point !
+    3) testTranslaterCercle(Forme2CercleTest)
+        NoSuchMethodError: 'void Cercle.translater(double, double)'
+
+
+ComplementsCercleTest : non modifiée (ok)
+
+Compilation de CercleTest.java : OK.
+Test CercleTest : OK (3 tests)	(voir evaluation1/CercleTest.txt)
+Test de CercleTest avec CercleMini : OK
+Test de CercleTest avec CercleMutant1 : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutant2 : OK
+Test de CercleTest avec CercleMutant3 : OK
+Test de CercleTest avec CercleMutant4 : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutant5 : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutant6 : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutant7 : OK
+Test de CercleTest avec CercleMutant8 : OK
+Test de CercleTest avec CercleMutant9 : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutantA : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutantB : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutantC : OK
+Test de CercleTest avec CercleMutantD : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutantE : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutantF : ERREUR : CercleTest aurait dû échouer !
+Test de CercleTest avec CercleMutantZ : OK
+Bilan des tests de CercleTest : échec.
