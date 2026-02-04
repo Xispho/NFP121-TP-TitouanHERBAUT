@@ -40,7 +40,7 @@ public interface Agenda {
 	 * 
 	 * @param creneau le créneau du rendez-vous
 	 * @return le rendez-vous à le créneau donnée
-	 * @throw LibreException si pas de rendez-vous à ce créneau
+	 * @throws LibreException si pas de rendez-vous à ce créneau
 	 */
 	String getRendezVous(int creneau) throws LibreException;
 

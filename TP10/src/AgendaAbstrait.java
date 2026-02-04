@@ -21,7 +21,7 @@ public abstract class AgendaAbstrait extends ObjetNomme implements Agenda {
      */
 	public void verifierCreneauValide(int creneau) throws CreneauInvalideException {
 		if (creneau < CRENEAU_MIN || creneau > CRENEAU_MAX)
-			throw new CreneauInvalideException("Créneau invalide");
+			throw new CreneauInvalideException();
 	}
 
 

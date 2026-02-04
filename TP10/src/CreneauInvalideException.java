@@ -3,8 +3,8 @@
  */
 public class CreneauInvalideException extends RuntimeException {
 
-    public CreneauInvalideException(String message) {
-        super(message);
+    public CreneauInvalideException() {
+        super("Le créneau est invalide.");
     }
 
 }

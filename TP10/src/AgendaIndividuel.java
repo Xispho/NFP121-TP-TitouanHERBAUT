@@ -12,7 +12,7 @@ public class AgendaIndividuel extends AgendaAbstrait {
 	 * @param nom le nom de l'agenda
 	 * @throws IllegalArgumentException si nom nul ou vide
 	 */
-	public AgendaIndividuel(String nom) {
+	public AgendaIndividuel(String nom) throws IllegalArgumentException {
 		super(nom);
 		this.rendezVous = new String[Agenda.CRENEAU_MAX + 1];
 			// On gaspille une case (la première qui ne sera jamais utilisée)
@@ -21,13 +21,19 @@ public class AgendaIndividuel extends AgendaAbstrait {
 
 
 	@Override
-	public void enregistrer(int creneau, String rdv) {
+	public void enregistrer(int creneau, String rdv) throws OccupeException {
+		verifierCreneauValide(creneau);
+		if (rdv == null || rdv.isEmpty())
+			throw new IllegalArgumentException("Le rendez-vous ne peut pas être null.");
+		if (this.rendezVous[creneau] != null)
+			throw new OccupeException();
 		this.rendezVous[creneau] = rdv;
 	}
 
 
 	@Override
 	public boolean annuler(int creneau) {
+		verifierCreneauValide(creneau);
 		boolean modifie = this.rendezVous[creneau] != null;
 		this.rendezVous[creneau] = null;
 		return modifie;
@@ -35,8 +41,12 @@ public class AgendaIndividuel extends AgendaAbstrait {
 
 
 	@Override
-	public String getRendezVous(int creneau) {
-		return this.rendezVous[creneau];
+	public String getRendezVous(int creneau) throws LibreException {
+		verifierCreneauValide(creneau);
+		String rdv = this.rendezVous[creneau];
+		if (rdv == null)
+			throw new LibreException();
+		return rdv;
 	}
 
 
