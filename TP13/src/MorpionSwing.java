@@ -95,7 +95,7 @@ public class MorpionSwing {
 		pane.setLayout(new BorderLayout());
 		this.fenetre.getContentPane().add(pane);
 
-		pane.add(menuBar(), BorderLayout.NORTH);
+		this.fenetre.setJMenuBar(menuBar());
 
 		JPanel gridMorpion = new JPanel();
 		GridLayout gridLayout = new GridLayout(3, 3);
