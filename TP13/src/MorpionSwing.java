@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import javax.swing.border.Border;
 import javax.swing.event.*;
 import java.awt.event.*;
 import java.util.*;
@@ -19,9 +20,9 @@ public class MorpionSwing {
 	private static final Map<ModeleMorpion.Etat, ImageIcon> images
 		= new HashMap<ModeleMorpion.Etat, ImageIcon>();
 	static {
-		images.put(ModeleMorpion.Etat.VIDE, new ImageIcon("blanc.jpg"));
-		images.put(ModeleMorpion.Etat.CROIX, new ImageIcon("croix.jpg"));
-		images.put(ModeleMorpion.Etat.ROND, new ImageIcon("rond.jpg"));
+		images.put(ModeleMorpion.Etat.VIDE, new ImageIcon("K:\\IPST-CNAM\\i1\\NFP121 - Programmation avancée\\NFP121-TP-TitouanHERBAUT\\TP13\\blanc.jpg"));
+		images.put(ModeleMorpion.Etat.CROIX, new ImageIcon("K:\\IPST-CNAM\\i1\\NFP121 - Programmation avancée\\NFP121-TP-TitouanHERBAUT\\TP13\\croix.jpg"));
+		images.put(ModeleMorpion.Etat.ROND, new ImageIcon("K:\\IPST-CNAM\\i1\\NFP121 - Programmation avancée\\NFP121-TP-TitouanHERBAUT\\TP13\\rond.jpg"));
 	}
 
 // Choix de réalisation :
@@ -80,6 +81,7 @@ public class MorpionSwing {
 		//	Définir la fenêtre principale
 		this.fenetre = new JFrame("Morpion");
 		this.fenetre.setLocation(100, 200);
+		this.fenetre.setPreferredSize(new Dimension(500,500));
 
 		// Construire le contrôleur (gestion des événements)
 		this.fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -87,6 +89,43 @@ public class MorpionSwing {
 		// afficher la fenêtre
 		this.fenetre.pack();			// redimmensionner la fenêtre
 		this.fenetre.setVisible(true);	// l'afficher
+
+
+		JPanel pane = new JPanel();
+		pane.setLayout(new BorderLayout());
+		this.fenetre.getContentPane().add(pane);
+
+		pane.add(menuBar(), BorderLayout.NORTH);
+
+		JPanel gridMorpion = new JPanel();
+		GridLayout gridLayout = new GridLayout(3, 3);
+		gridLayout.setVgap(0);
+		gridLayout.setHgap(0);
+		gridMorpion.setLayout(gridLayout);
+
+		Border border = BorderFactory.createLineBorder(Color.BLACK, 1);
+		for (int i = 0; i < cases.length; i++) {
+			for (int j = 0; j < cases[i].length; j++) {
+				int ligne = i;
+				int colonne = j;
+				JLabel jLabel = cases[ligne][colonne];
+				jLabel.setBorder(border);
+				jLabel.addMouseListener(
+					new MouseAdapter() {
+						@Override
+						public void mouseClicked(MouseEvent e) {
+                            try {
+                                cocher(ligne, colonne, e);
+                            } catch (CaseOccupeeException ex) {
+                                throw new RuntimeException(ex);
+                            }
+                        }
+					}
+				);
+				gridMorpion.add(jLabel);
+			}
+		}
+		pane.add(gridMorpion, BorderLayout.CENTER);
 	}
 
 // Quelques réactions aux interactions de l'utilisateur
@@ -107,7 +146,42 @@ public class MorpionSwing {
 		joueur.setIcon(images.get(modele.getJoueur()));
 	}
 
+	public void quitter() {
+		this.modele.quitter();
+	}
 
+	private void cocher(int i, int j, MouseEvent e) throws CaseOccupeeException {
+		if (cases[i][j] == e.getSource()) {
+			try {
+				this.modele.cocher(i, j);
+				this.cases[i][j].setIcon(images.get(this.modele.getValeur(i, j)));
+				this.joueur.setIcon(images.get(modele.getJoueur()));
+			} catch (CaseOccupeeException ex) {
+				JOptionPane.showMessageDialog(fenetre, "Cette case est déjà occupée !");
+			}
+			if (modele.estTerminee()) {
+				if (modele.estGagnee()) {
+					JOptionPane.showMessageDialog(fenetre, "Le joueur " + modele.getJoueur() + " a gagné !");
+				} else {
+					JOptionPane.showMessageDialog(fenetre, "Match nul !");
+				}
+			}
+		}
+	}
+
+
+	private JMenuBar menuBar() {
+		JMenuBar menuBar = new JMenuBar();
+		JMenu menu = new JMenu("Jeu");
+		menuBar.add(menu);
+		JMenuItem nouvellePartie = new JMenuItem("Nouvelle partie");
+		nouvellePartie.addActionListener(e -> recommencer());
+		menu.add(nouvellePartie);
+		JMenuItem quitter = new JMenuItem("Quitter");
+		quitter.addActionListener(e -> quitter());
+		menu.add(quitter);
+		return menuBar;
+	}
 
 // La méthode principale
 // ---------------------

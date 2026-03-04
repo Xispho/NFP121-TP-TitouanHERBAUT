@@ -113,6 +113,7 @@ public class ModeleMorpionSimple implements ModeleMorpion {
 
 
 	public void quitter() {
+		System.exit(0);
 	}
 
 	public void recommencer() {
