@@ -34,6 +34,8 @@ public class EditeurLigne {
 					new CommandeCurseurReculer(ligne));
 		menuPrincipal.ajouter("Placer le curseur en début de ligne",
 					new CommandeRAZ(ligne));
+		menuPrincipal.ajouter("Supprimer le caractère sous le curseur",
+					new CommandeSupprimerCaractere(ligne));
 	}
 
 	public void editer() {
