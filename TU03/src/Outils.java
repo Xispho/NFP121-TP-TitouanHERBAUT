@@ -8,7 +8,12 @@ public class Outils {
 			List<E> elements,
 			Critere<E> critere)
 	{
-		return false;	// TODO à corriger
+		for (E element : elements) {
+			if (!critere.satisfaitSur(element)) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 
@@ -20,7 +25,11 @@ public class Outils {
 			Critere<E> aGarder,
 			List<E> resultat)
 	{
-		// TODO : à corriger
+		for (E element : source) {
+			if (aGarder.satisfaitSur(element)) {
+				resultat.add(element);
+			}
+		}
 	}
 
 }
