@@ -57,23 +57,53 @@ public class LanceurIndependant {
 
 
 	private void testerUneClasse(String nomClasse)
-		throws ClassNotFoundException, InstantiationException,
-						  IllegalAccessException
-	{
+            throws ClassNotFoundException, InstantiationException,
+            IllegalAccessException, InvocationTargetException {
 		// Récupérer la classe
+		Class<?> aClass = Class.forName(nomClasse);
+
 
 		// Récupérer les méthodes "preparer" et "nettoyer"
 		Method preparer = null;
+		try {
+			preparer = aClass.getMethod("preparer");
+		} catch (NoSuchMethodException e) {
+		}
 		Method nettoyer = null;
+		try {
+			nettoyer = aClass.getMethod("nettoyer");
+		} catch (NoSuchMethodException e) {
+		}
 
 		// Instancier l'objet qui sera le récepteur des tests
-		Object objet = null;
+		Object objet = aClass.getConstructors()[0].newInstance();
+
+		 // Récupérer les méthodes de test
+		Method[] methodes = aClass.getMethods();
 
 		// Exécuter les méthods de test
+		for (Method m : methodes) {
+			if (m.getName().startsWith("tester")) {
+				this.nbTestsLances++;
+				try {
+					if (preparer != null) preparer.invoke(objet);
+					m.invoke(objet);
+					if (nettoyer != null) nettoyer.invoke(objet);
+				} catch (InvocationTargetException e) {
+					Throwable cause = e.getCause();
+					if (cause instanceof Echec) {
+						this.nbEchecs++;
+					} else {
+						this.nbErreurs++;
+					}
+					this.erreurs.add(cause);
+				}
+			}
+		}
 	}
 
 	public static void main(String... args) {
-		LanceurIndependant lanceur = new LanceurIndependant(args);
+		LanceurIndependant lanceur = new LanceurIndependant("MonnaieTest", "MonnaieTest2", "CasLimitesTest", "ErreurTest");
 	}
 
 }
