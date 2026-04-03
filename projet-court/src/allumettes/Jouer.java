@@ -15,7 +15,6 @@ public class Jouer {
 		try {
 			verifierNombreArguments(args);
 
-			System.out.println("\n\tà faire !\n");
 			Joueur joueur1 = new Joueur(args[0]);
 			Joueur joueur2 = new Joueur(args[1]);
 			Arbitre arbitre = new Arbitre(
