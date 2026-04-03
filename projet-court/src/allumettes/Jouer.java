@@ -16,14 +16,22 @@ public class Jouer {
 			verifierNombreArguments(args);
 
 			System.out.println("\n\tà faire !\n");
-
+			Joueur joueur1 = new Joueur(args[0]);
+			Joueur joueur2 = new Joueur(args[1]);
+			Arbitre arbitre = new Arbitre(
+				joueur1,
+				joueur2
+			);
+			Jeu jeu = new Game(13);
+			arbitre.arbitrer(jeu);
 		} catch (ConfigurationException e) {
 			System.out.println();
 			System.out.println("Erreur : " + e.getMessage());
 			afficherUsage();
 			System.exit(1);
-		}
-	}
+		} catch (CoupInvalideException e) {
+        }
+    }
 
 	private static void verifierNombreArguments(String[] args) {
 		final int nbJoueurs = 2;
