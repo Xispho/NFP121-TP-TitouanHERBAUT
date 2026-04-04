@@ -1,0 +1,9 @@
+Combien d'allumettes voulez-vous prendre ? (1-3) Combien d'allumettes voulez-vous prendre ? (1-3) Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:937)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:15)
+	at allumettes.Joueur.getPrise(Joueur.java:27)
+	at allumettes.Arbitre.arbitrer(Arbitre.java:15)
+	at allumettes.Jouer.main(Jouer.java:25)

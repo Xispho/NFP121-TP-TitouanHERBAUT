@@ -1,10 +1,11 @@
-Date de l'évaluation : ven. 06 mars 2026 16:31:54 CET
+Date de l'évaluation : sam. 04 avril 2026 15:25:13 CEST
 
 LISEZ-MOI.txt : NON MODIFIÉ
 
-Nombre de similitudes : 0	(voir evaluation1/sim_java.txt)
+Nombre de similitudes : 1	(voir evaluation1/sim_java.txt)
+Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 0/0	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 2/2	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : NON DÉFINIE (ou pas sur Gitlab)
 
@@ -18,11 +19,13 @@ Throwable, Exception et RuntimeException ne devraient pas être récupérées ca
 AssertionError ne doit pas être récupérée... ok
 
 Autres exceptions récupérées :
-  | allumettes/Jouer.java:20:       } catch (ConfigurationException e) {
+  | allumettes/Jouer.java:26:       } catch (ConfigurationException e) {
+  | allumettes/Jouer.java:31:       } catch (CoupInvalideException e) {
 
 Utilisation de 'Scanner' : NON
 
-Utilisation de 'split' : NON
+Utilisation de 'split' : ok
+  | allumettes/Joueur.java:16:        String[] parts = description.split("@");
 
 Utilisation de 'Random' : NON
 
@@ -33,5 +36,75 @@ Affichage de 'Impossible !' : jamais affiché (ERREUR)
 Utilisation de 'System.exit' : ok
 
 Compilation de Jouer.java : OK.
-Pas de fichier Arbitre.java sur Gitlab !
-Fichiers manquants sur Gitlab ? Un 'git push' oublié ?
+Compilation de Arbitre.java : OK.
+Test exemplePresqueSujet : NON CONFORME	(voir evaluation1/exemplePresqueSujet.diff)
+Test exempleTricheurSujet : NON CONFORME	(voir evaluation1/exempleTricheurSujet.diff)
+Test exempleConfiantTricheurSujet : NON CONFORME	(voir evaluation1/exempleConfiantTricheurSujet.diff)
+Test exempleRobustesse : NON CONFORME	(voir evaluation1/exempleRobustesse.diff)
+Test exempleHumainTricheurExpert : NON CONFORME	(voir evaluation1/exempleHumainTricheurExpert.diff)
+Test exempleMaxLou : NON CONFORME	(voir evaluation1/exempleMaxLou.diff)
+Test exempleRapideRapide : NON CONFORME	(voir evaluation1/exempleRapideRapide.diff)
+Test exempleTricheurExpert : NON CONFORME	(voir evaluation1/exempleTricheurExpert.diff)
+
+Test RobustesseTest : Tests run: 24,  Failures: 19	(voir evaluation1/RobustesseTest.txt)
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" IllegalArgumentException: Stratégie inconnue : ville
+        Exception in thread "main" IllegalArgumentException: Stratégie inconnue : xyz
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" IllegalArgumentException: Stratégie inconnue : xyz
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" IllegalArgumentException: Stratégie inconnue : ville
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+    1) testerSansStrategieConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    2) testerStrategieDoubleAtSymetrieConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    3) testerSansStrategie(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    4) testerStrategieInconnueSymetrieConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    5) testerStrategieDoubleAtStrategieALaFinSymetrie(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    6) testerNomNonDefini(RobustesseTest)
+        Le programme ne se termine pas.
+    7) testerStrategieInconnue(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    8) testerStrategieDoubleAtConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    9) testerStrategieDoubleAtStrategieALaFinSymetrieConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    10) testerStrategieInconnueSymetrie(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    11) testerNomNonDefiniConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    12) testerStrategieDoubleAtStrategieALaFinConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    13) testerStrategieDoubleAtStrategieALaFin(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    14) testerSansStrategieSymetrie(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    15) testerDoubleConfiantConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    16) testerSansStrategieSymetrieConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    17) testerStrategieInconnueConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    18) testerNomNonDefiniSymetrieConfiant(RobustesseTest)
+        Le programme s'est terminé sur une exception non récupérée.
+    19) testerNomNonDefiniSymetrie(RobustesseTest)
+        Le programme ne se termine pas.
+
+
+Vérification du respect du diagramme de classe...
+	Non fait car le projet n'est pas assez avancé
+
+Aucune classe de test (fichier *Test.java ou Test*.java) !

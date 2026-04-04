@@ -1,2 +1,4 @@
 Début de la vérification...
+[ERROR] Game.java:3:33: Il manque une espace avant '{'. [WhitespaceAround]
+[ERROR] Jouer.java:24:32: '13' devrait être défini comme une constante. [MagicNumber]
 Vérification terminée.

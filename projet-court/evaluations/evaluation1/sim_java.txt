@@ -1,6 +1,37 @@
+File allumettes/Arbitre.java: 143 tokens, 30 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
+File allumettes/Joueur.java: 113 tokens, 30 lines
+File allumettes/Game.java: 79 tokens, 24 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
-File allumettes/Jouer.java: 174 tokens, 54 lines
+File allumettes/Jouer.java: 219 tokens, 61 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
-Total input: 4 files (4 new, 0 old), 286 tokens
+Total input: 7 files (7 new, 0 old), 666 tokens
+
+allumettes/Arbitre.java: line 1-11 [33]
+allumettes/Joueur.java: line 1-13
+< package allumettes;
+< 
+< public class Arbitre {
+< 
+<     private Joueur joueur1;
+<     private Joueur joueur2;
+< 
+<     public Arbitre(Joueur joueur1, Joueur joueur2) {
+<         this.joueur1 = joueur1;
+<         this.joueur2 = joueur2;
+<     }
+---
+> package allumettes;
+> 
+> import strategies.StrategiePossible;
+> 
+> public class Joueur {
+> 
+>     private String nom;
+>     private StrategiePossible strategie;
+> 
+>     public Joueur(String nom, StrategiePossible strategie) {
+>         this.nom = nom;
+>         this.strategie = strategie;
+>     }
 
