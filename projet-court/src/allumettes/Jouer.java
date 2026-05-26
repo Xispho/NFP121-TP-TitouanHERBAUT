@@ -7,6 +7,8 @@ package allumettes;
  */
 public class Jouer {
 
+	static final int NB_ALLUMETTES = 13;
+
 	/** Lancer une partie. En argument sont donnés les deux joueurs sous
 	 * la forme nom@stratégie.
 	 * @param args la description des deux joueurs
@@ -21,7 +23,7 @@ public class Jouer {
 				joueur1,
 				joueur2
 			);
-			Jeu jeu = new Game(13);
+			Jeu jeu = new Game(NB_ALLUMETTES);
 			arbitre.arbitrer(jeu);
 		} catch (ConfigurationException e) {
 			System.out.println();

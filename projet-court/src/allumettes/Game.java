@@ -1,6 +1,6 @@
 package allumettes;
 
-public class Game implements Jeu{
+public class Game implements Jeu {
 
     private int nombreAllumettes;
 
