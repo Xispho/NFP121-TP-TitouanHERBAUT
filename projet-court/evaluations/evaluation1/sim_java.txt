@@ -1,11 +1,23 @@
-File allumettes/Arbitre.java: 143 tokens, 30 lines
+File allumettes/Arbitre.java: 175 tokens, 32 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
-File allumettes/Joueur.java: 113 tokens, 30 lines
+File allumettes/Joueur.java: 124 tokens, 34 lines
 File allumettes/Game.java: 79 tokens, 24 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
-File allumettes/Jouer.java: 219 tokens, 61 lines
+File allumettes/Jouer.java: 225 tokens, 63 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
-Total input: 7 files (7 new, 0 old), 666 tokens
+Total input: 7 files (7 new, 0 old), 715 tokens
+
+allumettes/Arbitre.java: line 15-18 [38]
+allumettes/Arbitre.java: line 23-26
+<             int prise1 = joueur1.getPrise(jeu);
+<             jeu.retirer(prise1);
+<             System.out.println("Allumettes restantes : " + jeu.getNombreAllumettes() + "\n");
+<             if (jeu.getNombreAllumettes() <= 0) {
+---
+>             int prise2 = joueur2.getPrise(jeu);
+>             jeu.retirer(prise2);
+>             System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes() + "\n");
+>             if (jeu.getNombreAllumettes() == 0) {
 
 allumettes/Arbitre.java: line 1-11 [33]
 allumettes/Joueur.java: line 1-13
