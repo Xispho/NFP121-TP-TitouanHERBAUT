@@ -19,7 +19,8 @@ public class InterfacesDOM {
 
 	/** Afficher le nombre d'interfaces spécifiées. */
 	public static void afficherNombreInterfacesSpecifiees(Document doc) {
-		// A COMPLETER...
+		System.out.println("Nb interfaces specifies = "
+				+  doc.getElementsByTagName("name").getLength());
 	}
 
 	/** Afficher les noms des interfaces automatiques. */
