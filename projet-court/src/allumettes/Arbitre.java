@@ -14,6 +14,7 @@ public class Arbitre {
         while (jeu.getNombreAllumettes() > 0) {
             int prise1 = joueur1.getPrise(jeu);
             jeu.retirer(prise1);
+            System.out.println("Allumettes restantes : " + jeu.getNombreAllumettes() + "\n");
             if (jeu.getNombreAllumettes() <= 0) {
                 System.out.println(joueur1.getNom() + " a gagné !");
                 break;
@@ -21,6 +22,7 @@ public class Arbitre {
 
             int prise2 = joueur2.getPrise(jeu);
             jeu.retirer(prise2);
+            System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes() + "\n");
             if (jeu.getNombreAllumettes() == 0) {
                 System.out.println(joueur2.getNom() + " a gagné !");
                 break;

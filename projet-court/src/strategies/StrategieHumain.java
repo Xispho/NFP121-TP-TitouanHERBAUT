@@ -1,16 +1,17 @@
 package strategies;
 
+import allumettes.Joueur;
+
 import java.util.Scanner;
 
-public class StrategieHumain implements Strategie{
+public class StrategieHumain implements Strategie {
 
     @Override
-    public int choisirNombreAllumettes(int nombreAllumettes) {
+    public int choisirNombreAllumettes(Joueur joueur, int nombreAllumettes) {
         int prise = 0;
         while (prise <= 0 || prise > Math.min(3, nombreAllumettes)) {
-            System.out.print("Combien d'allumettes voulez-vous prendre ? (1-3) ");
+            System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
             try {
-                // TODO: Scanner
                 Scanner scanner = new Scanner(System.in);
                 prise = scanner.nextInt();
             } catch (NumberFormatException e) {

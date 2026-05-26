@@ -24,7 +24,11 @@ public class Joueur {
 
     public int getPrise(Jeu jeu) {
         int nbAllumettes = jeu.getNombreAllumettes();
-        return strategie.getStrategieInstance().choisirNombreAllumettes(nbAllumettes);
+        return strategie.getStrategieInstance().choisirNombreAllumettes(this, nbAllumettes);
+    }
+
+    public StrategiePossible getStrategie() {
+        return strategie;
     }
 
 }
