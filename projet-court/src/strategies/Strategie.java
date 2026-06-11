@@ -1,5 +1,6 @@
 package strategies;
 
+import allumettes.Jeu;
 import allumettes.Joueur;
 
 public interface Strategie {
@@ -9,6 +10,6 @@ public interface Strategie {
      * @param nombreAllumettes le nombre d'allumettes restantes
      * @return le nombre d'allumettes à retirer
      */
-    int choisirNombreAllumettes(Joueur joueur, int nombreAllumettes);
+    int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes);
 
 }

@@ -7,7 +7,7 @@ public class StrategieRapide implements Strategie{
 
     // Retire 3 allumettes si possible, sinon le nombre maximum autorisé
     @Override
-    public int choisirNombreAllumettes(Joueur joueur, int nombreAllumettes) {
+    public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
         if (nombreAllumettes <= 0) {
             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
         }
