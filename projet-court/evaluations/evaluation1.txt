@@ -1,11 +1,11 @@
-Date de l'évaluation : sam. 04 avril 2026 15:25:13 CEST
+Date de l'évaluation : mar. 26 mai 2026 14:19:50 CEST
 
 LISEZ-MOI.txt : NON MODIFIÉ
 
-Nombre de similitudes : 1	(voir evaluation1/sim_java.txt)
+Nombre de similitudes : 2	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 2/2	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 3/1	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : NON DÉFINIE (ou pas sur Gitlab)
 
@@ -19,8 +19,8 @@ Throwable, Exception et RuntimeException ne devraient pas être récupérées ca
 AssertionError ne doit pas être récupérée... ok
 
 Autres exceptions récupérées :
-  | allumettes/Jouer.java:26:       } catch (ConfigurationException e) {
-  | allumettes/Jouer.java:31:       } catch (CoupInvalideException e) {
+  | allumettes/Jouer.java:28:       } catch (ConfigurationException e) {
+  | allumettes/Jouer.java:33:       } catch (CoupInvalideException e) {
 
 Utilisation de 'Scanner' : NON
 

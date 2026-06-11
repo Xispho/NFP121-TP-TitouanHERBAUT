@@ -1,4 +1,5 @@
 Début de la vérification...
-[ERROR] Game.java:3:33: Il manque une espace avant '{'. [WhitespaceAround]
-[ERROR] Jouer.java:24:32: '13' devrait être défini comme une constante. [MagicNumber]
+[ERROR] Arbitre.java:17: La ligne excède 90 caractères (trouvé 93). [LineLength]
+[ERROR] Arbitre.java:25: La ligne excède 90 caractères (trouvé 95). [LineLength]
+[ERROR] Joueur.java:27: La ligne excède 90 caractères (trouvé 92). [LineLength]
 Vérification terminée.

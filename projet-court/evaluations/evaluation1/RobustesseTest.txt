@@ -5,7 +5,7 @@ JUnit version 4.12
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -19,7 +19,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -33,7 +33,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -47,7 +47,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -62,7 +62,7 @@ E.
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:19)
+	at allumettes.Jouer.main(Jouer.java:21)
 
 
 ################################################################################
@@ -87,7 +87,7 @@ E.
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -101,7 +101,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -115,7 +115,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -130,7 +130,7 @@ E.
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:19)
+	at allumettes.Jouer.main(Jouer.java:21)
 
 
 ################################################################################
@@ -144,7 +144,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -156,6 +156,18 @@ E.
 ================================================================================
 > java allumettes.Jouer.main("xxx@rapide@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
+xxx prend 3 allumette(s).Allumettes restantes : 10
+
+yyy prend 3 allumette(s).
+Allumettes restantes : 7
+
+xxx prend 3 allumette(s).Allumettes restantes : 4
+
+yyy prend 3 allumette(s).
+Allumettes restantes : 1
+
+xxx prend 1 allumette(s).Allumettes restantes : 0
+
 xxx a gagné !
 
 --------------------------------------------------------------------------------
@@ -186,7 +198,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -201,7 +213,7 @@ E.
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -215,7 +227,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:19)
+	at allumettes.Jouer.main(Jouer.java:21)
 
 
 ################################################################################
@@ -229,7 +241,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -262,7 +274,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -276,7 +288,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -290,7 +302,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:18)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -302,6 +314,18 @@ E.
 ================================================================================
 > java allumettes.Jouer.main("yyy@rapide", "xxx@rapide@naif")
 --------------------------------------------------------------------------------
+yyy prend 3 allumette(s).Allumettes restantes : 10
+
+xxx prend 3 allumette(s).
+Allumettes restantes : 7
+
+yyy prend 3 allumette(s).Allumettes restantes : 4
+
+xxx prend 3 allumette(s).
+Allumettes restantes : 1
+
+yyy prend 1 allumette(s).Allumettes restantes : 0
+
 yyy a gagné !
 
 --------------------------------------------------------------------------------
@@ -338,17 +362,15 @@ Le programme ne se termine pas.
 
 E
 
-Time: 3,531
+Time: 2,287
 There were 19 failures:
 1) testerSansStrategieConfiant(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerSansStrategieConfiant(RobustesseTest.java:227)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -383,10 +405,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieDoubleAtSymetrieConfiant(RobustesseTest.java:287)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -421,10 +441,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerSansStrategie(RobustesseTest.java:233)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -459,10 +477,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieInconnueSymetrieConfiant(RobustesseTest.java:263)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -497,10 +513,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieDoubleAtStrategieALaFinSymetrie(RobustesseTest.java:317)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -535,10 +549,8 @@ java.lang.AssertionError: Le programme ne se termine pas.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:95)
 	at RobustesseTest.testerNomNonDefini(RobustesseTest.java:209)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -573,10 +585,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieInconnue(RobustesseTest.java:257)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -611,10 +621,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieDoubleAtConfiant(RobustesseTest.java:275)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -649,10 +657,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieDoubleAtStrategieALaFinSymetrieConfiant(RobustesseTest.java:311)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -687,10 +693,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieInconnueSymetrie(RobustesseTest.java:269)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -725,10 +729,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerNomNonDefiniConfiant(RobustesseTest.java:203)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -763,10 +765,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieDoubleAtStrategieALaFinConfiant(RobustesseTest.java:299)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -801,10 +801,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieDoubleAtStrategieALaFin(RobustesseTest.java:305)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -839,10 +837,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerSansStrategieSymetrie(RobustesseTest.java:245)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -877,10 +873,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerDoubleConfiantConfiant(RobustesseTest.java:191)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -915,10 +909,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerSansStrategieSymetrieConfiant(RobustesseTest.java:239)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -953,10 +945,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerStrategieInconnueConfiant(RobustesseTest.java:251)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -991,10 +981,8 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
 	at RobustesseTest.testerNomNonDefiniSymetrieConfiant(RobustesseTest.java:215)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
@@ -1029,10 +1017,8 @@ java.lang.AssertionError: Le programme ne se termine pas.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:95)
 	at RobustesseTest.testerNomNonDefiniSymetrie(RobustesseTest.java:221)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
