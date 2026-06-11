@@ -1,19 +1,9 @@
-1c1,2
+1c1,10
 < Max, combien d'allumettes ? Allumettes restantes : 11
 ---
 > Allumettes restantes : 13
 > Max, combien d'allumettes ? Max prend 2 allumettes.
-3,11c4,39
-< Lou, combien d'allumettes ? Exception in thread "main" java.util.NoSuchElementException
-< 	at java.base/java.util.Scanner.throwFor(Scanner.java:975)
-< 	at java.base/java.util.Scanner.next(Scanner.java:1632)
-< 	at java.base/java.util.Scanner.nextInt(Scanner.java:2297)
-< 	at java.base/java.util.Scanner.nextInt(Scanner.java:2251)
-< 	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:16)
-< 	at allumettes.Joueur.getPrise(Joueur.java:27)
-< 	at allumettes.Arbitre.arbitrer(Arbitre.java:23)
-< 	at allumettes.Jouer.main(Jouer.java:27)
----
+> 
 > Allumettes restantes : 11
 > Lou, combien d'allumettes ? Lou prend 1 allumette.
 > 
@@ -21,8 +11,9 @@
 > Max, combien d'allumettes ? Vous devez donner un entier.
 > Max, combien d'allumettes ? Max prend 5 allumettes.
 > Impossible ! Nombre invalide : 5 (> 3)
-> 
-> Allumettes restantes : 10
+3d11
+< Lou, combien d'allumettes ? 
+4a13,36
 > Max, combien d'allumettes ? Max prend 0 allumette.
 > Impossible ! Nombre invalide : 0 (< 1)
 > 
@@ -47,6 +38,16 @@
 > 
 > Allumettes restantes : 1
 > Lou, combien d'allumettes ? Lou prend 1 allumette.
-> 
+6,14c38,39
+< Max, combien d'allumettes ? Exception in thread "main" java.util.InputMismatchException
+< 	at java.base/java.util.Scanner.throwFor(Scanner.java:977)
+< 	at java.base/java.util.Scanner.next(Scanner.java:1632)
+< 	at java.base/java.util.Scanner.nextInt(Scanner.java:2297)
+< 	at java.base/java.util.Scanner.nextInt(Scanner.java:2251)
+< 	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:18)
+< 	at allumettes.Joueur.getPrise(Joueur.java:27)
+< 	at allumettes.Arbitre.arbitrer(Arbitre.java:15)
+< 	at allumettes.Jouer.main(Jouer.java:27)
+---
 > Lou perd !
 > Max gagne !

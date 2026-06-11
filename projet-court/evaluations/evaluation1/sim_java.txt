@@ -1,11 +1,11 @@
 File allumettes/Arbitre.java: 175 tokens, 32 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
-File allumettes/Joueur.java: 124 tokens, 34 lines
-File allumettes/Game.java: 79 tokens, 24 lines
+File allumettes/Joueur.java: 126 tokens, 34 lines
+File allumettes/Game.java: 104 tokens, 33 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
 File allumettes/Jouer.java: 225 tokens, 63 lines
-File allumettes/Jeu.java: 23 tokens, 21 lines
-Total input: 7 files (7 new, 0 old), 715 tokens
+File allumettes/Jeu.java: 27 tokens, 25 lines
+Total input: 7 files (7 new, 0 old), 746 tokens
 
 allumettes/Arbitre.java: line 15-18 [38]
 allumettes/Arbitre.java: line 23-26

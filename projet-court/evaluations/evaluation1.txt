@@ -1,4 +1,6 @@
-Date de l'évaluation : mar. 26 mai 2026 14:19:50 CEST
+Date de l'évaluation : jeu. 11 juin 2026 18:49:40 CEST
+
+Attention, il est interdit de changer Jeu.java	(voir evaluation1/Jeu.java.diff)
 
 LISEZ-MOI.txt : NON MODIFIÉ
 
@@ -22,7 +24,11 @@ Autres exceptions récupérées :
   | allumettes/Jouer.java:28:       } catch (ConfigurationException e) {
   | allumettes/Jouer.java:33:       } catch (CoupInvalideException e) {
 
-Utilisation de 'Scanner' : NON
+Utilisation de 'Scanner' : ok
+  | allumettes/Game.java:8:    private Scanner scanner;
+  | allumettes/Game.java:12:        this.scanner = new Scanner(System.in);
+  | allumettes/Game.java:29:    public Scanner getScanner() {
+  | allumettes/Jeu.java:23: Scanner getScanner();
 
 Utilisation de 'split' : ok
   | allumettes/Joueur.java:16:        String[] parts = description.split("@");
