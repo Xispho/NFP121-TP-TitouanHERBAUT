@@ -1,4 +1,4 @@
-Date de l'évaluation : jeu. 11 juin 2026 18:49:40 CEST
+Date de l'évaluation : jeu. 11 juin 2026 19:09:49 CEST
 
 Attention, il est interdit de changer Jeu.java	(voir evaluation1/Jeu.java.diff)
 
@@ -7,7 +7,7 @@ LISEZ-MOI.txt : NON MODIFIÉ
 Nombre de similitudes : 2	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 3/1	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 5/1	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : NON DÉFINIE (ou pas sur Gitlab)
 
@@ -37,7 +37,9 @@ Utilisation de 'Random' : NON
 
 Utilisation de '3' : ok
 
-Affichage de 'Impossible !' : jamais affiché (ERREUR)
+Affichage de 'Impossible !' : ne devrait apparaître qu'une fois (ERREUR)
+  | allumettes/Arbitre.java:36:                System.out.println("Impossible ! Nombre invalide : " + prise + " < " +  0);
+  | allumettes/Arbitre.java:38:                System.out.println("Impossible ! Nombre invalide : " + prise + " > " +  jeu.getNombreAllumettes());
 
 Utilisation de 'System.exit' : ok
 
@@ -52,7 +54,7 @@ Test exempleMaxLou : NON CONFORME	(voir evaluation1/exempleMaxLou.diff)
 Test exempleRapideRapide : NON CONFORME	(voir evaluation1/exempleRapideRapide.diff)
 Test exempleTricheurExpert : NON CONFORME	(voir evaluation1/exempleTricheurExpert.diff)
 
-Test RobustesseTest : Tests run: 24,  Failures: 19	(voir evaluation1/RobustesseTest.txt)
+Test RobustesseTest : Tests run: 24,  Failures: 21	(voir evaluation1/RobustesseTest.txt)
         Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
         Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
         Exception in thread "main" ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
@@ -92,21 +94,25 @@ Test RobustesseTest : Tests run: 24,  Failures: 19	(voir evaluation1/RobustesseT
         Le programme s'est terminé sur une exception non récupérée.
     11) testerNomNonDefiniConfiant(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
-    12) testerStrategieDoubleAtStrategieALaFinConfiant(RobustesseTest)
+    12) testerStrategieDoubleAt(RobustesseTest)
+        Le programme ne se termine pas.
+    13) testerStrategieDoubleAtStrategieALaFinConfiant(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
-    13) testerStrategieDoubleAtStrategieALaFin(RobustesseTest)
+    14) testerStrategieDoubleAtStrategieALaFin(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
-    14) testerSansStrategieSymetrie(RobustesseTest)
+    15) testerSansStrategieSymetrie(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
-    15) testerDoubleConfiantConfiant(RobustesseTest)
+    16) testerDoubleConfiantConfiant(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
-    16) testerSansStrategieSymetrieConfiant(RobustesseTest)
+    17) testerSansStrategieSymetrieConfiant(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
-    17) testerStrategieInconnueConfiant(RobustesseTest)
+    18) testerStrategieInconnueConfiant(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
-    18) testerNomNonDefiniSymetrieConfiant(RobustesseTest)
+    19) testerNomNonDefiniSymetrieConfiant(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
-    19) testerNomNonDefiniSymetrie(RobustesseTest)
+    20) testerStrategieDoubleAtSymetrie(RobustesseTest)
+        Le programme ne se termine pas.
+    21) testerNomNonDefiniSymetrie(RobustesseTest)
         Le programme ne se termine pas.
 
 

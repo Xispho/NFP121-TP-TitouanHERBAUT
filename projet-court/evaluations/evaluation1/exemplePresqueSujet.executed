@@ -1,8 +1,4 @@
-Xavier, combien d'allumettes ? Allumettes restantes : 11
-
-Ordinateur prend 3 allumette(s).
-Allumettes restantes : 8
-
+Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 2 < 0
 Xavier, combien d'allumettes ? Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Scanner.java:977)
 	at java.base/java.util.Scanner.next(Scanner.java:1632)
@@ -10,5 +6,6 @@ Xavier, combien d'allumettes ? Exception in thread "main" java.util.InputMismatc
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2251)
 	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:18)
 	at allumettes.Joueur.getPrise(Joueur.java:27)
+	at allumettes.Arbitre.priseJoueur(Arbitre.java:34)
 	at allumettes.Arbitre.arbitrer(Arbitre.java:15)
 	at allumettes.Jouer.main(Jouer.java:27)

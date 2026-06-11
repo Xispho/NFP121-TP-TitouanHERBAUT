@@ -1,16 +1,16 @@
-Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Allumettes restantes : 10
-
-Ordinateur prend 2 allumette(s).
-Allumettes restantes : 8
-
-Xavier, combien d'allumettes ? Allumettes restantes : 5
-
-Ordinateur prend 1 allumette(s).
-Allumettes restantes : 4
-
-Xavier, combien d'allumettes ? Allumettes restantes : 3
-
-Ordinateur prend 3 allumette(s).
-Allumettes restantes : 0
-
-Ordinateur a gagné !
+Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 3 < 0
+Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 3 < 0
+Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 1 < 0
+Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 3 < 0
+Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 2 < 0
+Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 1 < 0
+Xavier, combien d'allumettes ? Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:975)
+	at java.base/java.util.Scanner.next(Scanner.java:1632)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2297)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2251)
+	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:18)
+	at allumettes.Joueur.getPrise(Joueur.java:27)
+	at allumettes.Arbitre.priseJoueur(Arbitre.java:34)
+	at allumettes.Arbitre.arbitrer(Arbitre.java:15)
+	at allumettes.Jouer.main(Jouer.java:27)
