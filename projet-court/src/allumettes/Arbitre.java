@@ -12,13 +12,21 @@ public class Arbitre {
 
      public void arbitrer(Jeu jeu) throws CoupInvalideException {
         while (jeu.getNombreAllumettes() > 0) {
-            boolean isGameEnded;
-            isGameEnded = playRound(jeu, joueur1);
-            if (isGameEnded) {
+            priseJoueur(jeu, joueur1);
+            if (jeu.getNombreAllumettes() == 0) {
+                System.out.println(
+                    "\n" + joueur1.getNom() + " perd !"
+                    + "\n" + joueur2.getNom() + " gagne !"
+                );
                 break;
             }
-            isGameEnded = playRound(jeu, joueur2);
-            if (isGameEnded) {
+
+            priseJoueur(jeu, joueur2);
+            if (jeu.getNombreAllumettes() == 0) {
+                System.out.println(
+                    "\n" + joueur2.getNom() + " perd !"
+                    + "\n" + joueur1.getNom() + " gagne !"
+                );
                 break;
             }
         }
@@ -27,6 +35,7 @@ public class Arbitre {
     private void priseJoueur(Jeu jeu, Joueur joueur) throws CoupInvalideException {
         boolean isPriseOk = false;
         while (!isPriseOk) {
+            System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
             int prise = joueur.getPrise(jeu);
             if (prise < 0 || prise > jeu.getNombreAllumettes()) {
                 System.out.println("Impossible ! Nombre invalide : " + prise);
@@ -40,15 +49,5 @@ public class Arbitre {
                 jeu.retirer(prise);
             }
         }
-    }
-
-    private boolean playRound(Jeu jeu, Joueur joueur) throws CoupInvalideException {
-        System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
-        priseJoueur(jeu, joueur);
-        if (jeu.getNombreAllumettes() <= 1) {
-            System.out.println("\r\n" + joueur.getNom() + " a gagné !");
-            return true;
-        }
-        return false;
     }
 }
