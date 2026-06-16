@@ -10,11 +10,14 @@ public class StrategieExpert implements Strategie{
         if (nombreAllumettes <= 0) {
             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
         }
-        int result = Jeu.PRISE_MAX;
-        if (nombreAllumettes <= Jeu.PRISE_MAX) {
-            result = nombreAllumettes - 1;
+        int prise;
+        if (nombreAllumettes > 4) {
+            int reste = nombreAllumettes % 4;
+            prise = (reste == 0) ? 3 : reste - 1;
+        } else {
+            prise = nombreAllumettes - 1;
         }
-        System.out.print(joueur.getNom() + " prend " + result + " allumette(s).\n");
-        return result;
+        System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
+        return prise;
     }
 }
