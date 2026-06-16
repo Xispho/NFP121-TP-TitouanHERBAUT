@@ -20,6 +20,7 @@ public class StrategieHumain implements Strategie {
 //                System.out.println("Veuillez entrer un nombre valide.");
 //            }
         }
+        System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
         return prise;
     }
 

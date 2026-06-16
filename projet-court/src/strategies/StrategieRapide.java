@@ -12,7 +12,7 @@ public class StrategieRapide implements Strategie{
             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
         }
         int result = Math.min(Jeu.PRISE_MAX, nombreAllumettes);
-        System.out.print(joueur.getNom() + " prend " + result + " allumette(s).");
+        System.out.print(joueur.getNom() + " prend " + result + " allumette(s).\n");
         return result;
     }
 }

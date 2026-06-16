@@ -15,7 +15,7 @@ public class StrategieNaif implements Strategie {
         }
         int maxRetrait = Math.min(Jeu.PRISE_MAX, nombreAllumettes);
         int result = new Random().nextInt(maxRetrait);
-        System.out.print(joueur.getNom() + " prend " + result + " allumette(s).");
+        System.out.print(joueur.getNom() + " prend " + result + " allumette(s).\n");
         return result;
     }
 }
