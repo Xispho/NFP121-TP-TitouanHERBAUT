@@ -1,5 +1,11 @@
-Max, combien d'allumettes ? Impossible ! Nombre invalide : 2 < 0
-Max, combien d'allumettes ? Impossible ! Nombre invalide : 1 < 0
+
+Allumettes restantes : 13
+Max, combien d'allumettes ? Max prend 2 allumette(s).
+
+Allumettes restantes : 11
+Lou, combien d'allumettes ? Lou prend 1 allumette(s).
+
+Allumettes restantes : 10
 Max, combien d'allumettes ? Exception in thread "main" java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Scanner.java:977)
 	at java.base/java.util.Scanner.next(Scanner.java:1632)
@@ -7,6 +13,6 @@ Max, combien d'allumettes ? Exception in thread "main" java.util.InputMismatchEx
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2251)
 	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:18)
 	at allumettes.Joueur.getPrise(Joueur.java:27)
-	at allumettes.Arbitre.priseJoueur(Arbitre.java:34)
+	at allumettes.Arbitre.priseJoueur(Arbitre.java:39)
 	at allumettes.Arbitre.arbitrer(Arbitre.java:15)
 	at allumettes.Jouer.main(Jouer.java:27)

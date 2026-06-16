@@ -1,5 +1,17 @@
-1,11c1,25
-< Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 2 < 0
+3c2
+< Xavier, combien d'allumettes ? Xavier prend 2 allumette(s).
+---
+> Xavier, combien d'allumettes ? Xavier prend 2 allumettes.
+6c5,10
+< Ordinateur prend 3 allumette(s).
+---
+> Ordinateur prend 3 allumettes.
+> 
+> Allumettes restantes : 8
+> Xavier, combien d'allumettes ? Vous devez donner un entier.
+> Xavier, combien d'allumettes ? Xavier prend 5 allumettes.
+> Impossible ! Nombre invalide : 5 (> 3)
+9,18c13,25
 < Xavier, combien d'allumettes ? Exception in thread "main" java.util.InputMismatchException
 < 	at java.base/java.util.Scanner.throwFor(Scanner.java:977)
 < 	at java.base/java.util.Scanner.next(Scanner.java:1632)
@@ -7,22 +19,10 @@
 < 	at java.base/java.util.Scanner.nextInt(Scanner.java:2251)
 < 	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:18)
 < 	at allumettes.Joueur.getPrise(Joueur.java:27)
-< 	at allumettes.Arbitre.priseJoueur(Arbitre.java:34)
+< 	at allumettes.Arbitre.priseJoueur(Arbitre.java:39)
 < 	at allumettes.Arbitre.arbitrer(Arbitre.java:15)
 < 	at allumettes.Jouer.main(Jouer.java:27)
 ---
-> Allumettes restantes : 13
-> Xavier, combien d'allumettes ? Xavier prend 2 allumettes.
-> 
-> Allumettes restantes : 11
-> Ordinateur prend 3 allumettes.
-> 
-> Allumettes restantes : 8
-> Xavier, combien d'allumettes ? Vous devez donner un entier.
-> Xavier, combien d'allumettes ? Xavier prend 5 allumettes.
-> Impossible ! Nombre invalide : 5 (> 3)
-> 
-> Allumettes restantes : 8
 > Xavier, combien d'allumettes ? Xavier prend 3 allumettes.
 > 
 > Allumettes restantes : 5

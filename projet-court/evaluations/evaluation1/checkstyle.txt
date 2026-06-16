@@ -1,7 +1,2 @@
 Début de la vérification...
-[ERROR] Arbitre.java:16: La ligne excède 90 caractères (trouvé 93). [LineLength]
-[ERROR] Arbitre.java:23: La ligne excède 90 caractères (trouvé 95). [LineLength]
-[ERROR] Arbitre.java:36: La ligne excède 90 caractères (trouvé 91). [LineLength]
-[ERROR] Arbitre.java:38: La ligne excède 90 caractères (trouvé 115). [LineLength]
-[ERROR] Joueur.java:27: La ligne excède 90 caractères (trouvé 97). [LineLength]
 Vérification terminée.
