@@ -1,3 +1,11 @@
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+

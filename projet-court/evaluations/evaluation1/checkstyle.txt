@@ -1,4 +1,5 @@
 Début de la vérification...
-[ERROR] Jouer.java:3:8: Import inutilisé - java.util.Scanner. [UnusedImports]
-[ERROR] ScannerSingleton.java:5: La classe ScannerSingleton devrait être déclarée finale. [FinalClass]
+[ERROR] Joueur.java:21: La ligne excède 90 caractères (trouvé 128). [LineLength]
+[ERROR] Joueur.java:25: La ligne excède 90 caractères (trouvé 104). [LineLength]
+[ERROR] Joueur.java:29: La ligne excède 90 caractères (trouvé 105). [LineLength]
 Vérification terminée.

@@ -18,10 +18,10 @@
 < 	at java.base/java.util.Scanner.nextInt(Scanner.java:2297)
 < 	at java.base/java.util.Scanner.nextInt(Scanner.java:2251)
 < 	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:19)
-< 	at allumettes.Joueur.getPrise(Joueur.java:27)
+< 	at allumettes.Joueur.getPrise(Joueur.java:40)
 < 	at allumettes.Arbitre.priseJoueur(Arbitre.java:39)
 < 	at allumettes.Arbitre.arbitrer(Arbitre.java:15)
-< 	at allumettes.Jouer.main(Jouer.java:29)
+< 	at allumettes.Jouer.main(Jouer.java:27)
 ---
 > Max, combien d'allumettes ? Max prend 0 allumette.
 > Impossible ! Nombre invalide : 0 (< 1)

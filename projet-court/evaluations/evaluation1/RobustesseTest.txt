@@ -3,66 +3,86 @@ JUnit version 4.12
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "x", "yyy@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@rapide@naif")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("x", "yyy@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : x
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@xyz")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("yyy@rapide", "xxx@ville@naif")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville
+Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville@naif
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:23)
+	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Jouer.main(Jouer.java:21)
 
 
 ################################################################################
@@ -75,19 +95,28 @@ E.
 > java allumettes.Jouer.main("@humain", "ordi@rapide")
 --------------------------------------------------------------------------------
 
-################################################################################
-Le programme ne se termine pas.
+Erreur : Nom de joueur vide dans la description : @humain
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("xxx@xyz", "yyy@rapide")
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -99,38 +128,48 @@ E.
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "xxx@rapide@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@ville@naif")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("yyy@rapide", "xxx@xyz")
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:23)
+	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Jouer.main(Jouer.java:21)
 
 
 ################################################################################
@@ -142,9 +181,29 @@ E.
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "@humain", "ordi@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer.main("xxx@rapide@naif", "yyy@rapide")
+--------------------------------------------------------------------------------
+Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : rapide@naif
+	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
+	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -153,32 +212,6 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out
 
 
 E.
-================================================================================
-> java allumettes.Jouer.main("xxx@rapide@naif", "yyy@rapide")
---------------------------------------------------------------------------------
-
-Allumettes restantes : 13
-xxx prend 3 allumette(s).
-
-Allumettes restantes : 10
-yyy prend 3 allumette(s).
-
-Allumettes restantes : 7
-xxx prend 3 allumette(s).
-
-Allumettes restantes : 4
-yyy prend 3 allumette(s).
-
-Allumettes restantes : 1
-xxx prend 1 allumette(s).
-
-xxx perd !
-yyy gagne !
-
---------------------------------------------------------------------------------
-
-
-.
 ================================================================================
 > java allumettes.Jouer.main("-confiant")
 --------------------------------------------------------------------------------
@@ -201,24 +234,29 @@ Usage :
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "xxx@ville@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("xxx@ville@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville
+Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville@naif
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Jouer.main(Jouer.java:20)
 
 
 ################################################################################
@@ -230,31 +268,41 @@ E.
 ================================================================================
 > java allumettes.Jouer.main("yyy@rapide", "x")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:23)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : x
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "-confiant")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
 
-################################################################################
-*** Exception non récupérée !
 --------------------------------------------------------------------------------
 
 
-E.
+.
 ================================================================================
 > java allumettes.Jouer.main()
 --------------------------------------------------------------------------------
@@ -277,71 +325,75 @@ Usage :
 ================================================================================
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "x")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
 
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
 
-################################################################################
-*** Exception non récupérée !
---------------------------------------------------------------------------------
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
 
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
 
-E.
-================================================================================
-> java allumettes.Jouer.main("-confiant", "xxx@xyz", "yyy@rapide")
---------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
-
-
-################################################################################
-*** Exception non récupérée !
---------------------------------------------------------------------------------
-
-
-E.
-================================================================================
-> java allumettes.Jouer.main("-confiant", "ordi@rapide", "@humain")
---------------------------------------------------------------------------------
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:22)
-
-
-################################################################################
-*** Exception non récupérée !
---------------------------------------------------------------------------------
-
-
-E.
-================================================================================
-> java allumettes.Jouer.main("yyy@rapide", "xxx@rapide@naif")
---------------------------------------------------------------------------------
-
-Allumettes restantes : 13
-yyy prend 3 allumette(s).
-
-Allumettes restantes : 10
-xxx prend 3 allumette(s).
-
-Allumettes restantes : 7
-yyy prend 3 allumette(s).
-
-Allumettes restantes : 4
-xxx prend 3 allumette(s).
-
-Allumettes restantes : 1
-yyy prend 1 allumette(s).
-
-yyy perd !
-xxx gagne !
 
 --------------------------------------------------------------------------------
 
 
 .
+================================================================================
+> java allumettes.Jouer.main("-confiant", "xxx@xyz", "yyy@rapide")
+--------------------------------------------------------------------------------
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer.main("-confiant", "ordi@rapide", "@humain")
+--------------------------------------------------------------------------------
+
+Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer.main("yyy@rapide", "xxx@rapide@naif")
+--------------------------------------------------------------------------------
+Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : rapide@naif
+	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
+	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Jouer.main(Jouer.java:21)
+
+
+################################################################################
+*** Exception non récupérée !
+--------------------------------------------------------------------------------
+
+
+E.
 ================================================================================
 > java allumettes.Jouer.main("-confiant")
 --------------------------------------------------------------------------------
@@ -365,160 +417,25 @@ Usage :
 > java allumettes.Jouer.main("ordi@rapide", "@humain")
 --------------------------------------------------------------------------------
 
-################################################################################
-Le programme ne se termine pas.
+Erreur : Nom de joueur vide dans la description : @humain
+
+Usage :
+	java allumettes.Jouer joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
 --------------------------------------------------------------------------------
 
 
-E
 
-Time: 2,135
-There were 19 failures:
-1) testerSansStrategieConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerSansStrategieConfiant(RobustesseTest.java:227)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-2) testerStrategieDoubleAtSymetrieConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerStrategieDoubleAtSymetrieConfiant(RobustesseTest.java:287)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-3) testerSansStrategie(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerSansStrategie(RobustesseTest.java:233)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-4) testerStrategieInconnueSymetrieConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerStrategieInconnueSymetrieConfiant(RobustesseTest.java:263)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-5) testerStrategieDoubleAtStrategieALaFinSymetrie(RobustesseTest)
+
+Time: 1,312
+There were 6 failures:
+1) testerStrategieDoubleAtStrategieALaFinSymetrie(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
@@ -554,43 +471,7 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-6) testerNomNonDefini(RobustesseTest)
-java.lang.AssertionError: Le programme ne se termine pas.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:95)
-	at RobustesseTest.testerNomNonDefini(RobustesseTest.java:209)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-7) testerStrategieInconnue(RobustesseTest)
+2) testerStrategieInconnue(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
@@ -626,79 +507,7 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-8) testerStrategieDoubleAtConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerStrategieDoubleAtConfiant(RobustesseTest.java:275)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-9) testerStrategieDoubleAtStrategieALaFinSymetrieConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerStrategieDoubleAtStrategieALaFinSymetrieConfiant(RobustesseTest.java:311)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-10) testerStrategieInconnueSymetrie(RobustesseTest)
+3) testerStrategieInconnueSymetrie(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
@@ -734,11 +543,11 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-11) testerNomNonDefiniConfiant(RobustesseTest)
+4) testerStrategieDoubleAt(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerNomNonDefiniConfiant(RobustesseTest.java:203)
+	at RobustesseTest.testerStrategieDoubleAt(RobustesseTest.java:281)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -770,43 +579,7 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-12) testerStrategieDoubleAtStrategieALaFinConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerStrategieDoubleAtStrategieALaFinConfiant(RobustesseTest.java:299)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-13) testerStrategieDoubleAtStrategieALaFin(RobustesseTest)
+5) testerStrategieDoubleAtStrategieALaFin(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
@@ -842,191 +615,11 @@ java.lang.AssertionError: Le programme s'est terminé sur une exception non réc
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-14) testerSansStrategieSymetrie(RobustesseTest)
+6) testerStrategieDoubleAtSymetrie(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
 	at org.junit.Assert.fail(Assert.java:88)
 	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerSansStrategieSymetrie(RobustesseTest.java:245)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-15) testerDoubleConfiantConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerDoubleConfiantConfiant(RobustesseTest.java:191)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-16) testerSansStrategieSymetrieConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerSansStrategieSymetrieConfiant(RobustesseTest.java:239)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-17) testerStrategieInconnueConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerStrategieInconnueConfiant(RobustesseTest.java:251)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-18) testerNomNonDefiniSymetrieConfiant(RobustesseTest)
-java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:102)
-	at RobustesseTest.testerNomNonDefiniSymetrieConfiant(RobustesseTest.java:215)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
-	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
-	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-19) testerNomNonDefiniSymetrie(RobustesseTest)
-java.lang.AssertionError: Le programme ne se termine pas.
-	at org.junit.Assert.fail(Assert.java:88)
-	at RobustesseTest.runJouer(RobustesseTest.java:95)
-	at RobustesseTest.testerNomNonDefiniSymetrie(RobustesseTest.java:221)
+	at RobustesseTest.testerStrategieDoubleAtSymetrie(RobustesseTest.java:293)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
@@ -1060,5 +653,5 @@ java.lang.AssertionError: Le programme ne se termine pas.
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
 
 FAILURES!!!
-Tests run: 24,  Failures: 19
+Tests run: 24,  Failures: 6
 

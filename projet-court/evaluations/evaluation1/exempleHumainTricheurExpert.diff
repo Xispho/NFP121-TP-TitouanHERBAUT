@@ -1,20 +1,26 @@
-1,3c1,21
-< Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-< 	at allumettes.Joueur.<init>(Joueur.java:18)
-< 	at allumettes.Jouer.main(Jouer.java:22)
----
+0a1,2
 > Allumettes restantes : 13
 > Xavier, combien d'allumettes ? Xavier prend 1 allumette.
-> 
+2c4,5
+< Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+---
 > Allumettes restantes : 12
 > Ordinateur prend 3 allumettes.
-> 
+4,7c7,8
+< Usage :
+< 	java allumettes.Jouer joueur1 joueur2
+< 		joueur est de la forme nom@stratégie
+< 		strategie = naif | rapide | expert | humain | tricheur
+---
 > Allumettes restantes : 9
 > Xavier, combien d'allumettes ? Xavier prend 3 allumettes.
-> 
+9,10c10,11
+< 	Exemple :
+< 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+---
 > Allumettes restantes : 6
 > Ordinateur prend 1 allumette.
-> 
+11a13,21
 > Allumettes restantes : 5
 > Xavier, combien d'allumettes ? [Une allumette en moins, plus que 4. Chut !]
 > Xavier, combien d'allumettes ? Xavier prend 3 allumettes.
