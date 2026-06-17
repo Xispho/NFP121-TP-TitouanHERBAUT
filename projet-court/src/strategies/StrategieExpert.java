@@ -17,7 +17,6 @@ public class StrategieExpert implements Strategie{
         } else {
             prise = nombreAllumettes - 1;
         }
-        System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
         return prise;
     }
 }

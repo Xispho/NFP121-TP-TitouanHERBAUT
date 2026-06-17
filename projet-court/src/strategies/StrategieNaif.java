@@ -14,8 +14,6 @@ public class StrategieNaif implements Strategie {
             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
         }
         int maxRetrait = Math.min(Jeu.PRISE_MAX, nombreAllumettes);
-        int prise = new Random().nextInt(maxRetrait);
-        System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
-        return prise;
+        return new Random().nextInt(maxRetrait);
     }
 }

@@ -1,5 +1,7 @@
 package allumettes;
 
+import static java.lang.Integer.min;
+
 public class Arbitre {
 
     private Joueur joueur1;
@@ -36,17 +38,20 @@ public class Arbitre {
         boolean isPriseOk = false;
         while (!isPriseOk) {
             System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
+            int priseMaxCurrentRound = min(Jeu.PRISE_MAX, jeu.getNombreAllumettes());
             int prise = joueur.getPrise(jeu);
-            if (prise < 0 || prise > jeu.getNombreAllumettes()) {
-                System.out.println("Impossible ! Nombre invalide : " + prise);
-                if (prise < 0) {
-                    System.out.println(" < " + 0);
-                } else if (prise > jeu.getNombreAllumettes()) {
-                    System.out.println(" > " + jeu.getNombreAllumettes());
+            if (prise < 1 || prise > priseMaxCurrentRound) {
+                String erreur = "Impossible ! Nombre invalide : " + prise;
+                if (prise < 1) {
+                    erreur += " (< " + 1 + ")";
+                } else {
+                    erreur += " (> " + priseMaxCurrentRound + ")";
                 }
+                System.out.println(erreur);
             } else {
                 isPriseOk = true;
                 jeu.retirer(prise);
+                System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
             }
         }
     }
