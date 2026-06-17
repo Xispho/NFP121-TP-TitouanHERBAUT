@@ -2,19 +2,21 @@ package allumettes;
 
 import java.util.Scanner;
 
-public class ScannerSingleton {
+public final class ScannerSingleton {
 
     private static ScannerSingleton instance;
     private Scanner scanner;
 
-    // Constructeur privé pour empêcher l'instantiation.
+    /**
+     * Constructeur qui crée un scanner
+     */
     private ScannerSingleton() {
         this.scanner = new Scanner(System.in);
     }
 
     /**
      * Retourne l'instance unique de Scanner liée à System.in.
-     * Ne fermez pas le scanner sauf si l'application se termine (fermer System.in aussi).
+     * Crée l'instance si elle n'existe pas encore
      */
     public static ScannerSingleton getInstance() {
         if (instance == null) {

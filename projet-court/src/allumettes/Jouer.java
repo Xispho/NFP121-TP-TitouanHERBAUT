@@ -1,7 +1,5 @@
 package allumettes;
 
-import java.util.Scanner;
-
 /** Lance une partie des 13 allumettes en fonction des arguments fournis
  * sur la ligne de commande.
  * @author	Xavier Crégut
