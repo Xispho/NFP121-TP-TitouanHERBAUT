@@ -18,15 +18,24 @@ public class Joueur {
         }
         String[] parts = description.split("@", 2);
         if (parts.length < 2) {
-            throw new ConfigurationException("Description du joueur invalide (format attendu: nom@strategie) : " + description);
+            throw new ConfigurationException(
+                "Description invalide (format attendu: nom@strategie) : "
+                + description
+            );
         }
         this.nom = parts[0].trim();
         if (this.nom.isEmpty()) {
-            throw new ConfigurationException("Nom de joueur vide dans la description : " + description);
+            throw new ConfigurationException(
+                "Nom de joueur vide dans la description : "
+                + description
+            );
         }
         String nomStrategie = parts[1].trim();
         if (nomStrategie.isEmpty()) {
-            throw new ConfigurationException("Stratégie manquante dans la description : " + description);
+            throw new ConfigurationException(
+                "Stratégie manquante dans la description : "
+                + description
+            );
         }
         this.strategie = StrategiePossible.getStrategie(nomStrategie);
     }
