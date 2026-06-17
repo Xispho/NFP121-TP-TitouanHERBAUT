@@ -17,11 +17,11 @@
 < 	at java.base/java.util.Scanner.next(Scanner.java:1632)
 < 	at java.base/java.util.Scanner.nextInt(Scanner.java:2297)
 < 	at java.base/java.util.Scanner.nextInt(Scanner.java:2251)
-< 	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:18)
+< 	at strategies.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:19)
 < 	at allumettes.Joueur.getPrise(Joueur.java:27)
 < 	at allumettes.Arbitre.priseJoueur(Arbitre.java:39)
 < 	at allumettes.Arbitre.arbitrer(Arbitre.java:15)
-< 	at allumettes.Jouer.main(Jouer.java:27)
+< 	at allumettes.Jouer.main(Jouer.java:29)
 ---
 > Xavier, combien d'allumettes ? Xavier prend 3 allumettes.
 > 

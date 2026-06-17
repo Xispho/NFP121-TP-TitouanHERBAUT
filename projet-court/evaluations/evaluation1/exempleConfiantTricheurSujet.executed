@@ -1,3 +1,3 @@
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)

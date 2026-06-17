@@ -1,7 +1,7 @@
 1,3c1,21
 < Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 < 	at allumettes.Joueur.<init>(Joueur.java:18)
-< 	at allumettes.Jouer.main(Jouer.java:20)
+< 	at allumettes.Jouer.main(Jouer.java:22)
 ---
 > Allumettes restantes : 13
 > Xavier, combien d'allumettes ? Xavier prend 1 allumette.

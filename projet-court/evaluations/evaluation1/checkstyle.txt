@@ -1,2 +1,4 @@
 Début de la vérification...
+[ERROR] Jouer.java:3:8: Import inutilisé - java.util.Scanner. [UnusedImports]
+[ERROR] ScannerSingleton.java:5: La classe ScannerSingleton devrait être déclarée finale. [FinalClass]
 Vérification terminée.

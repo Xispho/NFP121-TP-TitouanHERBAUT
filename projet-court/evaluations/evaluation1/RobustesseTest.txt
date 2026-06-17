@@ -5,7 +5,7 @@ JUnit version 4.12
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -19,7 +19,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -33,7 +33,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -47,7 +47,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -62,7 +62,7 @@ E.
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:21)
+	at allumettes.Jouer.main(Jouer.java:23)
 
 
 ################################################################################
@@ -87,7 +87,7 @@ E.
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -101,7 +101,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -115,7 +115,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -130,7 +130,7 @@ E.
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:21)
+	at allumettes.Jouer.main(Jouer.java:23)
 
 
 ################################################################################
@@ -144,7 +144,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -203,7 +203,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -218,7 +218,7 @@ E.
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -232,7 +232,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:21)
+	at allumettes.Jouer.main(Jouer.java:23)
 
 
 ################################################################################
@@ -246,7 +246,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -279,7 +279,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -293,7 +293,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -307,7 +307,7 @@ E.
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
 	at allumettes.Joueur.<init>(Joueur.java:18)
-	at allumettes.Jouer.main(Jouer.java:20)
+	at allumettes.Jouer.main(Jouer.java:22)
 
 
 ################################################################################
@@ -372,7 +372,7 @@ Le programme ne se termine pas.
 
 E
 
-Time: 2,29
+Time: 2,135
 There were 19 failures:
 1) testerSansStrategieConfiant(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.
