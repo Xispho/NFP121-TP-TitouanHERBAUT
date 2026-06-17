@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
-Nom       : 
-Prénom    : 
-Groupe TP : 
+Nom       : HERBAUT
+Prénom    : Titouan
+Groupe TP : i1
 --------------------------------------------------------------------------------
 
 Consigne : Dans ce fichier, les « ... » indiquent les endroits à compléter.
@@ -16,8 +16,8 @@ prises en compte dans la notation du projet.
 Il faut remplacer les ... par des nombres.
 
 
-* Temps passé sur la V1 : ... heures ... minutes
-* Temps passé sur la V2 : ... heures ... minutes
+* Temps passé sur la V1 : 3 heures 00 minutes
+* Temps passé sur la V2 : 9 heures 00 minutes
 
 Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
 
@@ -37,7 +37,8 @@ Expliquer ce qu'il faut faire pour ajouter un nouveau niveau de jeu, par
 exemple la stratégie lente (C13).  Pour plus de précision, on numérotera
 les étapes à faire.
 --------------------------------------------------------------------------------
-
+On ajoute un classe qui implémente l'interface Strategie.
+On l'ajoute dans l'enum de StrategiePossible, et on modifie le getStrategieInstance pour qu'il soit géré.
 ...
 
 
@@ -45,7 +46,7 @@ les étapes à faire.
 Expliquer ce qui permet, dans votre conception, de changer dynamiquement
 (en cours d'exécution du programme) la stratégie d'un joueur (C14).
 --------------------------------------------------------------------------------
-
+La stratégie est un attribut de Joueur, donc si on change la valeur de cette attribut, la stratégie changera.
 ...
 
 
@@ -55,7 +56,8 @@ Expliquer ce qui permet, dans votre conception, de changer dynamiquement
 Donner ici les explications supplémentaires utiles à la compréhension du
 travail rendu.
 --------------------------------------------------------------------------------
-
+Ajout d'une classe ScannerSingleton, pas sûr que ce soit la solution demander pour avoir une seule instance du scanner.
+Le singeleton permet d'avoir une seule instance du scanner, car si il est créé on retourne l'instance existante, sinon on la crée.
 ...
 
 --------------------------------------------------------------------------------
