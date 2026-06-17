@@ -7,7 +7,13 @@ Ordinateur prend 3 allumette(s).
 
 Allumettes restantes : 8
 Xavier, combien d'allumettes ? Vous devez donner un entier.
-Xavier, combien d'allumettes ? Xavier, combien d'allumettes ? Xavier prend 3 allumette(s).
+Impossible ! Nombre invalide : 0 (< 1)
+
+Allumettes restantes : 8
+Xavier, combien d'allumettes ? Impossible ! Nombre invalide : 5 (> 3)
+
+Allumettes restantes : 8
+Xavier, combien d'allumettes ? Xavier prend 3 allumette(s).
 
 Allumettes restantes : 5
 Ordinateur prend 3 allumette(s).

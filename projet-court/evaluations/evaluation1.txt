@@ -1,9 +1,9 @@
-Date de l'évaluation : mer. 17 juin 2026 22:13:23 CEST
+Date de l'évaluation : mer. 17 juin 2026 23:52:55 CEST
 
 Nombre de similitudes : 2	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 0/0	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 1/1	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : NON DÉFINIE (ou pas sur Gitlab)
 
