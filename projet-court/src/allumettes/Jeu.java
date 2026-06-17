@@ -1,7 +1,5 @@
 package allumettes;
 
-import java.util.Scanner;
-
 public interface Jeu {
 
 	/** Nombre maximal d'allumettes pouvant être prises. */
@@ -19,7 +17,5 @@ public interface Jeu {
 	 * @throws CoupInvalideException tentative de prendre un nombre invalide d'allumettes
 	 */
 	void retirer(int nbPrises) throws CoupInvalideException;
-
-	Scanner getScanner();
 
 }

@@ -1,15 +1,11 @@
 package allumettes;
 
-import java.util.Scanner;
-
 public class Game implements Jeu {
 
     private int nombreAllumettes;
-    private Scanner scanner;
 
     public Game(int nombreAllumettes) {
         this.nombreAllumettes = nombreAllumettes;
-        this.scanner = new Scanner(System.in);
     }
 
     @Override
@@ -23,11 +19,6 @@ public class Game implements Jeu {
             throw new CoupInvalideException(nombre, "Invalide");
         }
         nombreAllumettes -= nombre;
-    }
-
-    @Override
-    public Scanner getScanner() {
-        return scanner;
     }
 
 }
