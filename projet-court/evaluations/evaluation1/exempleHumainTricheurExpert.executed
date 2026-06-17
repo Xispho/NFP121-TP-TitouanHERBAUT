@@ -1,5 +1,5 @@
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2

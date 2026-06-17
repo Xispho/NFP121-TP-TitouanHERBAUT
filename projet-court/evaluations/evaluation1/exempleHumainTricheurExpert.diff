@@ -2,7 +2,7 @@
 > Allumettes restantes : 13
 > Xavier, combien d'allumettes ? Xavier prend 1 allumette.
 2c4,5
-< Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+< Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 ---
 > Allumettes restantes : 12
 > Ordinateur prend 3 allumettes.

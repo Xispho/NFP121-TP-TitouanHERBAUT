@@ -4,7 +4,7 @@ JUnit version 4.12
 > java allumettes.Jouer.main("-confiant", "x", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -23,7 +23,7 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@rapide@naif")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -42,7 +42,7 @@ Usage :
 > java allumettes.Jouer.main("x", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : x
+Erreur : Description invalide (format attendu: nom@strategie) : x
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -61,7 +61,7 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@xyz")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -81,7 +81,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville@naif
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Joueur.<init>(Joueur.java:40)
 	at allumettes.Jouer.main(Jouer.java:21)
 
 
@@ -115,7 +115,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Joueur.<init>(Joueur.java:40)
 	at allumettes.Jouer.main(Jouer.java:20)
 
 
@@ -129,7 +129,7 @@ E.
 > java allumettes.Jouer.main("-confiant", "xxx@rapide@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -148,7 +148,7 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@ville@naif")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -168,7 +168,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Joueur.<init>(Joueur.java:40)
 	at allumettes.Jouer.main(Jouer.java:21)
 
 
@@ -182,7 +182,7 @@ E.
 > java allumettes.Jouer.main("-confiant", "@humain", "ordi@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -202,7 +202,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : rapide@naif
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Joueur.<init>(Joueur.java:40)
 	at allumettes.Jouer.main(Jouer.java:20)
 
 
@@ -235,7 +235,7 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "xxx@ville@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -255,7 +255,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville@naif
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Joueur.<init>(Joueur.java:40)
 	at allumettes.Jouer.main(Jouer.java:20)
 
 
@@ -269,7 +269,7 @@ E.
 > java allumettes.Jouer.main("yyy@rapide", "x")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : x
+Erreur : Description invalide (format attendu: nom@strategie) : x
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -288,7 +288,7 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "-confiant")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -326,7 +326,7 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "x")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -345,7 +345,7 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "xxx@xyz", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -364,7 +364,7 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "ordi@rapide", "@humain")
 --------------------------------------------------------------------------------
 
-Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
 	java allumettes.Jouer joueur1 joueur2
@@ -384,7 +384,7 @@ Usage :
 --------------------------------------------------------------------------------
 Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : rapide@naif
 	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:31)
+	at allumettes.Joueur.<init>(Joueur.java:40)
 	at allumettes.Jouer.main(Jouer.java:21)
 
 
@@ -433,7 +433,7 @@ Usage :
 
 
 
-Time: 1,312
+Time: 1,539
 There were 6 failures:
 1) testerStrategieDoubleAtStrategieALaFinSymetrie(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.

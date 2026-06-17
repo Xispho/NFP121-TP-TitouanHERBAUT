@@ -2,7 +2,7 @@
 > Allumettes restantes : 13
 > Ordinateur prend 3 allumettes.
 2c4,7
-< Erreur : Description du joueur invalide (format attendu: nom@strategie) : -confiant
+< Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 ---
 > Allumettes restantes : 10
 > [Je triche...]

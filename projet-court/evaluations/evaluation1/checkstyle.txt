@@ -1,5 +1,2 @@
 Début de la vérification...
-[ERROR] Joueur.java:21: La ligne excède 90 caractères (trouvé 128). [LineLength]
-[ERROR] Joueur.java:25: La ligne excède 90 caractères (trouvé 104). [LineLength]
-[ERROR] Joueur.java:29: La ligne excède 90 caractères (trouvé 105). [LineLength]
 Vérification terminée.
