@@ -56,7 +56,7 @@ public class Arbitre {
             } else {
                 erreur += " (> " + priseMaxCurrentRound + ")";
             }
-            System.out.println(erreur + "\n");
+            System.out.println(erreur);
             return false;
         }
         return true;
