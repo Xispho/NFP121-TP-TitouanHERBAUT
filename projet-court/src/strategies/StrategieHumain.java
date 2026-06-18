@@ -13,13 +13,17 @@ public class StrategieHumain implements Strategie {
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
         ScannerSingleton scannerSingleton = ScannerSingleton.getInstance();
         Scanner scanner = scannerSingleton.getScanner();
-        System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
+        boolean notEntier = true;
         int prise = 0;
-        try {
-            prise = scanner.nextInt();
-        } catch (InputMismatchException e) {
-            scanner.nextLine();
-            System.out.println("Vous devez donner un entier.");
+        while (notEntier) {
+            System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
+            try {
+                prise = scanner.nextInt();
+                notEntier = false;
+            } catch (InputMismatchException e) {
+                scanner.nextLine();
+                System.out.println("Vous devez donner un entier.");
+            }
         }
         return prise;
     }

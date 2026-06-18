@@ -36,23 +36,29 @@ public class Arbitre {
 
     private void priseJoueur(Jeu jeu, Joueur joueur) throws CoupInvalideException {
         boolean isPriseOk = false;
+        int prise = -1;
+        System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
         while (!isPriseOk) {
-            System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
-            int priseMaxCurrentRound = min(Jeu.PRISE_MAX, jeu.getNombreAllumettes());
-            int prise = joueur.getPrise(jeu);
-            if (prise < 1 || prise > priseMaxCurrentRound) {
-                String erreur = "Impossible ! Nombre invalide : " + prise;
-                if (prise < 1) {
-                    erreur += " (< " + 1 + ")";
-                } else {
-                    erreur += " (> " + priseMaxCurrentRound + ")";
-                }
-                System.out.println(erreur);
-            } else {
-                isPriseOk = true;
-                jeu.retirer(prise);
-                System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
-            }
+            prise = joueur.getPrise(jeu);
+
+            System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
+            isPriseOk = checkPrise(jeu, prise);
         }
+        jeu.retirer(prise);
+    }
+
+    private boolean checkPrise(Jeu jeu, int prise) {
+        int priseMaxCurrentRound = min(Jeu.PRISE_MAX, jeu.getNombreAllumettes());
+        if (prise < 1 || prise > priseMaxCurrentRound) {
+            String erreur = "Impossible ! Nombre invalide : " + prise;
+            if (prise < 1) {
+                erreur += " (< " + 1 + ")";
+            } else {
+                erreur += " (> " + priseMaxCurrentRound + ")";
+            }
+            System.out.println(erreur);
+            return false;
+        }
+        return true;
     }
 }
