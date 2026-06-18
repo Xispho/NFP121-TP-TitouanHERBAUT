@@ -10,41 +10,38 @@
 < Max, combien d'allumettes ? Max prend 5 allumette(s).
 ---
 > Max, combien d'allumettes ? Max prend 5 allumettes.
-12c11,13
+13c12,13
 < Max, combien d'allumettes ? Max prend 0 allumette(s).
 ---
-> 
 > Allumettes restantes : 10
 > Max, combien d'allumettes ? Max prend 0 allumette.
-14c15,17
+16c16,17
 < Max, combien d'allumettes ? Max prend 3 allumette(s).
 ---
-> 
 > Allumettes restantes : 10
 > Max, combien d'allumettes ? Max prend 3 allumettes.
-17c20
+19c20
 < Lou, combien d'allumettes ? Lou prend 1 allumette(s).
 ---
 > Lou, combien d'allumettes ? Lou prend 1 allumette.
-20c23
+22c23
 < Max, combien d'allumettes ? Max prend 2 allumette(s).
 ---
 > Max, combien d'allumettes ? Max prend 2 allumettes.
-23c26
+25c26
 < Lou, combien d'allumettes ? Lou prend 2 allumette(s).
 ---
 > Lou, combien d'allumettes ? Lou prend 2 allumettes.
-26c29
+28c29
 < Max, combien d'allumettes ? Max prend 1 allumette(s).
 ---
 > Max, combien d'allumettes ? Max prend 1 allumette.
-29c32
+31c32
 < Lou, combien d'allumettes ? Lou prend 2 allumette(s).
 ---
 > Lou, combien d'allumettes ? Lou prend 2 allumettes.
-31c34,36
+34c35,36
 < Lou, combien d'allumettes ? Lou prend 1 allumette(s).
 ---
-> 
 > Allumettes restantes : 1
 > Lou, combien d'allumettes ? Lou prend 1 allumette.

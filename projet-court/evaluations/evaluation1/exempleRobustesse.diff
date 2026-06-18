@@ -2,81 +2,72 @@
 < Xavier, combien d'allumette ? Xavier prend 4 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 4 allumette.
-5c4,6
+6c5,6
 < Xavier, combien d'allumette ? Xavier prend 5 allumette(s).
 ---
-> 
 > Allumettes restantes : 13
 > Xavier, combien d'allumette ? Xavier prend 5 allumette.
-7c8,10
+9c9,10
 < Xavier, combien d'allumette ? Xavier prend 0 allumette(s).
 ---
-> 
 > Allumettes restantes : 13
 > Xavier, combien d'allumette ? Xavier prend 0 allumette.
-9c12,14
+12c13,14
 < Xavier, combien d'allumette ? Xavier prend -1 allumette(s).
 ---
-> 
 > Allumettes restantes : 13
 > Xavier, combien d'allumette ? Xavier prend -1 allumette.
-11c16,18
+15c17,18
 < Xavier, combien d'allumette ? Xavier prend 3 allumette(s).
 ---
-> 
 > Allumettes restantes : 13
 > Xavier, combien d'allumette ? Xavier prend 3 allumette.
-14c21
+18c21
 < Ordinateur prend 1 allumette(s).
 ---
 > Ordinateur prend 1 allumette.
-17c24
+21c24
 < Xavier, combien d'allumette ? Xavier prend 3 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 3 allumette.
-20c27
+24c27
 < Ordinateur prend 1 allumette(s).
 ---
 > Ordinateur prend 1 allumette.
-23c30
+27c30
 < Xavier, combien d'allumette ? Xavier prend 1 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 1 allumette.
-26c33
+30c33
 < Ordinateur prend 3 allumette(s).
 ---
 > Ordinateur prend 3 allumette.
-29c36
+33c36
 < Xavier, combien d'allumette ? Xavier prend 4 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 4 allumette.
-31c38,40
+36c39,40
 < Xavier, combien d'allumette ? Xavier prend 3 allumette(s).
 ---
-> 
 > Allumettes restantes : 1
 > Xavier, combien d'allumette ? Xavier prend 3 allumette.
-33c42,44
+39c43,44
 < Xavier, combien d'allumette ? Xavier prend 2 allumette(s).
 ---
-> 
 > Allumettes restantes : 1
 > Xavier, combien d'allumette ? Xavier prend 2 allumette.
-35c46,48
+42c47,48
 < Xavier, combien d'allumette ? Xavier prend 0 allumette(s).
 ---
-> 
 > Allumettes restantes : 1
 > Xavier, combien d'allumette ? Xavier prend 0 allumette.
-37c50,52
+45c51,52
 < Xavier, combien d'allumette ? Xavier prend -1 allumette(s).
 ---
-> 
 > Allumettes restantes : 1
 > Xavier, combien d'allumette ? Xavier prend -1 allumette.
-39c54,56
+48c55,56
 < Xavier, combien d'allumette ? Xavier prend 1 allumette(s).
 ---
-> 
 > Allumettes restantes : 1
 > Xavier, combien d'allumette ? Xavier prend 1 allumette.
