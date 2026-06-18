@@ -10,11 +10,9 @@ Max, combien d'allumettes ? Vous devez donner un entier.
 Max, combien d'allumettes ? Max prend 5 allumette(s).
 Impossible ! Nombre invalide : 5 (> 3)
 
-
 Allumettes restantes : 10
 Max, combien d'allumettes ? Max prend 0 allumette(s).
 Impossible ! Nombre invalide : 0 (< 1)
-
 
 Allumettes restantes : 10
 Max, combien d'allumettes ? Max prend 3 allumette(s).
@@ -34,7 +32,6 @@ Max, combien d'allumettes ? Max prend 1 allumette(s).
 Allumettes restantes : 1
 Lou, combien d'allumettes ? Lou prend 2 allumette(s).
 Impossible ! Nombre invalide : 2 (> 1)
-
 
 Allumettes restantes : 1
 Lou, combien d'allumettes ? Lou prend 1 allumette(s).

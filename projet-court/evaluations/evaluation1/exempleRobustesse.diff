@@ -2,63 +2,63 @@
 < Xavier, combien d'allumette ? Xavier prend 4 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 4 allumette.
-8c6
+7c6
 < Xavier, combien d'allumette ? Xavier prend 5 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 5 allumette.
-13c10
+11c10
 < Xavier, combien d'allumette ? Xavier prend 0 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 0 allumette.
-18c14
+15c14
 < Xavier, combien d'allumette ? Xavier prend -1 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend -1 allumette.
-23c18
+19c18
 < Xavier, combien d'allumette ? Xavier prend 3 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 3 allumette.
-26c21
+22c21
 < Ordinateur prend 1 allumette(s).
 ---
 > Ordinateur prend 1 allumette.
-29c24
+25c24
 < Xavier, combien d'allumette ? Xavier prend 3 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 3 allumette.
-32c27
+28c27
 < Ordinateur prend 1 allumette(s).
 ---
 > Ordinateur prend 1 allumette.
-35c30
+31c30
 < Xavier, combien d'allumette ? Xavier prend 1 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 1 allumette.
-38c33
+34c33
 < Ordinateur prend 3 allumette(s).
 ---
 > Ordinateur prend 3 allumette.
-41c36
+37c36
 < Xavier, combien d'allumette ? Xavier prend 4 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 4 allumette.
-46c40
+41c40
 < Xavier, combien d'allumette ? Xavier prend 3 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 3 allumette.
-51c44
+45c44
 < Xavier, combien d'allumette ? Xavier prend 2 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 2 allumette.
-56c48
+49c48
 < Xavier, combien d'allumette ? Xavier prend 0 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 0 allumette.
-61c52
+53c52
 < Xavier, combien d'allumette ? Xavier prend -1 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend -1 allumette.
-66c56
+57c56
 < Xavier, combien d'allumette ? Xavier prend 1 allumette(s).
 ---
 > Xavier, combien d'allumette ? Xavier prend 1 allumette.
