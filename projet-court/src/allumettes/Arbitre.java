@@ -4,8 +4,8 @@ import static java.lang.Integer.min;
 
 public class Arbitre {
 
-    private Joueur joueur1;
-    private Joueur joueur2;
+    private final Joueur joueur1;
+    private final Joueur joueur2;
 
     public Arbitre(Joueur joueur1, Joueur joueur2) {
         this.joueur1 = joueur1;
@@ -41,7 +41,7 @@ public class Arbitre {
             System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
             prise = joueur.getPrise(jeu);
 
-            System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
+            System.out.print(joueur.getNom() + " prend " + prise + " allumette" + (prise > 1 ? "s" : "") + ".\n");
             isPriseOk = checkPrise(jeu, prise);
         }
         jeu.retirer(prise);
