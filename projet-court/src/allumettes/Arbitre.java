@@ -37,8 +37,8 @@ public class Arbitre {
     private void priseJoueur(Jeu jeu, Joueur joueur) throws CoupInvalideException {
         boolean isPriseOk = false;
         int prise = -1;
-        System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
         while (!isPriseOk) {
+            System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
             prise = joueur.getPrise(jeu);
 
             System.out.print(joueur.getNom() + " prend " + prise + " allumette(s).\n");
