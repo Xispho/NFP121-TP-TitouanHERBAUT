@@ -10,20 +10,19 @@
 < Xavier, combien d'allumettes ? Xavier prend 5 allumette(s).
 ---
 > Xavier, combien d'allumettes ? Xavier prend 5 allumettes.
-13c12,13
+15c13
 < Xavier, combien d'allumettes ? Xavier prend 3 allumette(s).
 ---
-> Allumettes restantes : 8
 > Xavier, combien d'allumettes ? Xavier prend 3 allumettes.
-16c16
+18c16
 < Ordinateur prend 3 allumette(s).
 ---
 > Ordinateur prend 3 allumettes.
-19c19
+21c19
 < Xavier, combien d'allumettes ? Xavier prend 1 allumette(s).
 ---
 > Xavier, combien d'allumettes ? Xavier prend 1 allumette.
-22c22
+24c22
 < Ordinateur prend 1 allumette(s).
 ---
 > Ordinateur prend 1 allumette.
