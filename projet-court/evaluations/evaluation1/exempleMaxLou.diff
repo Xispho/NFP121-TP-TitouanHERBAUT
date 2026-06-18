@@ -6,45 +6,45 @@
 < Lou, combien d'allumettes ? Lou prend 1 allumette(s).
 ---
 > Lou, combien d'allumettes ? Lou prend 1 allumette.
-10c9,10
-< Impossible ! Nombre invalide : 0 (< 1)
+10c9
+< Max, combien d'allumettes ? Max prend 5 allumette(s).
 ---
 > Max, combien d'allumettes ? Max prend 5 allumettes.
-> Impossible ! Nombre invalide : 5 (> 3)
-13,16c13,14
-< Max, combien d'allumettes ? Impossible ! Nombre invalide : 5 (> 3)
-< 
-< Allumettes restantes : 10
-< Max, combien d'allumettes ? Impossible ! Nombre invalide : 0 (< 1)
+12c11,13
+< Max, combien d'allumettes ? Max prend 0 allumette(s).
 ---
+> 
+> Allumettes restantes : 10
 > Max, combien d'allumettes ? Max prend 0 allumette.
-> Impossible ! Nombre invalide : 0 (< 1)
-19c17
+14c15,17
 < Max, combien d'allumettes ? Max prend 3 allumette(s).
 ---
+> 
+> Allumettes restantes : 10
 > Max, combien d'allumettes ? Max prend 3 allumettes.
-22c20
+17c20
 < Lou, combien d'allumettes ? Lou prend 1 allumette(s).
 ---
 > Lou, combien d'allumettes ? Lou prend 1 allumette.
-25c23
+20c23
 < Max, combien d'allumettes ? Max prend 2 allumette(s).
 ---
 > Max, combien d'allumettes ? Max prend 2 allumettes.
-28c26
+23c26
 < Lou, combien d'allumettes ? Lou prend 2 allumette(s).
 ---
 > Lou, combien d'allumettes ? Lou prend 2 allumettes.
-31c29
+26c29
 < Max, combien d'allumettes ? Max prend 1 allumette(s).
 ---
 > Max, combien d'allumettes ? Max prend 1 allumette.
-34c32,33
-< Lou, combien d'allumettes ? Impossible ! Nombre invalide : 2 (> 1)
+29c32
+< Lou, combien d'allumettes ? Lou prend 2 allumette(s).
 ---
 > Lou, combien d'allumettes ? Lou prend 2 allumettes.
-> Impossible ! Nombre invalide : 2 (> 1)
-37c36
+31c34,36
 < Lou, combien d'allumettes ? Lou prend 1 allumette(s).
 ---
+> 
+> Allumettes restantes : 1
 > Lou, combien d'allumettes ? Lou prend 1 allumette.
