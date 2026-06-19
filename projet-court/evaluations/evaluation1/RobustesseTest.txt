@@ -433,7 +433,7 @@ Usage :
 
 
 
-Time: 1,525
+Time: 1,598
 There were 6 failures:
 1) testerStrategieDoubleAtStrategieALaFinSymetrie(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.

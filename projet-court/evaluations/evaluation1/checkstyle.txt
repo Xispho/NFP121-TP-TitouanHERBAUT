@@ -1,2 +1,3 @@
 Début de la vérification...
+[ERROR] Arbitre.java:44: La ligne excède 90 caractères (trouvé 114). [LineLength]
 Vérification terminée.

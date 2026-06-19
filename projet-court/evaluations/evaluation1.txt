@@ -1,9 +1,9 @@
-Date de l'évaluation : jeu. 18 juin 2026 23:18:53 CEST
+Date de l'évaluation : ven. 19 juin 2026 07:28:13 CEST
 
-Nombre de similitudes : 2	(voir evaluation1/sim_java.txt)
+Nombre de similitudes : 1	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 0/0	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 1/1	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : NON DÉFINIE (ou pas sur Gitlab)
 
@@ -39,13 +39,13 @@ Utilisation de 'System.exit' : ok
 
 Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
-Test exemplePresqueSujet : NON CONFORME	(voir evaluation1/exemplePresqueSujet.diff)
+Test exemplePresqueSujet : ok
 Test exempleTricheurSujet : NON CONFORME	(voir evaluation1/exempleTricheurSujet.diff)
 Test exempleConfiantTricheurSujet : NON CONFORME	(voir evaluation1/exempleConfiantTricheurSujet.diff)
-Test exempleRobustesse : NON CONFORME	(voir evaluation1/exempleRobustesse.diff)
+Test exempleRobustesse : ok
 Test exempleHumainTricheurExpert : NON CONFORME	(voir evaluation1/exempleHumainTricheurExpert.diff)
-Test exempleMaxLou : NON CONFORME	(voir evaluation1/exempleMaxLou.diff)
-Test exempleRapideRapide : NON CONFORME	(voir evaluation1/exempleRapideRapide.diff)
+Test exempleMaxLou : ok
+Test exempleRapideRapide : ok
 Test exempleTricheurExpert : NON CONFORME	(voir evaluation1/exempleTricheurExpert.diff)
 
 Test RobustesseTest : Tests run: 24,  Failures: 6	(voir evaluation1/RobustesseTest.txt)
@@ -68,6 +68,9 @@ Test RobustesseTest : Tests run: 24,  Failures: 6	(voir evaluation1/RobustesseTe
     6) testerStrategieDoubleAtSymetrie(RobustesseTest)
         Le programme s'est terminé sur une exception non récupérée.
 
+
+On recommence avec les classes/interfaces fournies : Jeu ConfigurationException CoupInvalideException
+Test exemplePresqueSujet : ok
 
 Vérification du respect du diagramme de classe...
 	Non fait car le projet n'est pas assez avancé
