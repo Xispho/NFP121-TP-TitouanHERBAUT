@@ -1,0 +1,16 @@
+Les Q# font référence aux questions posées dans le fichier LISEZ-MOI.txt.
+Les pénalités '+' sont évaluées manuellement (enseignant de TP).
+Les pénalités '+' peuvent donner lieu à des pénalités définitives en V1 (si le travail est jugé insuffisant).
+
++ C13 : Impossible d'ajouter de nouvelles stratégies en ne modifiant que Jouer (cf Q2)
+
++ Pas de procuration.
+
++ Autres remarques
+    - C'est Jeu.retirer qui signalera que le coup est invalide.  Inutile de
+      le vérifier explicitement.
+    - Pas d'utilisation des exceptions
+    - Pas mal de code redondant.
+
++ Correction sur les pénalités automatiques : 0
+
