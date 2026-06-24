@@ -17,8 +17,8 @@ public class Jouer {
 		try {
 			verifierNombreArguments(args);
 
-			Joueur joueur1 = new Joueur(args[0]);
-			Joueur joueur2 = new Joueur(args[1]);
+			Joueur joueur1 = creerJoueur(args[0]);
+			Joueur joueur2 = creerJoueur(args[1]);
 			Arbitre arbitre = new Arbitre(
 				joueur1,
 				joueur2
@@ -43,6 +43,54 @@ public class Jouer {
 		if (args.length > nbJoueurs + 1) {
 			throw new ConfigurationException("Trop d'arguments : "
 					+ args.length);
+		}
+	}
+
+	private static Joueur creerJoueur(String description) {
+		String nom;
+		Strategie strategie;
+		if (description == null) {
+			throw new ConfigurationException("Description du joueur invalide: null");
+		}
+		String[] parts = description.split("@", 2);
+		if (parts.length < 2) {
+			throw new ConfigurationException(
+					"Description invalide (format attendu: nom@strategie) : "
+							+ description
+			);
+		}
+		nom = parts[0].trim();
+		if (nom.isEmpty()) {
+			throw new ConfigurationException(
+					"Nom de joueur vide dans la description : "
+							+ description
+			);
+		}
+		String nomStrategie = parts[1].trim();
+		if (nomStrategie.isEmpty()) {
+			throw new ConfigurationException(
+					"Stratégie manquante dans la description : "
+							+ description
+			);
+		}
+		strategie = getStrategieInstance(nomStrategie);
+		return new Joueur(nom, strategie);
+	}
+
+	public static Strategie getStrategieInstance(String strategie) {
+		switch (strategie) {
+			case "naif":
+				return new StrategieNaif();
+			case "rapide":
+				return new StrategieRapide();
+			case "expert":
+				return new StrategieExpert();
+			case "humain":
+				return new StrategieHumain();
+			case "tricheur":
+				return new StrategieTricheur();
+			default:
+				throw new IllegalStateException("Stratégie non gérée : " + strategie);
 		}
 	}
 

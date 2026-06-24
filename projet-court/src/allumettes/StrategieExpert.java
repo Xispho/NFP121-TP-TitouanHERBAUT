@@ -1,7 +1,4 @@
-package strategies;
-
-import allumettes.Jeu;
-import allumettes.Joueur;
+package allumettes;
 
 public class StrategieExpert implements Strategie{
 

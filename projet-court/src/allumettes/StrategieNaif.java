@@ -1,11 +1,10 @@
-package strategies;
-
-import allumettes.Jeu;
-import allumettes.Joueur;
+package allumettes;
 
 import java.util.Random;
 
 public class StrategieNaif implements Strategie {
+
+    private Random random = new Random();
 
     // Retire un nombre d'allumettes aléatoire entre 1 et 3
     @Override
@@ -14,6 +13,6 @@ public class StrategieNaif implements Strategie {
             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
         }
         int maxRetrait = Math.min(Jeu.PRISE_MAX, nombreAllumettes);
-        return new Random().nextInt(maxRetrait);
+        return random.nextInt(maxRetrait) + 1;
     }
 }

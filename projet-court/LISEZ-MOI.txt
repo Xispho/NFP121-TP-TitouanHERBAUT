@@ -38,7 +38,7 @@ exemple la stratégie lente (C13).  Pour plus de précision, on numérotera
 les étapes à faire.
 --------------------------------------------------------------------------------
 On ajoute un classe qui implémente l'interface Strategie.
-On l'ajoute dans l'enum de StrategiePossible, et on modifie le getStrategieInstance pour qu'il soit géré.
+On l'ajoute dans le getStrategieInstance pour qu'il soit géré.
 ...
 
 

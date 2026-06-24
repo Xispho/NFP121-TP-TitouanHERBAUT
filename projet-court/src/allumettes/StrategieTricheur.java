@@ -1,8 +1,4 @@
-package strategies;
-
-import allumettes.CoupInvalideException;
-import allumettes.Jeu;
-import allumettes.Joueur;
+package allumettes;
 
 public class StrategieTricheur implements Strategie{
 
