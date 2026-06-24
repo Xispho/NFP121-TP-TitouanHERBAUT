@@ -1,10 +1,13 @@
 package allumettes;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class StrategieHumain implements Strategie {
 
     private static final Scanner SCANNER = new Scanner(System.in);
+
+    private String[] tricherStrings = {"[je triche...]"};
 
     @Override
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
@@ -13,7 +16,7 @@ public class StrategieHumain implements Strategie {
         while (notEntier) {
             System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
             String input = SCANNER.nextLine();
-            if (input.equals("tricher")) {
+            if (Arrays.asList(tricherStrings).contains(input)) {
                 tricher(jeu);
                 return 1;
             } else {
