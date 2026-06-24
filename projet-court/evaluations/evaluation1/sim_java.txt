@@ -1,12 +1,18 @@
 File allumettes/Arbitre.java: 332 tokens, 64 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
-File allumettes/Joueur.java: 211 tokens, 58 lines
+File allumettes/Joueur.java: 80 tokens, 28 lines
+File allumettes/StrategieHumain.java: 169 tokens, 41 lines
+File allumettes/StrategieRapide.java: 52 tokens, 13 lines
 File allumettes/Game.java: 79 tokens, 24 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
-File allumettes/Jouer.java: 225 tokens, 63 lines
+File allumettes/Jouer.java: 420 tokens, 111 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
+File allumettes/StrategieExpert.java: 81 tokens, 19 lines
+File allumettes/StrategieNaif.java: 71 tokens, 18 lines
+File allumettes/Strategie.java: 19 tokens, 12 lines
+File allumettes/StrategieTricheur.java: 62 tokens, 17 lines
 File allumettes/ScannerSingleton.java: 66 tokens, 32 lines
-Total input: 8 files (8 new, 0 old), 1025 tokens
+Total input: 14 files (14 new, 0 old), 1543 tokens
 
 allumettes/Arbitre.java: line 17-24 [46]
 allumettes/Arbitre.java: line 26-33
@@ -27,4 +33,81 @@ allumettes/Arbitre.java: line 26-33
 >                 );
 >                 break;
 >             }
+
+allumettes/StrategieRapide.java: line 1-10 [39]
+allumettes/StrategieExpert.java: line 1-9
+< package allumettes;
+< 
+< public class StrategieRapide implements Strategie{
+< 
+<     // Retire 3 allumettes si possible, sinon le nombre maximum autorisé
+<     @Override
+<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+<         if (nombreAllumettes <= 0) {
+<             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
+<         }
+---
+> package allumettes;
+> 
+> public class StrategieExpert implements Strategie{
+> 
+>     @Override
+>     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+>         if (nombreAllumettes <= 0) {
+>             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
+>         }
+
+allumettes/StrategieHumain.java: line 31-38 [37]
+allumettes/StrategieTricheur.java: line 6-13
+<     private void tricher(Jeu jeu) {
+<         try {
+<             while (jeu.getNombreAllumettes() > 2) {
+<                 jeu.retirer(1);
+<             }
+<         } catch (CoupInvalideException e) {
+<             throw new RuntimeException(e);
+<         }
+---
+>     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+>         try {
+>             while (jeu.getNombreAllumettes() > 2) {
+>                 jeu.retirer(1);
+>             }
+>         } catch (CoupInvalideException e) {
+>             throw new RuntimeException(e);
+>         }
+
+allumettes/Jouer.java: line 62-68 [28]
+allumettes/Jouer.java: line 69-75
+< 		nom = parts[0].trim();
+< 		if (nom.isEmpty()) {
+< 			throw new ConfigurationException(
+< 					"Nom de joueur vide dans la description : "
+< 							+ description
+< 			);
+< 		}
+---
+> 		String nomStrategie = parts[1].trim();
+> 		if (nomStrategie.isEmpty()) {
+> 			throw new ConfigurationException(
+> 					"Stratégie manquante dans la description : "
+> 							+ description
+> 			);
+> 		}
+
+allumettes/StrategieExpert.java: line 1-6 [24]
+allumettes/StrategieTricheur.java: line 1-6
+< package allumettes;
+< 
+< public class StrategieExpert implements Strategie{
+< 
+<     @Override
+<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+---
+> package allumettes;
+> 
+> public class StrategieTricheur implements Strategie{
+> 
+>     @Override
+>     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
 

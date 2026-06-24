@@ -79,9 +79,9 @@ Usage :
 ================================================================================
 > java allumettes.Jouer.main("yyy@rapide", "xxx@ville@naif")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville@naif
-	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:40)
+Exception in thread "main" java.lang.IllegalStateException: Stratégie non gérée : ville@naif
+	at allumettes.Jouer.getStrategieInstance(Jouer.java:93)
+	at allumettes.Jouer.creerJoueur(Jouer.java:76)
 	at allumettes.Jouer.main(Jouer.java:21)
 
 
@@ -113,9 +113,9 @@ Usage :
 ================================================================================
 > java allumettes.Jouer.main("xxx@xyz", "yyy@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
-	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:40)
+Exception in thread "main" java.lang.IllegalStateException: Stratégie non gérée : xyz
+	at allumettes.Jouer.getStrategieInstance(Jouer.java:93)
+	at allumettes.Jouer.creerJoueur(Jouer.java:76)
 	at allumettes.Jouer.main(Jouer.java:20)
 
 
@@ -166,9 +166,9 @@ Usage :
 ================================================================================
 > java allumettes.Jouer.main("yyy@rapide", "xxx@xyz")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : xyz
-	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:40)
+Exception in thread "main" java.lang.IllegalStateException: Stratégie non gérée : xyz
+	at allumettes.Jouer.getStrategieInstance(Jouer.java:93)
+	at allumettes.Jouer.creerJoueur(Jouer.java:76)
 	at allumettes.Jouer.main(Jouer.java:21)
 
 
@@ -200,9 +200,9 @@ Usage :
 ================================================================================
 > java allumettes.Jouer.main("xxx@rapide@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : rapide@naif
-	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:40)
+Exception in thread "main" java.lang.IllegalStateException: Stratégie non gérée : rapide@naif
+	at allumettes.Jouer.getStrategieInstance(Jouer.java:93)
+	at allumettes.Jouer.creerJoueur(Jouer.java:76)
 	at allumettes.Jouer.main(Jouer.java:20)
 
 
@@ -253,9 +253,9 @@ Usage :
 ================================================================================
 > java allumettes.Jouer.main("xxx@ville@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : ville@naif
-	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:40)
+Exception in thread "main" java.lang.IllegalStateException: Stratégie non gérée : ville@naif
+	at allumettes.Jouer.getStrategieInstance(Jouer.java:93)
+	at allumettes.Jouer.creerJoueur(Jouer.java:76)
 	at allumettes.Jouer.main(Jouer.java:20)
 
 
@@ -382,9 +382,9 @@ Usage :
 ================================================================================
 > java allumettes.Jouer.main("yyy@rapide", "xxx@rapide@naif")
 --------------------------------------------------------------------------------
-Exception in thread "main" java.lang.IllegalArgumentException: Stratégie inconnue : rapide@naif
-	at strategies.StrategiePossible.getStrategie(StrategiePossible.java:22)
-	at allumettes.Joueur.<init>(Joueur.java:40)
+Exception in thread "main" java.lang.IllegalStateException: Stratégie non gérée : rapide@naif
+	at allumettes.Jouer.getStrategieInstance(Jouer.java:93)
+	at allumettes.Jouer.creerJoueur(Jouer.java:76)
 	at allumettes.Jouer.main(Jouer.java:21)
 
 
@@ -433,7 +433,7 @@ Usage :
 
 
 
-Time: 1,598
+Time: 1,665
 There were 6 failures:
 1) testerStrategieDoubleAtStrategieALaFinSymetrie(RobustesseTest)
 java.lang.AssertionError: Le programme s'est terminé sur une exception non récupérée.

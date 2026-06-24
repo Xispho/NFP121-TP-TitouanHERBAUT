@@ -1,3 +1,12 @@
 Début de la vérification...
 [ERROR] Arbitre.java:44: La ligne excède 90 caractères (trouvé 114). [LineLength]
+[ERROR] StrategieRapide.java:3:50: Il manque une espace avant '{'. [WhitespaceAround]
+[ERROR] StrategieRapide.java:9: La ligne excède 90 caractères (trouvé 92). [LineLength]
+[ERROR] StrategieExpert.java:3:50: Il manque une espace avant '{'. [WhitespaceAround]
+[ERROR] StrategieExpert.java:8: La ligne excède 90 caractères (trouvé 92). [LineLength]
+[ERROR] StrategieExpert.java:11:32: '4' devrait être défini comme une constante. [MagicNumber]
+[ERROR] StrategieExpert.java:12:44: '4' devrait être défini comme une constante. [MagicNumber]
+[ERROR] StrategieExpert.java:13:36: '3' devrait être défini comme une constante. [MagicNumber]
+[ERROR] StrategieNaif.java:13: La ligne excède 90 caractères (trouvé 92). [LineLength]
+[ERROR] StrategieTricheur.java:3:52: Il manque une espace avant '{'. [WhitespaceAround]
 Vérification terminée.
