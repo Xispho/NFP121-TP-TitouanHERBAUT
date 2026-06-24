@@ -6,7 +6,7 @@ Suppositions faites :
  - jeuReel     = class allumettes.Game
 
 
-Time: 0,017
+Time: 0,018
 There was 1 failure:
 1) testerProcurationFonctionnement(FormeProxyTest)
 java.lang.AssertionError: Procuration non identifée (relire le sujet concernant le patron Procuration) : impossible d'exécuter ce test.

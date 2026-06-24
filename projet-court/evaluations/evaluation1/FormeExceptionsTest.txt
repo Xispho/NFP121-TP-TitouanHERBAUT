@@ -6,7 +6,7 @@ Suppositions faites :
  - jeuReel     = class allumettes.Game
 
 
-Time: 0,018
+Time: 0,014
 There was 1 failure:
 1) testerOperationInterditeException(FormeExceptionsTest)
 java.lang.AssertionError: Procuration : Pas de classe OperationInterditeException.

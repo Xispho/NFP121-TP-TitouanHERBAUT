@@ -6,7 +6,6 @@ Début de la vérification...
 [ERROR] StrategieExpert.java:8: La ligne excède 90 caractères (trouvé 92). [LineLength]
 [ERROR] StrategieExpert.java:11:32: '4' devrait être défini comme une constante. [MagicNumber]
 [ERROR] StrategieExpert.java:12:44: '4' devrait être défini comme une constante. [MagicNumber]
-[ERROR] StrategieExpert.java:13:36: '3' devrait être défini comme une constante. [MagicNumber]
 [ERROR] StrategieNaif.java:13: La ligne excède 90 caractères (trouvé 92). [LineLength]
 [ERROR] StrategieTricheur.java:3:52: Il manque une espace avant '{'. [WhitespaceAround]
 Vérification terminée.

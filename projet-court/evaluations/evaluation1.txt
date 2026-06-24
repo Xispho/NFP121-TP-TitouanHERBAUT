@@ -1,9 +1,11 @@
-Date de l'évaluation : mer. 24 juin 2026 17:44:49 CEST
+Date de l'évaluation : mer. 24 juin 2026 18:05:09 CEST
 
-Nombre de similitudes : 5	(voir evaluation1/sim_java.txt)
+Attention, il est interdit de changer CoupInvalideException.java	(voir evaluation1/CoupInvalideException.java.diff)
+
+Nombre de similitudes : 4	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 5/3	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 4/3	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : NON DÉFINIE (ou pas sur Gitlab)
 
@@ -17,30 +19,21 @@ Throwable, Exception et RuntimeException ne devraient pas être récupérées ca
 AssertionError ne doit pas être récupérée... ok
 
 Autres exceptions récupérées :
-  | allumettes/StrategieHumain.java:23:                } catch (NumberFormatException e) {
-  | allumettes/StrategieHumain.java:36:        } catch (CoupInvalideException e) {
+  | allumettes/StrategieHumain.java:26:                } catch (NumberFormatException e) {
+  | allumettes/StrategieHumain.java:39:        } catch (CoupInvalideException e) {
   | allumettes/Jouer.java:28:       } catch (ConfigurationException e) {
-  | allumettes/Jouer.java:33:       } catch (CoupInvalideException e) {
-  | allumettes/StrategieTricheur.java:11:        } catch (CoupInvalideException e) {
 
 Utilisation de 'Scanner' : ok
-  | allumettes/StrategieHumain.java:7:    private static final Scanner SCANNER = new Scanner(System.in);
-  | allumettes/ScannerSingleton.java:8:    private Scanner scanner;
-  | allumettes/ScannerSingleton.java:14:        this.scanner = new Scanner(System.in);
-  | allumettes/ScannerSingleton.java:18:     * Retourne l'instance unique de Scanner liée à System.in.
-  | allumettes/ScannerSingleton.java:28:    public Scanner getScanner() {
+  | allumettes/StrategieHumain.java:8:    private static final Scanner SCANNER = new Scanner(System.in);
 
 Utilisation de 'split' : ok
-  | allumettes/Jouer.java:55:       String[] parts = description.split("@", 2);
+  | allumettes/Jouer.java:54:       String[] parts = description.split("@", 2);
 
 Utilisation de 'Random' : ok
   | allumettes/StrategieNaif.java:3:import java.util.Random;
   | allumettes/StrategieNaif.java:7:    private Random random = new Random();
 
-Utilisation de '3' : Ne pas utiliser de constante littérale hors -1, 0 ou 1 (peut-être PRISE_MAX ?)
-  |     allumettes/StrategieRapide.java:5:    // Retire 3 allumettes si possible, sinon le nombre maximum autorisé
-  |     allumettes/StrategieExpert.java:13:            prise = (reste == 0) ? 3 : reste - 1;
-  |     allumettes/StrategieNaif.java:9:    // Retire un nombre d'allumettes aléatoire entre 1 et 3
+Utilisation de '3' : ok
 
 Affichage de 'Impossible !' : ok
 
@@ -48,7 +41,6 @@ Utilisation de 'System.exit' : ok
 
 Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
-Compilation de ScannerSingleton.java : OK.
 Test exemplePresqueSujet : ok
 Test exempleTricheurSujet : NON CONFORME	(voir evaluation1/exempleTricheurSujet.diff)
 Test exempleConfiantTricheurSujet : NON CONFORME	(voir evaluation1/exempleConfiantTricheurSujet.diff)
