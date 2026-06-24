@@ -30,8 +30,7 @@ public class Jouer {
 			System.out.println("Erreur : " + e.getMessage());
 			afficherUsage();
 			System.exit(1);
-		} catch (CoupInvalideException e) {
-        }
+		}
     }
 
 	private static void verifierNombreArguments(String[] args) {

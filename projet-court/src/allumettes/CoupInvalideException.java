@@ -4,7 +4,7 @@ package allumettes;
  * @author	Xavier Crégut
  * @version	$Revision: 1.3 $
  */
-public class CoupInvalideException extends Exception {
+public class CoupInvalideException extends RuntimeException {
 
 	/** Le coup joué. */
 	private int coup;
