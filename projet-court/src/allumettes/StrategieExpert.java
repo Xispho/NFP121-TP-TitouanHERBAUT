@@ -10,7 +10,7 @@ public class StrategieExpert implements Strategie{
         int prise;
         if (nombreAllumettes > 4) {
             int reste = nombreAllumettes % 4;
-            prise = (reste == 0) ? 3 : reste - 1;
+            prise = (reste == 0) ? Jeu.PRISE_MAX : reste - 1;
         } else {
             prise = nombreAllumettes - 1;
         }

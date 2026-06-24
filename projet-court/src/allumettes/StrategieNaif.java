@@ -6,7 +6,7 @@ public class StrategieNaif implements Strategie {
 
     private Random random = new Random();
 
-    // Retire un nombre d'allumettes aléatoire entre 1 et 3
+    // Retire un nombre d'allumettes aléatoire entre 1 et Jeu.PRISE_MAX
     @Override
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
         if (nombreAllumettes <= 0) {

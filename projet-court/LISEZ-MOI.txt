@@ -56,8 +56,6 @@ La stratégie est un attribut de Joueur, donc si on change la valeur de cette at
 Donner ici les explications supplémentaires utiles à la compréhension du
 travail rendu.
 --------------------------------------------------------------------------------
-Ajout d'une classe ScannerSingleton, pas sûr que ce soit la solution demander pour avoir une seule instance du scanner.
-Le singeleton permet d'avoir une seule instance du scanner, car si il est créé on retourne l'instance existante, sinon on la crée.
 ...
 
 --------------------------------------------------------------------------------
