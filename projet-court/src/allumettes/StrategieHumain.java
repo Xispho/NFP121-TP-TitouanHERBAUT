@@ -13,18 +13,24 @@ public class StrategieHumain implements Strategie {
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
         boolean notEntier = true;
         int prise = 0;
+        boolean withInterface = true;
         while (notEntier) {
-            System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
-            String input = SCANNER.nextLine();
-            if (Arrays.asList(tricherStrings).contains(input)) {
-                tricher(jeu);
-                return 1;
+            if (withInterface) {
+                AllumettesInterface interface_ = new AllumettesInterface(jeu, joueur);
+                return interface_.getSelectedChoice();
             } else {
-                try {
-                    prise = Integer.parseInt(input);
-                    notEntier = false;
-                } catch (NumberFormatException e) {
-                    System.out.println("Vous devez donner un entier.");
+                System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
+                String input = SCANNER.nextLine();
+                if (Arrays.asList(tricherStrings).contains(input)) {
+                    tricher(jeu);
+                    return 1;
+                } else {
+                    try {
+                        prise = Integer.parseInt(input);
+                        notEntier = false;
+                    } catch (NumberFormatException e) {
+                        System.out.println("Vous devez donner un entier.");
+                    }
                 }
             }
         }
