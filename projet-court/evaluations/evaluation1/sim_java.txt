@@ -1,17 +1,18 @@
 File allumettes/Arbitre.java: 332 tokens, 64 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
 File allumettes/Joueur.java: 80 tokens, 28 lines
-File allumettes/StrategieHumain.java: 183 tokens, 44 lines
+File allumettes/StrategieHumain.java: 212 tokens, 50 lines
 File allumettes/StrategieRapide.java: 52 tokens, 13 lines
 File allumettes/Game.java: 79 tokens, 24 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
 File allumettes/Jouer.java: 413 tokens, 110 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
 File allumettes/StrategieExpert.java: 83 tokens, 19 lines
+File allumettes/AllumettesInterface.java: 367 tokens, 80 lines (not NL-terminated)
 File allumettes/StrategieNaif.java: 71 tokens, 18 lines
 File allumettes/Strategie.java: 19 tokens, 12 lines
 File allumettes/StrategieTricheur.java: 46 tokens, 13 lines
-Total input: 13 files (13 new, 0 old), 1470 tokens
+Total input: 14 files (14 new, 0 old), 1866 tokens
 
 allumettes/Arbitre.java: line 17-24 [46]
 allumettes/Arbitre.java: line 26-33
