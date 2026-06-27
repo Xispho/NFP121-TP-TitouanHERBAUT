@@ -13,7 +13,7 @@ public class StrategieHumain implements Strategie {
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
         boolean notEntier = true;
         int prise = 0;
-        boolean withInterface = true;
+        boolean withInterface = false;
         while (notEntier) {
             if (withInterface) {
                 AllumettesInterface interface_ = new AllumettesInterface(jeu, joueur);

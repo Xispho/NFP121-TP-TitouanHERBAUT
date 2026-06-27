@@ -7,34 +7,23 @@ public class Arbitre {
     private final Joueur joueur1;
     private final Joueur joueur2;
 
+    private Joueur current;
+
     public Arbitre(Joueur joueur1, Joueur joueur2) {
         this.joueur1 = joueur1;
         this.joueur2 = joueur2;
+        this.current = joueur1;
     }
 
-     public void arbitrer(Jeu jeu) throws CoupInvalideException {
+     public void arbitrer(Jeu jeu) {
         while (jeu.getNombreAllumettes() > 0) {
-            priseJoueur(jeu, joueur1);
-            if (jeu.getNombreAllumettes() == 0) {
-                System.out.println(
-                    "\n" + joueur1.getNom() + " perd !"
-                    + "\n" + joueur2.getNom() + " gagne !"
-                );
-                break;
-            }
-
-            priseJoueur(jeu, joueur2);
-            if (jeu.getNombreAllumettes() == 0) {
-                System.out.println(
-                    "\n" + joueur2.getNom() + " perd !"
-                    + "\n" + joueur1.getNom() + " gagne !"
-                );
-                break;
-            }
+            priseJoueur(jeu, current);
+            toggleCurrentJoueur();
         }
+        displayEndMessage(current);
     }
 
-    private void priseJoueur(Jeu jeu, Joueur joueur) throws CoupInvalideException {
+    private void priseJoueur(Jeu jeu, Joueur joueur) {
         boolean isPriseOk = false;
         int prise = -1;
         while (!isPriseOk) {
@@ -60,5 +49,24 @@ public class Arbitre {
             return false;
         }
         return true;
+    }
+
+    private void toggleCurrentJoueur() {
+        if (this.current == this.joueur1) {
+            this.current = this.joueur2;
+        } else {
+            this.current = this.joueur1;
+        }
+    }
+
+    private void displayEndMessage(Joueur winner) {
+        Joueur loser = joueur1;
+        if (winner == joueur1) {
+            loser = joueur2;
+        }
+        System.out.println(
+                "\n" + loser.getNom() + " perd !"
+                + "\n" + winner.getNom() + " gagne !"
+        );
     }
 }

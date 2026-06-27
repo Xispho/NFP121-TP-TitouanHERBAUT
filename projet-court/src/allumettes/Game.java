@@ -15,8 +15,12 @@ public class Game implements Jeu {
 
     @Override
     public void retirer(int nombre) throws CoupInvalideException {
-        if (nombre < 1 || nombre > PRISE_MAX || nombre > nombreAllumettes) {
-            throw new CoupInvalideException(nombre, "Invalide");
+        if (nombre < 1) {
+            throw new CoupInvalideException(nombre, "1 >");
+        } else if (nombre > PRISE_MAX) {
+            throw new CoupInvalideException(nombre, PRISE_MAX + " <");
+        } else if (nombre > nombreAllumettes) {
+            throw new CoupInvalideException(nombre, nombreAllumettes + " <");
         }
         nombreAllumettes -= nombre;
     }
