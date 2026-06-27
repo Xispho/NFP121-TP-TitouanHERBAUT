@@ -14,7 +14,7 @@ public class Joueur {
         return nom;
     }
 
-    public int getPrise(Jeu jeu) {
+    public int getPrise(Jeu jeu) throws CoupInvalideException {
         int nbAllumettes = jeu.getNombreAllumettes();
         return strategie.choisirNombreAllumettes(
                 jeu, this, nbAllumettes

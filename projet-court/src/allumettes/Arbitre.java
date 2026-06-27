@@ -15,7 +15,7 @@ public class Arbitre {
         this.current = joueur1;
     }
 
-     public void arbitrer(Jeu jeu) {
+     public void arbitrer(Jeu jeu) throws CoupInvalideException {
         while (jeu.getNombreAllumettes() > 0) {
             priseJoueur(jeu, current);
             toggleCurrentJoueur();
@@ -23,15 +23,19 @@ public class Arbitre {
         displayEndMessage(current);
     }
 
-    private void priseJoueur(Jeu jeu, Joueur joueur) {
+    private void priseJoueur(Jeu jeu, Joueur joueur) throws CoupInvalideException, OperationInterditeException {
         boolean isPriseOk = false;
         int prise = -1;
+        Jeu jeuProxy = new JeuProxy(jeu);
         while (!isPriseOk) {
             System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
-            prise = joueur.getPrise(jeu);
-
+            try {
+                prise = joueur.getPrise(jeuProxy);
+            } catch (OperationInterditeException e) {
+                throw new OperationInterditeException("Abandon de la partie car " + joueur.getNom() + " triche !");
+            }
             System.out.print(joueur.getNom() + " prend " + prise + " allumette" + (prise > 1 ? "s" : "") + ".\n");
-            isPriseOk = checkPrise(jeu, prise);
+            isPriseOk = checkPrise(jeuProxy, prise);
         }
         jeu.retirer(prise);
     }
@@ -65,8 +69,8 @@ public class Arbitre {
             loser = joueur2;
         }
         System.out.println(
-                "\n" + loser.getNom() + " perd !"
-                + "\n" + winner.getNom() + " gagne !"
+            "\n" + loser.getNom() + " perd !"
+            + "\n" + winner.getNom() + " gagne !"
         );
     }
 }

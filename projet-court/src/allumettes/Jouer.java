@@ -30,7 +30,9 @@ public class Jouer {
 			System.out.println("Erreur : " + e.getMessage());
 			afficherUsage();
 			System.exit(1);
-		}
+		} catch (CoupInvalideException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 	private static void verifierNombreArguments(String[] args) {
@@ -89,7 +91,7 @@ public class Jouer {
 			case "tricheur":
 				return new StrategieTricheur();
 			default:
-				throw new IllegalStateException("Stratégie non gérée : " + strategie);
+				throw new ConfigurationException("Stratégie non gérée : " + strategie);
 		}
 	}
 

@@ -5,32 +5,26 @@ import java.util.Scanner;
 
 public class StrategieHumain implements Strategie {
 
-    private static final Scanner SCANNER = new Scanner(System.in);
+    public static final Scanner SCANNER = new Scanner(System.in);
 
-    private String[] tricherStrings = {"[je triche...]"};
+    public static final String[] tricherStrings = {"[je triche...]"};
 
     @Override
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
         boolean notEntier = true;
         int prise = 0;
-        boolean withInterface = false;
         while (notEntier) {
-            if (withInterface) {
-                AllumettesInterface interface_ = new AllumettesInterface(jeu, joueur);
-                return interface_.getSelectedChoice();
+            System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
+            String input = SCANNER.nextLine();
+            if (Arrays.asList(tricherStrings).contains(input)) {
+                tricher(jeu);
+                return 1;
             } else {
-                System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
-                String input = SCANNER.nextLine();
-                if (Arrays.asList(tricherStrings).contains(input)) {
-                    tricher(jeu);
-                    return 1;
-                } else {
-                    try {
-                        prise = Integer.parseInt(input);
-                        notEntier = false;
-                    } catch (NumberFormatException e) {
-                        System.out.println("Vous devez donner un entier.");
-                    }
+                try {
+                    prise = Integer.parseInt(input);
+                    notEntier = false;
+                } catch (NumberFormatException e) {
+                    System.out.println("Vous devez donner un entier.");
                 }
             }
         }
