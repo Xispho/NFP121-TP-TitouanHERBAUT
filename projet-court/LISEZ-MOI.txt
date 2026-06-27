@@ -16,8 +16,8 @@ prises en compte dans la notation du projet.
 Il faut remplacer les ... par des nombres.
 
 
-* Temps passé sur la V1 : 3 heures 00 minutes
-* Temps passé sur la V2 : 9 heures 00 minutes
+* Temps passé sur la V1 : 10 heures 00 minutes
+* Temps passé sur la V2 : 3 heures 00 minutes
 
 Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
 
@@ -37,7 +37,7 @@ Expliquer ce qu'il faut faire pour ajouter un nouveau niveau de jeu, par
 exemple la stratégie lente (C13).  Pour plus de précision, on numérotera
 les étapes à faire.
 --------------------------------------------------------------------------------
-On ajoute un classe qui implémente l'interface Strategie.
+On ajoute une classe qui implémente l'interface Strategie.
 On l'ajoute dans le getStrategieInstance pour qu'il soit géré.
 ...
 
