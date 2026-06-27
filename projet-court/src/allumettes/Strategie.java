@@ -7,7 +7,6 @@ public interface Strategie {
      * @param nombreAllumettes le nombre d'allumettes restantes
      * @return le nombre d'allumettes à retirer
      */
-    int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes)
-            throws CoupInvalideException;
+    int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes);
 
 }

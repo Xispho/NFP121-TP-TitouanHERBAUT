@@ -97,8 +97,6 @@ public class Jouer {
 				return new StrategieExpert();
 			case "humain":
 				return new StrategieHumain();
-			case "tricheur":
-				return new StrategieTricheur();
 			default:
 				throw new ConfigurationException("Stratégie non gérée : " + strategie);
 		}
