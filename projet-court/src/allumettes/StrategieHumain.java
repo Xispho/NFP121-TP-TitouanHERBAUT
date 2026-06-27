@@ -19,14 +19,14 @@ public class StrategieHumain implements Strategie {
             if (Arrays.asList(TRICHER_STRINGS).contains(input)) {
                 if (input.equals("[je triche...]")) {
                     tricher(jeu, 2);
-                    System.out.println("[je triche...]" +
-                            " \n[Allumettes restantes : " +
-                            jeu.getNombreAllumettes() + "]");
+                    System.out.println("[je triche...]"
+                            + " \n[Allumettes restantes : "
+                            + jeu.getNombreAllumettes() + "]");
                     return 1;
                 } else if (input.equals("triche")) {
-                    tricher(jeu, 4);
+                    tricher(jeu, Jeu.PRISE_MAX + 1);
                     System.out.println("[Une allumette en moins, plus que 4. Chut !]");
-                    return 3;
+                    return Jeu.PRISE_MAX;
                 }
             } else {
                 try {

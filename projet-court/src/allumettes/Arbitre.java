@@ -82,7 +82,7 @@ public class Arbitre {
         if (winner == joueur1) {
             loser = joueur2;
         }
-        System.out.println("\n" + loser.getNom() +
-                " perd !" + "\n" + winner.getNom() + " gagne !");
+        System.out.println("\n" + loser.getNom()
+                + " perd !" + "\n" + winner.getNom() + " gagne !");
     }
 }
