@@ -2,21 +2,21 @@ File allumettes/Arbitre.java: 431 tokens, 88 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
 File allumettes/Joueur.java: 80 tokens, 28 lines
 File allumettes/OperationInterditeException.java: 21 tokens, 7 lines
-File allumettes/StrategieHumain.java: 185 tokens, 44 lines
+File allumettes/StrategieHumain.java: 249 tokens, 53 lines
 File allumettes/StrategieRapide.java: 37 tokens, 9 lines
 File allumettes/Game.java: 107 tokens, 28 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
 File allumettes/JeuProxy.java: 58 tokens, 21 lines
-File allumettes/Jouer.java: 465 tokens, 121 lines
+File allumettes/Jouer.java: 457 tokens, 118 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
-File allumettes/StrategieExpert.java: 81 tokens, 18 lines
+File allumettes/StrategieExpert.java: 91 tokens, 18 lines
 File allumettes/AllumettesInterface.java: 361 tokens, 83 lines (not NL-terminated)
 File allumettes/StrategieNaif.java: 56 tokens, 15 lines
 File allumettes/Strategie.java: 19 tokens, 12 lines
-Total input: 15 files (15 new, 0 old), 2013 tokens
+Total input: 15 files (15 new, 0 old), 2079 tokens
 
-allumettes/Jouer.java: line 72-78 [28]
-allumettes/Jouer.java: line 79-85
+allumettes/Jouer.java: line 71-77 [28]
+allumettes/Jouer.java: line 78-84
 < 		nom = parts[0].trim();
 < 		if (nom.isEmpty()) {
 < 			throw new ConfigurationException(
