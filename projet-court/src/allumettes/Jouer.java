@@ -17,11 +17,20 @@ public class Jouer {
 		try {
 			verifierNombreArguments(args);
 
-			Joueur joueur1 = creerJoueur(args[0]);
-			Joueur joueur2 = creerJoueur(args[1]);
+			// Parser l'argument optionnel -confiant
+			boolean confiant = false;
+			int indexJoueur1 = 0;
+			if (args.length > 0 && args[0].equals("-confiant")) {
+				confiant = true;
+				indexJoueur1 = 1;
+			}
+
+			Joueur joueur1 = creerJoueur(args[indexJoueur1]);
+			Joueur joueur2 = creerJoueur(args[indexJoueur1 + 1]);
 			Arbitre arbitre = new Arbitre(
 				joueur1,
-				joueur2
+				joueur2,
+				confiant
 			);
 			Jeu jeu = new Game(NB_ALLUMETTES);
 			arbitre.arbitrer(jeu);
@@ -98,13 +107,15 @@ public class Jouer {
 	/** Afficher des indications sur la manière d'exécuter cette classe. */
 	public static void afficherUsage() {
 		System.out.println("\n" + "Usage :"
-				+ "\n\t" + "java allumettes.Jouer joueur1 joueur2"
+				+ "\n\t" + "java allumettes.Jouer [-confiant] joueur1 joueur2"
 				+ "\n\t\t" + "joueur est de la forme nom@stratégie"
 				+ "\n\t\t" + "strategie = naif | rapide | expert | humain | tricheur"
+				+ "\n\t\t" + "-confiant: optional, donne au joueur le vrai jeu (pas de proxy)"
 				+ "\n"
 				+ "\n\t" + "Exemple :"
 				+ "\n\t" + "	java allumettes.Jouer Xavier@humain "
 					   + "Ordinateur@naif"
+				+ "\n\t" + "	java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur"
 				+ "\n"
 				);
 	}

@@ -6,12 +6,18 @@ public class Arbitre {
 
     private final Joueur joueur1;
     private final Joueur joueur2;
+    private final boolean confiant;
 
     private Joueur current;
 
     public Arbitre(Joueur joueur1, Joueur joueur2) {
+        this(joueur1, joueur2, false);
+    }
+
+    public Arbitre(Joueur joueur1, Joueur joueur2, boolean confiant) {
         this.joueur1 = joueur1;
         this.joueur2 = joueur2;
+        this.confiant = confiant;
         this.current = joueur1;
     }
 
@@ -27,6 +33,9 @@ public class Arbitre {
         boolean isPriseOk = false;
         int prise = -1;
         Jeu jeuProxy = new JeuProxy(jeu);
+        if (confiant) {
+            jeuProxy = jeu;
+        }
         while (!isPriseOk) {
             System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
             try {
