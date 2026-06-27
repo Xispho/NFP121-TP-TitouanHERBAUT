@@ -7,8 +7,6 @@ public class StrategieHumain implements Strategie {
 
     public static final Scanner SCANNER = new Scanner(System.in);
 
-    public static final String[] TRICHER_STRINGS = {"[je triche...]", "triche"};
-
     @Override
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
         boolean notEntier = true;
@@ -16,18 +14,10 @@ public class StrategieHumain implements Strategie {
         while (notEntier) {
             System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
             String input = SCANNER.nextLine();
-            if (Arrays.asList(TRICHER_STRINGS).contains(input)) {
-                if (input.equals("[je triche...]")) {
-                    tricher(jeu, 2);
-                    System.out.println("[je triche...]"
-                            + " \n[Allumettes restantes : "
-                            + jeu.getNombreAllumettes() + "]");
-                    return 1;
-                } else if (input.equals("triche")) {
-                    tricher(jeu, Jeu.PRISE_MAX + 1);
-                    System.out.println("[Une allumette en moins, plus que 4. Chut !]");
-                    return Jeu.PRISE_MAX;
-                }
+            if (input.equals("triche")) {
+                tricher(jeu);
+                System.out.println("[Une allumette en moins, plus que 4. Chut !]");
+                return Jeu.PRISE_MAX;
             } else {
                 try {
                     prise = Integer.parseInt(input);
@@ -40,9 +30,9 @@ public class StrategieHumain implements Strategie {
         return prise;
     }
 
-    private void tricher(Jeu jeu, int target) {
+    private void tricher(Jeu jeu) {
         try {
-            while (jeu.getNombreAllumettes() > target) {
+            while (jeu.getNombreAllumettes() > Jeu.PRISE_MAX + 1) {
                 jeu.retirer(1);
             }
         } catch (CoupInvalideException e) {
