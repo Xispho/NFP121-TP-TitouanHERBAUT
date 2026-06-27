@@ -42,13 +42,13 @@ public class Arbitre {
             try {
                 prise = joueur.getPrise(jeuProxy);
             } catch (OperationInterditeException e) {
-                System.out.println("Abandon de la partie car "
-                        + joueur.getNom() + " triche !");
+                System.out.println("Abandon de la partie car "+
+                        joueur.getNom() + " triche !");
                 System.exit(0);
             }
             System.out.print(joueur.getNom() +
-                    " prend " + prise + " allumette"
-                    + (prise > 1 ? "s" : "") + ".\n");
+                    " prend " + prise + " allumette" +
+                    (prise > 1 ? "s" : "") + ".\n");
             isPriseOk = checkPrise(jeuProxy, prise);
         }
         jeu.retirer(prise);

@@ -17,7 +17,6 @@ public class Jouer {
 		try {
 			verifierNombreArguments(args);
 
-			// Parser l'argument optionnel -confiant
 			boolean confiant = false;
 			int indexJoueur1 = 0;
 			if (args.length > 0 && args[0].equals("-confiant")) {
