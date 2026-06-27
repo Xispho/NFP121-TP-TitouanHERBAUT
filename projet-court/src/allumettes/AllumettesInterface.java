@@ -7,6 +7,10 @@ import java.awt.event.ActionListener;
 
 public class AllumettesInterface extends JFrame {
 
+    // Constante
+    private final static int WIDTH = 200;
+    private final static int HEIGHT = 200;
+
     private JTextField textField;
     private JLabel displayLabel;
     private JButton btn1;
@@ -23,12 +27,11 @@ public class AllumettesInterface extends JFrame {
     private void initUI(Jeu jeu, Joueur joueur) {
         setTitle(joueur.getNom() + " ?");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(200, 200);
+        setSize(WIDTH, HEIGHT);
         setLocationRelativeTo(null);
 
         // Panel principal
-        JPanel mainPanel = new JPanel(new BorderLayout(5, 5));
-        mainPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        JPanel mainPanel = new JPanel(new BorderLayout());
 
         // Champ texte en haut
         textField = new JTextField("tricher");

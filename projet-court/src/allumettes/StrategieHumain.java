@@ -7,7 +7,7 @@ public class StrategieHumain implements Strategie {
 
     public static final Scanner SCANNER = new Scanner(System.in);
 
-    public static final String[] tricherStrings = {"[je triche...]"};
+    public static final String[] TricherStrings = {"[je triche...]"};
 
     @Override
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
@@ -16,7 +16,7 @@ public class StrategieHumain implements Strategie {
         while (notEntier) {
             System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
             String input = SCANNER.nextLine();
-            if (Arrays.asList(tricherStrings).contains(input)) {
+            if (Arrays.asList(TricherStrings).contains(input)) {
                 tricher(jeu);
                 return 1;
             } else {

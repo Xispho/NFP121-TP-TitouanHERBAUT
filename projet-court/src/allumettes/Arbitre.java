@@ -29,7 +29,8 @@ public class Arbitre {
         displayEndMessage(current);
     }
 
-    private void priseJoueur(Jeu jeu, Joueur joueur) throws CoupInvalideException, OperationInterditeException {
+    private void priseJoueur(Jeu jeu, Joueur joueur)
+            throws CoupInvalideException, OperationInterditeException {
         boolean isPriseOk = false;
         int prise = -1;
         Jeu jeuProxy = new JeuProxy(jeu);
@@ -41,9 +42,13 @@ public class Arbitre {
             try {
                 prise = joueur.getPrise(jeuProxy);
             } catch (OperationInterditeException e) {
-                throw new OperationInterditeException("Abandon de la partie car " + joueur.getNom() + " triche !");
+                System.out.println("Abandon de la partie car "
+                        + joueur.getNom() + " triche !");
+                System.exit(0);
             }
-            System.out.print(joueur.getNom() + " prend " + prise + " allumette" + (prise > 1 ? "s" : "") + ".\n");
+            System.out.print(joueur.getNom() +
+                    " prend " + prise + " allumette"
+                    + (prise > 1 ? "s" : "") + ".\n");
             isPriseOk = checkPrise(jeuProxy, prise);
         }
         jeu.retirer(prise);
@@ -77,9 +82,7 @@ public class Arbitre {
         if (winner == joueur1) {
             loser = joueur2;
         }
-        System.out.println(
-            "\n" + loser.getNom() + " perd !"
-            + "\n" + winner.getNom() + " gagne !"
-        );
+        System.out.println("\n" + loser.getNom() +
+                " perd !" + "\n" + winner.getNom() + " gagne !");
     }
 }

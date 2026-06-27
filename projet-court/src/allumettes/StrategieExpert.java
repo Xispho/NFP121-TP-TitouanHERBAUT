@@ -1,12 +1,9 @@
 package allumettes;
 
-public class StrategieExpert implements Strategie{
+public class StrategieExpert implements Strategie {
 
     @Override
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
-        if (nombreAllumettes <= 0) {
-            throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
-        }
         int prise;
         if (nombreAllumettes > 4) {
             int reste = nombreAllumettes % 4;

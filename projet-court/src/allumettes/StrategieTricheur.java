@@ -1,9 +1,10 @@
 package allumettes;
 
-public class StrategieTricheur implements Strategie{
+public class StrategieTricheur implements Strategie {
 
     @Override
-    public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) throws CoupInvalideException {
+    public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes)
+            throws CoupInvalideException {
         while (jeu.getNombreAllumettes() > 2) {
             jeu.retirer(1);
         }
