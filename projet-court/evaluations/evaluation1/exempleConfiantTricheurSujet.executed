@@ -5,9 +5,7 @@ Usage :
 	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
-		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
-		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
