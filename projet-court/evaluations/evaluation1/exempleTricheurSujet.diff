@@ -1,8 +1,20 @@
-6,9c5,6
-< Exception in thread "main" allumettes.OperationInterditeException: Abandon de la partie car Tricheur triche !
-< 	at allumettes.Arbitre.priseJoueur(Arbitre.java:44)
-< 	at allumettes.Arbitre.arbitrer(Arbitre.java:26)
-< 	at allumettes.Jouer.main(Jouer.java:36)
+0a1,2
+> Allumettes restantes : 13
+> Ordinateur prend 3 allumettes.
+2,13c4,6
+< Erreur : Stratégie non gérée : tricheur
+< 
+< Usage :
+< 	java allumettes.Jouer [-confiant] joueur1 joueur2
+< 		joueur est de la forme nom@stratégie
+< 		strategie = naif | rapide | expert | humain | tricheur
+< 		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
+< 
+< 	Exemple :
+< 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+< 		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
+< 
 ---
+> Allumettes restantes : 10
 > [Je triche...]
 > Abandon de la partie car Tricheur triche !

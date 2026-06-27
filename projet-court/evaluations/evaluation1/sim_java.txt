@@ -1,57 +1,19 @@
-File allumettes/Arbitre.java: 423 tokens, 85 lines
+File allumettes/Arbitre.java: 431 tokens, 88 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
-File allumettes/Joueur.java: 82 tokens, 28 lines
+File allumettes/Joueur.java: 80 tokens, 28 lines
 File allumettes/OperationInterditeException.java: 21 tokens, 7 lines
 File allumettes/StrategieHumain.java: 185 tokens, 44 lines
-File allumettes/StrategieRapide.java: 52 tokens, 13 lines
+File allumettes/StrategieRapide.java: 37 tokens, 9 lines
 File allumettes/Game.java: 107 tokens, 28 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
 File allumettes/JeuProxy.java: 58 tokens, 21 lines
-File allumettes/Jouer.java: 473 tokens, 123 lines
+File allumettes/Jouer.java: 465 tokens, 121 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
-File allumettes/StrategieExpert.java: 96 tokens, 21 lines
-File allumettes/AllumettesInterface.java: 367 tokens, 80 lines (not NL-terminated)
-File allumettes/StrategieNaif.java: 71 tokens, 18 lines
-File allumettes/Strategie.java: 21 tokens, 12 lines
-File allumettes/StrategieTricheur.java: 48 tokens, 13 lines
-Total input: 16 files (16 new, 0 old), 2116 tokens
-
-allumettes/StrategieRapide.java: line 1-10 [39]
-allumettes/StrategieExpert.java: line 1-9
-< package allumettes;
-< 
-< public class StrategieRapide implements Strategie{
-< 
-<     // Retire Jeu.PRISE_MAX allumettes si possible, sinon le nombre maximum autorisé
-<     @Override
-<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
-<         if (nombreAllumettes <= 0) {
-<             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
-<         }
----
-> package allumettes;
-> 
-> public class StrategieExpert implements Strategie{
-> 
->     @Override
->     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
->         if (nombreAllumettes <= 0) {
->             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
->         }
-
-allumettes/StrategieExpert.java: line 5-9 [31]
-allumettes/StrategieNaif.java: line 10-14
-<     @Override
-<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
-<         if (nombreAllumettes <= 0) {
-<             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
-<         }
----
->     @Override
->     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
->         if (nombreAllumettes <= 0) {
->             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
->         }
+File allumettes/StrategieExpert.java: 81 tokens, 18 lines
+File allumettes/AllumettesInterface.java: 361 tokens, 83 lines (not NL-terminated)
+File allumettes/StrategieNaif.java: 56 tokens, 15 lines
+File allumettes/Strategie.java: 19 tokens, 12 lines
+Total input: 15 files (15 new, 0 old), 2013 tokens
 
 allumettes/Jouer.java: line 72-78 [28]
 allumettes/Jouer.java: line 79-85
@@ -70,4 +32,20 @@ allumettes/Jouer.java: line 79-85
 > 							+ description
 > 			);
 > 		}
+
+allumettes/StrategieRapide.java: line 1-6 [24]
+allumettes/StrategieExpert.java: line 1-6
+< package allumettes;
+< 
+< public class StrategieRapide implements Strategie {
+< 
+<     @Override
+<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+---
+> package allumettes;
+> 
+> public class StrategieExpert implements Strategie {
+> 
+>     @Override
+>     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
 

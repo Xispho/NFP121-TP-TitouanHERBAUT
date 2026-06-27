@@ -23,6 +23,6 @@ Xavier, combien d'allumettes ? Exception in thread "main" java.util.NoSuchElemen
 	at java.base/java.util.Scanner.nextLine(Scanner.java:1690)
 	at allumettes.StrategieHumain.choisirNombreAllumettes(StrategieHumain.java:18)
 	at allumettes.Joueur.getPrise(Joueur.java:19)
-	at allumettes.Arbitre.priseJoueur(Arbitre.java:42)
+	at allumettes.Arbitre.priseJoueur(Arbitre.java:43)
 	at allumettes.Arbitre.arbitrer(Arbitre.java:26)
 	at allumettes.Jouer.main(Jouer.java:36)
