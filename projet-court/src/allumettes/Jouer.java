@@ -107,12 +107,10 @@ public class Jouer {
 				+ "\n\t" + "java allumettes.Jouer [-confiant] joueur1 joueur2"
 				+ "\n\t\t" + "joueur est de la forme nom@stratégie"
 				+ "\n\t\t" + "strategie = naif | rapide | expert | humain | tricheur"
-				+ "\n\t\t" + "-confiant: optional, donne au joueur le vrai jeu (pas de proxy)"
 				+ "\n"
 				+ "\n\t" + "Exemple :"
 				+ "\n\t" + "	java allumettes.Jouer Xavier@humain "
 					   + "Ordinateur@naif"
-				+ "\n\t" + "	java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur"
 				+ "\n"
 				);
 	}
