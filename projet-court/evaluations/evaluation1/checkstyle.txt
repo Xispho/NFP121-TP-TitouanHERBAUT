@@ -1,6 +1,8 @@
 Début de la vérification...
-[ERROR] Arbitre.java:33: La ligne excède 90 caractères (trouvé 114). [LineLength]
-[ERROR] StrategieHumain.java:19:37: Le nom 'interface_' n'est pas conforme à l'expression '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] Arbitre.java:26: La ligne excède 90 caractères (trouvé 112). [LineLength]
+[ERROR] Arbitre.java:35: La ligne excède 90 caractères (trouvé 115). [LineLength]
+[ERROR] Arbitre.java:37: La ligne excède 90 caractères (trouvé 114). [LineLength]
+[ERROR] StrategieHumain.java:10:34: Le nom 'tricherStrings' n'est pas conforme à l'expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'. [ConstantName]
 [ERROR] StrategieRapide.java:3:50: Il manque une espace avant '{'. [WhitespaceAround]
 [ERROR] StrategieRapide.java:9: La ligne excède 90 caractères (trouvé 92). [LineLength]
 [ERROR] StrategieExpert.java:3:50: Il manque une espace avant '{'. [WhitespaceAround]
@@ -27,5 +29,7 @@ Début de la vérification...
 [ERROR] AllumettesInterface.java:53:55: '3' devrait être défini comme une constante. [MagicNumber]
 [ERROR] AllumettesInterface.java:73:30: '100' devrait être défini comme une constante. [MagicNumber]
 [ERROR] StrategieNaif.java:13: La ligne excède 90 caractères (trouvé 92). [LineLength]
+[ERROR] Strategie.java:10: La ligne excède 90 caractères (trouvé 107). [LineLength]
 [ERROR] StrategieTricheur.java:3:52: Il manque une espace avant '{'. [WhitespaceAround]
+[ERROR] StrategieTricheur.java:6: La ligne excède 90 caractères (trouvé 115). [LineLength]
 Vérification terminée.

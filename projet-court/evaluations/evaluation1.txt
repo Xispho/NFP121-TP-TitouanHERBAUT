@@ -1,34 +1,36 @@
-Date de l'évaluation : sam. 27 juin 2026 15:44:09 CEST
-
-Attention, il est interdit de changer CoupInvalideException.java	(voir evaluation1/CoupInvalideException.java.diff)
+Date de l'évaluation : sam. 27 juin 2026 20:32:28 CEST
 
 Nombre de similitudes : 4	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 16/7	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 19/7	(voir evaluation1//checkstyle.txt)
 
-Classe OperationInterditeException : NON DÉFINIE (ou pas sur Gitlab)
+Classe OperationInterditeException : OperationInterditeException (ok)
 
-Procuration sur le jeu réel : Non identifiée
+Procuration sur le jeu réel : allumettes/JeuProxy.java (ok)
 
-OperationInterditeException : JAMAIS LEVÉE
-OperationInterditeException : JAMAIS RECUPÉRÉE
+OperationInterditeException : Pourquoi la lever à plusieurs endroits ?
+  | allumettes/Arbitre.java:35:                throw new OperationInterditeException("Abandon de la partie car " + joueur.getNom() + " triche !");
+  | allumettes/JeuProxy.java:18:        throw new OperationInterditeException("Triche !");
+
+OperationInterditeException, récupérée dans : allumettes/Arbitre.java (ok)
 
 Throwable, Exception et RuntimeException ne devraient pas être récupérées car trop générales... ok
 
 AssertionError ne doit pas être récupérée... ok
 
 Autres exceptions récupérées :
-  | allumettes/StrategieHumain.java:31:                    } catch (NumberFormatException e) {
-  | allumettes/StrategieHumain.java:45:        } catch (CoupInvalideException e) {
+  | allumettes/StrategieHumain.java:26:                } catch (NumberFormatException e) {
+  | allumettes/StrategieHumain.java:39:        } catch (CoupInvalideException e) {
   | allumettes/Jouer.java:28:       } catch (ConfigurationException e) {
+  | allumettes/Jouer.java:33:       } catch (CoupInvalideException e) {
   | allumettes/AllumettesInterface.java:74:            } catch (InterruptedException e) {
 
 Utilisation de 'Scanner' : ok
-  | allumettes/StrategieHumain.java:8:    private static final Scanner SCANNER = new Scanner(System.in);
+  | allumettes/StrategieHumain.java:8:    public static final Scanner SCANNER = new Scanner(System.in);
 
 Utilisation de 'split' : ok
-  | allumettes/Jouer.java:54:       String[] parts = description.split("@", 2);
+  | allumettes/Jouer.java:56:       String[] parts = description.split("@", 2);
 
 Utilisation de 'Random' : ok
   | allumettes/StrategieNaif.java:3:import java.util.Random;
@@ -45,6 +47,7 @@ Utilisation de 'System.exit' : ok
 
 Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
+Compilation de AllumettesInterface.java : OK.
 Test exemplePresqueSujet : ok
 Test exempleTricheurSujet : NON CONFORME	(voir evaluation1/exempleTricheurSujet.diff)
 Test exempleConfiantTricheurSujet : NON CONFORME	(voir evaluation1/exempleConfiantTricheurSujet.diff)
@@ -54,41 +57,19 @@ Test exempleMaxLou : ok
 Test exempleRapideRapide : ok
 Test exempleTricheurExpert : NON CONFORME	(voir evaluation1/exempleTricheurExpert.diff)
 
-Test RobustesseTest : Tests run: 24,  Failures: 6	(voir evaluation1/RobustesseTest.txt)
-        Exception in thread "main" IllegalStateException: Stratégie non gérée : ville@naif
-        Exception in thread "main" IllegalStateException: Stratégie non gérée : xyz
-        Exception in thread "main" IllegalStateException: Stratégie non gérée : xyz
-        Exception in thread "main" IllegalStateException: Stratégie non gérée : rapide@naif
-        Exception in thread "main" IllegalStateException: Stratégie non gérée : ville@naif
-        Exception in thread "main" IllegalStateException: Stratégie non gérée : rapide@naif
-    1) testerStrategieDoubleAtStrategieALaFinSymetrie(RobustesseTest)
-        Le programme s'est terminé sur une exception non récupérée.
-    2) testerStrategieInconnue(RobustesseTest)
-        Le programme s'est terminé sur une exception non récupérée.
-    3) testerStrategieInconnueSymetrie(RobustesseTest)
-        Le programme s'est terminé sur une exception non récupérée.
-    4) testerStrategieDoubleAt(RobustesseTest)
-        Le programme s'est terminé sur une exception non récupérée.
-    5) testerStrategieDoubleAtStrategieALaFin(RobustesseTest)
-        Le programme s'est terminé sur une exception non récupérée.
-    6) testerStrategieDoubleAtSymetrie(RobustesseTest)
-        Le programme s'est terminé sur une exception non récupérée.
-
+Test RobustesseTest : OK (24 tests)	(voir evaluation1/RobustesseTest.txt)
 
 On recommence avec les classes/interfaces fournies : Jeu ConfigurationException CoupInvalideException
 Test exemplePresqueSujet : ok
 
 Vérification du respect du diagramme de classe...
-Test FormeC7Test : OK (1 test)	(voir evaluation1/FormeC7Test.txt)
+Test FormeC7Test : Tests run: 1,  Failures: 1	(voir evaluation1/FormeC7Test.txt)
+    1) testerRespectArchitecture(FormeC7Test)
+        Joueur.getPrise ne doit pas propager CoupInvalideException
+
 Test FormeC9Test : OK (1 test)	(voir evaluation1/FormeC9Test.txt)
 Test FormeC14Test : OK (1 test)	(voir evaluation1/FormeC14Test.txt)
-Test FormeExceptionsTest : Tests run: 1,  Failures: 1	(voir evaluation1/FormeExceptionsTest.txt)
-    1) testerOperationInterditeException(FormeExceptionsTest)
-        Procuration : Pas de classe OperationInterditeException.
-
-Test FormeProxyTest : Tests run: 2,  Failures: 1	(voir evaluation1/FormeProxyTest.txt)
-    1) testerProcurationFonctionnement(FormeProxyTest)
-        Procuration non identifée (relire le sujet concernant le patron Procuration) : impossible d'exécuter ce test.
-
+Test FormeExceptionsTest : OK (1 test)	(voir evaluation1/FormeExceptionsTest.txt)
+Test FormeProxyTest : OK (2 tests)	(voir evaluation1/FormeProxyTest.txt)
 
 Aucune classe de test (fichier *Test.java ou Test*.java) !
