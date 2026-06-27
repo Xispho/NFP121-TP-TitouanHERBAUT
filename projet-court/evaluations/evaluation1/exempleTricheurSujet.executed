@@ -1,11 +1,6 @@
 
-Erreur : Stratégie non gérée : tricheur
+Allumettes restantes : 13
+Ordinateur prend 3 allumettes.
 
-Usage :
-	java allumettes.Jouer [-confiant] joueur1 joueur2
-		joueur est de la forme nom@stratégie
-		strategie = naif | rapide | expert | humain | tricheur
-
-	Exemple :
-		java allumettes.Jouer Xavier@humain Ordinateur@naif
-
+Allumettes restantes : 10
+Abandon de la partie car Tricheur triche !
