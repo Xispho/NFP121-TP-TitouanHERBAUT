@@ -1,9 +1,9 @@
-File allumettes/Arbitre.java: 332 tokens, 64 lines
+File allumettes/Arbitre.java: 345 tokens, 72 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
 File allumettes/Joueur.java: 80 tokens, 28 lines
 File allumettes/StrategieHumain.java: 212 tokens, 50 lines
 File allumettes/StrategieRapide.java: 52 tokens, 13 lines
-File allumettes/Game.java: 79 tokens, 24 lines
+File allumettes/Game.java: 107 tokens, 28 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
 File allumettes/Jouer.java: 413 tokens, 110 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
@@ -12,27 +12,7 @@ File allumettes/AllumettesInterface.java: 367 tokens, 80 lines (not NL-terminate
 File allumettes/StrategieNaif.java: 71 tokens, 18 lines
 File allumettes/Strategie.java: 19 tokens, 12 lines
 File allumettes/StrategieTricheur.java: 46 tokens, 13 lines
-Total input: 14 files (14 new, 0 old), 1866 tokens
-
-allumettes/Arbitre.java: line 17-24 [46]
-allumettes/Arbitre.java: line 26-33
-<             priseJoueur(jeu, joueur1);
-<             if (jeu.getNombreAllumettes() == 0) {
-<                 System.out.println(
-<                     "\n" + joueur1.getNom() + " perd !"
-<                     + "\n" + joueur2.getNom() + " gagne !"
-<                 );
-<                 break;
-<             }
----
->             priseJoueur(jeu, joueur2);
->             if (jeu.getNombreAllumettes() == 0) {
->                 System.out.println(
->                     "\n" + joueur2.getNom() + " perd !"
->                     + "\n" + joueur1.getNom() + " gagne !"
->                 );
->                 break;
->             }
+Total input: 14 files (14 new, 0 old), 1907 tokens
 
 allumettes/StrategieRapide.java: line 1-10 [39]
 allumettes/StrategieExpert.java: line 1-9
@@ -90,4 +70,21 @@ allumettes/StrategieTricheur.java: line 1-6
 > 
 >     @Override
 >     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+
+allumettes/Arbitre.java: line 8-14 [24]
+allumettes/Joueur.java: line 5-10
+<     private final Joueur joueur2;
+< 
+<     private Joueur current;
+< 
+<     public Arbitre(Joueur joueur1, Joueur joueur2) {
+<         this.joueur1 = joueur1;
+<         this.joueur2 = joueur2;
+---
+>     private String nom;
+>     private Strategie strategie;
+> 
+>     public Joueur(String nom, Strategie strategie) {
+>         this.nom = nom;
+>         this.strategie = strategie;
 

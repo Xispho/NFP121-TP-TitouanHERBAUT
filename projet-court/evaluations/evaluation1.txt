@@ -1,4 +1,4 @@
-Date de l'évaluation : jeu. 25 juin 2026 17:14:37 CEST
+Date de l'évaluation : sam. 27 juin 2026 15:44:09 CEST
 
 Attention, il est interdit de changer CoupInvalideException.java	(voir evaluation1/CoupInvalideException.java.diff)
 
@@ -45,12 +45,12 @@ Utilisation de 'System.exit' : ok
 
 Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
-Test exemplePresqueSujet : NON CONFORME	(voir evaluation1/exemplePresqueSujet.diff)
+Test exemplePresqueSujet : ok
 Test exempleTricheurSujet : NON CONFORME	(voir evaluation1/exempleTricheurSujet.diff)
 Test exempleConfiantTricheurSujet : NON CONFORME	(voir evaluation1/exempleConfiantTricheurSujet.diff)
-Test exempleRobustesse : NON CONFORME	(voir evaluation1/exempleRobustesse.diff)
+Test exempleRobustesse : ok
 Test exempleHumainTricheurExpert : NON CONFORME	(voir evaluation1/exempleHumainTricheurExpert.diff)
-Test exempleMaxLou : NON CONFORME	(voir evaluation1/exempleMaxLou.diff)
+Test exempleMaxLou : ok
 Test exempleRapideRapide : ok
 Test exempleTricheurExpert : NON CONFORME	(voir evaluation1/exempleTricheurExpert.diff)
 
@@ -75,7 +75,20 @@ Test RobustesseTest : Tests run: 24,  Failures: 6	(voir evaluation1/RobustesseTe
         Le programme s'est terminé sur une exception non récupérée.
 
 
+On recommence avec les classes/interfaces fournies : Jeu ConfigurationException CoupInvalideException
+Test exemplePresqueSujet : ok
+
 Vérification du respect du diagramme de classe...
-	Non fait car le projet n'est pas assez avancé
+Test FormeC7Test : OK (1 test)	(voir evaluation1/FormeC7Test.txt)
+Test FormeC9Test : OK (1 test)	(voir evaluation1/FormeC9Test.txt)
+Test FormeC14Test : OK (1 test)	(voir evaluation1/FormeC14Test.txt)
+Test FormeExceptionsTest : Tests run: 1,  Failures: 1	(voir evaluation1/FormeExceptionsTest.txt)
+    1) testerOperationInterditeException(FormeExceptionsTest)
+        Procuration : Pas de classe OperationInterditeException.
+
+Test FormeProxyTest : Tests run: 2,  Failures: 1	(voir evaluation1/FormeProxyTest.txt)
+    1) testerProcurationFonctionnement(FormeProxyTest)
+        Procuration non identifée (relire le sujet concernant le patron Procuration) : impossible d'exécuter ce test.
+
 
 Aucune classe de test (fichier *Test.java ou Test*.java) !

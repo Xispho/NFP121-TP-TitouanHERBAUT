@@ -1,5 +1,5 @@
 Début de la vérification...
-[ERROR] Arbitre.java:44: La ligne excède 90 caractères (trouvé 114). [LineLength]
+[ERROR] Arbitre.java:33: La ligne excède 90 caractères (trouvé 114). [LineLength]
 [ERROR] StrategieHumain.java:19:37: Le nom 'interface_' n'est pas conforme à l'expression '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] StrategieRapide.java:3:50: Il manque une espace avant '{'. [WhitespaceAround]
 [ERROR] StrategieRapide.java:9: La ligne excède 90 caractères (trouvé 92). [LineLength]
