@@ -1,6 +1,6 @@
 
 Allumettes restantes : 13
 Exception in thread "main" allumettes.OperationInterditeException: Abandon de la partie car J1 triche !
-	at allumettes.Arbitre.priseJoueur(Arbitre.java:35)
-	at allumettes.Arbitre.arbitrer(Arbitre.java:20)
-	at allumettes.Jouer.main(Jouer.java:27)
+	at allumettes.Arbitre.priseJoueur(Arbitre.java:44)
+	at allumettes.Arbitre.arbitrer(Arbitre.java:26)
+	at allumettes.Jouer.main(Jouer.java:36)

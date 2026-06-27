@@ -1,4 +1,4 @@
-File allumettes/Arbitre.java: 383 tokens, 76 lines
+File allumettes/Arbitre.java: 423 tokens, 85 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
 File allumettes/Joueur.java: 82 tokens, 28 lines
 File allumettes/OperationInterditeException.java: 21 tokens, 7 lines
@@ -7,14 +7,14 @@ File allumettes/StrategieRapide.java: 52 tokens, 13 lines
 File allumettes/Game.java: 107 tokens, 28 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
 File allumettes/JeuProxy.java: 58 tokens, 21 lines
-File allumettes/Jouer.java: 426 tokens, 112 lines
+File allumettes/Jouer.java: 473 tokens, 123 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
-File allumettes/StrategieExpert.java: 83 tokens, 19 lines
+File allumettes/StrategieExpert.java: 96 tokens, 21 lines
 File allumettes/AllumettesInterface.java: 367 tokens, 80 lines (not NL-terminated)
 File allumettes/StrategieNaif.java: 71 tokens, 18 lines
 File allumettes/Strategie.java: 21 tokens, 12 lines
 File allumettes/StrategieTricheur.java: 48 tokens, 13 lines
-Total input: 16 files (16 new, 0 old), 2016 tokens
+Total input: 16 files (16 new, 0 old), 2116 tokens
 
 allumettes/StrategieRapide.java: line 1-10 [39]
 allumettes/StrategieExpert.java: line 1-9
@@ -53,8 +53,8 @@ allumettes/StrategieNaif.java: line 10-14
 >             throw new IllegalArgumentException("Le nombre d'allumettes doit être positif.");
 >         }
 
-allumettes/Jouer.java: line 63-69 [28]
-allumettes/Jouer.java: line 70-76
+allumettes/Jouer.java: line 72-78 [28]
+allumettes/Jouer.java: line 79-85
 < 		nom = parts[0].trim();
 < 		if (nom.isEmpty()) {
 < 			throw new ConfigurationException(
@@ -70,21 +70,4 @@ allumettes/Jouer.java: line 70-76
 > 							+ description
 > 			);
 > 		}
-
-allumettes/Arbitre.java: line 8-14 [24]
-allumettes/Joueur.java: line 5-10
-<     private final Joueur joueur2;
-< 
-<     private Joueur current;
-< 
-<     public Arbitre(Joueur joueur1, Joueur joueur2) {
-<         this.joueur1 = joueur1;
-<         this.joueur2 = joueur2;
----
->     private String nom;
->     private Strategie strategie;
-> 
->     public Joueur(String nom, Strategie strategie) {
->         this.nom = nom;
->         this.strategie = strategie;
 

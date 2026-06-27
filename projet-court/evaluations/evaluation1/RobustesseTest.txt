@@ -4,15 +4,17 @@ JUnit version 4.12
 > java allumettes.Jouer.main("-confiant", "x", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : x
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -23,15 +25,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@rapide@naif")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Stratégie non gérée : rapide@naif
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -45,12 +49,14 @@ Usage :
 Erreur : Description invalide (format attendu: nom@strategie) : x
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -61,15 +67,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@xyz")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Stratégie non gérée : xyz
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -83,12 +91,14 @@ Usage :
 Erreur : Stratégie non gérée : ville@naif
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -102,12 +112,14 @@ Usage :
 Erreur : Nom de joueur vide dans la description : @humain
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -121,12 +133,14 @@ Usage :
 Erreur : Stratégie non gérée : xyz
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -137,15 +151,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "xxx@rapide@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Stratégie non gérée : rapide@naif
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -156,15 +172,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "xxx@ville@naif")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Stratégie non gérée : ville@naif
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -178,12 +196,14 @@ Usage :
 Erreur : Stratégie non gérée : xyz
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -194,15 +214,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "@humain", "ordi@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Nom de joueur vide dans la description : @humain
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -216,12 +238,14 @@ Usage :
 Erreur : Stratégie non gérée : rapide@naif
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -235,12 +259,14 @@ Usage :
 Erreur : Trop peu d'arguments : 1
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -251,15 +277,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "xxx@ville@naif", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Stratégie non gérée : ville@naif
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -273,12 +301,14 @@ Usage :
 Erreur : Stratégie non gérée : ville@naif
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -292,12 +322,14 @@ Usage :
 Erreur : Description invalide (format attendu: nom@strategie) : x
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -311,12 +343,14 @@ Usage :
 Erreur : Description invalide (format attendu: nom@strategie) : -confiant
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -330,12 +364,14 @@ Usage :
 Erreur : Trop peu d'arguments : 0
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -346,15 +382,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "yyy@rapide", "x")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Description invalide (format attendu: nom@strategie) : x
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -365,15 +403,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "xxx@xyz", "yyy@rapide")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Stratégie non gérée : xyz
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -384,15 +424,17 @@ Usage :
 > java allumettes.Jouer.main("-confiant", "ordi@rapide", "@humain")
 --------------------------------------------------------------------------------
 
-Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+Erreur : Nom de joueur vide dans la description : @humain
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -406,12 +448,14 @@ Usage :
 Erreur : Stratégie non gérée : rapide@naif
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -425,12 +469,14 @@ Usage :
 Erreur : Trop peu d'arguments : 1
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -444,12 +490,14 @@ Usage :
 Erreur : Nom de joueur vide dans la description : @humain
 
 Usage :
-	java allumettes.Jouer joueur1 joueur2
+	java allumettes.Jouer [-confiant] joueur1 joueur2
 		joueur est de la forme nom@stratégie
 		strategie = naif | rapide | expert | humain | tricheur
+		-confiant: optional, donne au joueur le vrai jeu (pas de proxy)
 
 	Exemple :
 		java allumettes.Jouer Xavier@humain Ordinateur@naif
+		java allumettes.Jouer -confiant Ordinateur@rapide Tricheur@tricheur
 
 
 --------------------------------------------------------------------------------
@@ -457,7 +505,7 @@ Usage :
 
 
 
-Time: 1,394
+Time: 1,353
 
 OK (24 tests)
 
