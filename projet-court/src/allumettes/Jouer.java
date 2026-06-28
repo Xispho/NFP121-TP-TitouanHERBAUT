@@ -98,6 +98,8 @@ public class Jouer {
 				return new StrategieHumain();
 			case "tricheur":
 				return new StrategieTricheur();
+			case "swing":
+				return new StrategieSwing();
 			default:
 				throw new ConfigurationException("Stratégie non gérée : " + strategie);
 		}

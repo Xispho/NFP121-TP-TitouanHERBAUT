@@ -8,76 +8,105 @@ import java.awt.event.ActionListener;
 public class AllumettesInterface extends JFrame {
 
     // Constante
-    private final static int WIDTH = 200;
-    private final static int HEIGHT = 200;
+    private final static int WIDTH = 300;
+    private final static int HEIGHT = 300;
 
-    private JTextField textField;
-    private JLabel displayLabel;
-    private JButton btn1;
-    private JButton btn2;
-    private JButton btn3;
-    private int selectedChoice = -1;
-    private boolean choiceMade = false;
+    private final Object verrou = new Object();
+    private int choix = 0;
 
-    public AllumettesInterface(Jeu jeu, Joueur joueur) {
-        initUI(jeu, joueur);
-        setVisible(true);
-    }
+    private JLabel nbAllumetteLabel;
+    private JButton btnTricher;
+    private JTextField nbTriche;
+    private JButton btnPriseUn;
+    private JButton btnPriseDeux;
+    private JButton btnPriseTrois;
 
-    private void initUI(Jeu jeu, Joueur joueur) {
-        setTitle(joueur.getNom() + " ?");
+    public AllumettesInterface() {
+        setTitle("[joueur] ?");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
         setLocationRelativeTo(null);
 
-        // Panel principal
         JPanel mainPanel = new JPanel(new BorderLayout());
+        add(mainPanel);
 
-        // Champ texte en haut
-        textField = new JTextField("tricher");
+        btnTricher = new JButton("tricher");
+        nbTriche = new JTextField();
         JPanel topPanel = new JPanel();
-        topPanel.add(textField);
+        topPanel.add(btnTricher);
+        topPanel.add(nbTriche);
         mainPanel.add(topPanel, BorderLayout.NORTH);
 
-        // Affichage central
-        displayLabel = new JLabel(String.valueOf(jeu.getNombreAllumettes()), SwingConstants.CENTER);
-        displayLabel.setFont(new Font("Arial", Font.BOLD, 36));
-        mainPanel.add(displayLabel, BorderLayout.CENTER);
+        nbAllumetteLabel = new JLabel("13", SwingConstants.CENTER);
+        mainPanel.add(nbAllumetteLabel, BorderLayout.CENTER);
 
-        // Boutons du bas
         JPanel buttonPanel = new JPanel(new GridLayout(1, 3, 5, 0));
-
-        btn1 = new JButton("1");
-        btn2 = new JButton("2");
-        btn3 = new JButton("3");
-
-        btn1.addActionListener(e -> handleButtonClick(1));
-        btn2.addActionListener(e -> handleButtonClick(2));
-        btn3.addActionListener(e -> handleButtonClick(3));
-
-        buttonPanel.add(btn1);
-        buttonPanel.add(btn2);
-        buttonPanel.add(btn3);
-
         mainPanel.add(buttonPanel, BorderLayout.SOUTH);
 
-        add(mainPanel);
+        btnPriseUn = new JButton("1");
+        btnPriseDeux = new JButton("2");
+        btnPriseTrois = new JButton("3");
+
+        btnPriseUn.addActionListener(e -> handleButtonClick(1));
+        btnPriseDeux.addActionListener(e -> handleButtonClick(2));
+        btnPriseTrois.addActionListener(e -> handleButtonClick(3));
+
+        buttonPanel.add(btnPriseUn);
+        buttonPanel.add(btnPriseDeux);
+        buttonPanel.add(btnPriseTrois);
     }
 
-    private void handleButtonClick(int choice) {
-        selectedChoice = choice;
-        choiceMade = true;
-        dispose();
-    }
-
-    public int getSelectedChoice() {
-        while (!choiceMade) {
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+    public int getPrise(Jeu jeu, Joueur joueur) {
+        btnTricher.addActionListener(e -> handleButtonTricher(jeu));
+        setTitle(joueur.getNom());
+        choix = 0;
+        updateButtons(jeu);
+        updateNbAllumette(jeu);
+        setVisible(true);
+        synchronized (verrou) {
+            while (choix == 0) {
+                try {
+                    verrou.wait();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
         }
-        return selectedChoice;
+        setVisible(false);
+        return choix;
+    }
+
+    private void handleButtonTricher(Jeu jeu) {
+        synchronized (verrou) {
+            int nb = Integer.parseInt(nbTriche.getText());
+            for (int i = 0; i < nb; i++) {
+                try {
+                    jeu.retirer(1);
+                } catch (CoupInvalideException e) {
+                    break;
+                }
+            }
+            updateButtons(jeu);
+            updateNbAllumette(jeu);
+        }
+    }
+
+    private void handleButtonClick(int nb) {
+        synchronized (verrou) {
+            choix = nb;
+            verrou.notify();
+        }
+    }
+
+    private void updateNbAllumette(Jeu jeu) {
+        nbAllumetteLabel.setText(String.valueOf(jeu.getNombreAllumettes()));
+        System.out.println("[Je triche..." + jeu.getNombreAllumettes() + "allumettes en moins]\n");
+    }
+
+    private void updateButtons(Jeu jeu) {
+        int n = jeu.getNombreAllumettes();
+        btnPriseUn.setEnabled(n >= 1);
+        btnPriseDeux.setEnabled(n >= 2);
+        btnPriseTrois.setEnabled(n >= 3);
     }
 }
