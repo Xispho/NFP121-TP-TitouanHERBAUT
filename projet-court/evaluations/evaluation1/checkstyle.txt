@@ -1,5 +1,4 @@
 Début de la vérification...
-[ERROR] StrategieHumain.java:3:8: Import inutilisé - java.util.Arrays. [UnusedImports]
 [ERROR] AllumettesInterface.java:1: Il manque un caractère NewLine à la fin du fichier. [NewlineAtEndOfFile]
 [ERROR] AllumettesInterface.java:3: L'utilisation des import.* est prohibé - javax.swing.*. [AvoidStarImport]
 [ERROR] AllumettesInterface.java:4: L'utilisation des import.* est prohibé - java.awt.*. [AvoidStarImport]

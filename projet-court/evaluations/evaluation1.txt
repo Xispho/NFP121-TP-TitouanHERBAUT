@@ -1,9 +1,9 @@
-Date de l'évaluation : sam. 27 juin 2026 22:14:48 CEST
+Date de l'évaluation : dim. 28 juin 2026 12:46:38 CEST
 
 Nombre de similitudes : 4	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 12/6	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 11/6	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : OperationInterditeException (ok)
 
@@ -22,10 +22,10 @@ Autres exceptions récupérées :
   | allumettes/Jouer.java:36:       } catch (ConfigurationException e) {
   | allumettes/Jouer.java:41:       } catch (CoupInvalideException e) {
   | allumettes/AllumettesInterface.java:77:            } catch (InterruptedException e) {
-  | allumettes/StrategieTricheur.java:17:        } catch (CoupInvalideException e) {
+  | allumettes/StrategieTricheur.java:18:        } catch (CoupInvalideException e) {
 
 Utilisation de 'Scanner' : ok
-  | allumettes/StrategieHumain.java:8:    public static final Scanner SCANNER = new Scanner(System.in);
+  | allumettes/StrategieHumain.java:7:    public static final Scanner SCANNER = new Scanner(System.in);
 
 Utilisation de 'split' : ok
   | allumettes/Jouer.java:64:       String[] parts = description.split("@", 2);
@@ -49,13 +49,13 @@ Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
 Compilation de AllumettesInterface.java : OK.
 Test exemplePresqueSujet : ok
-Test exempleTricheurSujet : NON CONFORME	(voir evaluation1/exempleTricheurSujet.diff)
-Test exempleConfiantTricheurSujet : NON CONFORME	(voir evaluation1/exempleConfiantTricheurSujet.diff)
+Test exempleTricheurSujet : ok
+Test exempleConfiantTricheurSujet : ok
 Test exempleRobustesse : ok
 Test exempleHumainTricheurExpert : NON CONFORME	(voir evaluation1/exempleHumainTricheurExpert.diff)
 Test exempleMaxLou : ok
 Test exempleRapideRapide : ok
-Test exempleTricheurExpert : NON CONFORME	(voir evaluation1/exempleTricheurExpert.diff)
+Test exempleTricheurExpert : ok
 
 Test RobustesseTest : OK (24 tests)	(voir evaluation1/RobustesseTest.txt)
 
