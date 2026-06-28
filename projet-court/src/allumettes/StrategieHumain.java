@@ -15,8 +15,8 @@ public class StrategieHumain implements Strategie {
             String input = SCANNER.nextLine();
             if (input.equals("triche")) {
                 tricher(jeu);
-                System.out.println("[Une allumette en moins, plus que 4. Chut !]");
-                System.out.println(joueur.getNom() + ", combien d'allumettes ? ");
+                System.out.println("[Une allumette en moins, plus que 4. Chut !]"
+                        + joueur.getNom() + ", combien d'allumettes ? ");
                 return Jeu.PRISE_MAX;
             } else {
                 try {

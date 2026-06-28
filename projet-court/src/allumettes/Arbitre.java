@@ -41,15 +41,15 @@ public class Arbitre {
             System.out.println("\nAllumettes restantes : " + jeu.getNombreAllumettes());
             try {
                 prise = joueur.getPrise(jeuProxy);
+                System.out.print(joueur.getNom()
+                        + " prend " + prise + " allumette"
+                        + (prise > 1 ? "s" : "") + ".\n");
+                isPriseOk = checkPrise(jeuProxy, prise);
             } catch (OperationInterditeException e) {
                 System.out.println("Abandon de la partie car "
                         + joueur.getNom() + " triche !");
                 System.exit(0);
             }
-            System.out.print(joueur.getNom()
-                    + " prend " + prise + " allumette"
-                    + (prise > 1 ? "s" : "") + ".\n");
-            isPriseOk = checkPrise(jeuProxy, prise);
         }
         jeu.retirer(prise);
     }
