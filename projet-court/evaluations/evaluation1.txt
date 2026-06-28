@@ -1,9 +1,9 @@
-Date de l'évaluation : dim. 28 juin 2026 13:52:02 CEST
+Date de l'évaluation : dim. 28 juin 2026 16:24:10 CEST
 
-Nombre de similitudes : 4	(voir evaluation1/sim_java.txt)
+Nombre de similitudes : 5	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 11/6	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 9/6	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : OperationInterditeException (ok)
 
@@ -21,7 +21,8 @@ Autres exceptions récupérées :
   | allumettes/StrategieHumain.java:36:        } catch (CoupInvalideException e) {
   | allumettes/Jouer.java:36:       } catch (ConfigurationException e) {
   | allumettes/Jouer.java:41:       } catch (CoupInvalideException e) {
-  | allumettes/AllumettesInterface.java:77:            } catch (InterruptedException e) {
+  | allumettes/AllumettesInterface.java:70:                } catch (InterruptedException e) {
+  | allumettes/AllumettesInterface.java:85:                } catch (CoupInvalideException e) {
   | allumettes/StrategieTricheur.java:18:        } catch (CoupInvalideException e) {
 
 Utilisation de 'Scanner' : ok
@@ -35,9 +36,10 @@ Utilisation de 'Random' : ok
   | allumettes/StrategieNaif.java:7:    private Random random = new Random();
 
 Utilisation de '3' : Ne pas utiliser de constante littérale hors -1, 0 ou 1 (peut-être PRISE_MAX ?)
-  |     allumettes/AllumettesInterface.java:48:        JPanel buttonPanel = new JPanel(new GridLayout(1, 3, 5, 0));
-  |     allumettes/AllumettesInterface.java:52:        btn3 = new JButton("3");
-  |     allumettes/AllumettesInterface.java:56:        btn3.addActionListener(e -> handleButtonClick(3));
+  |     allumettes/AllumettesInterface.java:43:        JPanel buttonPanel = new JPanel(new GridLayout(1, 3, 5, 0));
+  |     allumettes/AllumettesInterface.java:48:        btnPriseTrois = new JButton("3");
+  |     allumettes/AllumettesInterface.java:52:        btnPriseTrois.addActionListener(e -> handleButtonClick(3));
+  |     allumettes/AllumettesInterface.java:110:        btnPriseTrois.setEnabled(n >= 3);
 
 Affichage de 'Impossible !' : ok
 
@@ -46,7 +48,6 @@ Utilisation de 'System.exit' : ok
 Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
 Compilation de StrategieRapideTest.java : OK.
-Compilation de AllumettesInterface.java : OK.
 Test exemplePresqueSujet : ok
 Test exempleTricheurSujet : ok
 Test exempleConfiantTricheurSujet : ok

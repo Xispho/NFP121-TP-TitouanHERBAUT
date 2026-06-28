@@ -7,14 +7,15 @@ File allumettes/StrategieRapide.java: 37 tokens, 9 lines
 File allumettes/Game.java: 107 tokens, 28 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
 File allumettes/JeuProxy.java: 58 tokens, 21 lines
-File allumettes/Jouer.java: 465 tokens, 120 lines
+File allumettes/Jouer.java: 473 tokens, 122 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
 File allumettes/StrategieExpert.java: 91 tokens, 18 lines
-File allumettes/AllumettesInterface.java: 361 tokens, 83 lines (not NL-terminated)
+File allumettes/AllumettesInterface.java: 529 tokens, 112 lines (not NL-terminated)
 File allumettes/StrategieNaif.java: 56 tokens, 15 lines
 File allumettes/Strategie.java: 19 tokens, 12 lines
 File allumettes/StrategieTricheur.java: 103 tokens, 22 lines
-Total input: 16 files (16 new, 0 old), 2168 tokens
+File allumettes/StrategieSwing.java: 55 tokens, 16 lines
+Total input: 17 files (17 new, 0 old), 2399 tokens
 
 allumettes/Jouer.java: line 71-77 [28]
 allumettes/Jouer.java: line 78-84
@@ -55,21 +56,21 @@ allumettes/StrategieTricheur.java: line 15-22
 >     }
 > }
 
-allumettes/StrategieExpert.java: line 1-6 [24]
-allumettes/StrategieTricheur.java: line 1-6
-< package allumettes;
-< 
-< public class StrategieExpert implements Strategie {
-< 
-<     @Override
-<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+allumettes/Jouer.java: line 91-96 [24]
+allumettes/Jouer.java: line 97-102
+< 			case "naif":
+< 				return new StrategieNaif();
+< 			case "rapide":
+< 				return new StrategieRapide();
+< 			case "expert":
+< 				return new StrategieExpert();
 ---
-> package allumettes;
-> 
-> public class StrategieTricheur implements Strategie {
-> 
->     @Override
->     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+> 			case "humain":
+> 				return new StrategieHumain();
+> 			case "tricheur":
+> 				return new StrategieTricheur();
+> 			case "swing":
+> 				return new StrategieSwing();
 
 allumettes/StrategieRapide.java: line 1-6 [24]
 allumettes/StrategieExpert.java: line 1-6
@@ -83,6 +84,22 @@ allumettes/StrategieExpert.java: line 1-6
 > package allumettes;
 > 
 > public class StrategieExpert implements Strategie {
+> 
+>     @Override
+>     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+
+allumettes/StrategieExpert.java: line 1-6 [24]
+allumettes/StrategieTricheur.java: line 1-6
+< package allumettes;
+< 
+< public class StrategieExpert implements Strategie {
+< 
+<     @Override
+<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+---
+> package allumettes;
+> 
+> public class StrategieTricheur implements Strategie {
 > 
 >     @Override
 >     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
