@@ -56,6 +56,8 @@ La stratégie est un attribut de Joueur, donc si on change la valeur de cette at
 Donner ici les explications supplémentaires utiles à la compréhension du
 travail rendu.
 --------------------------------------------------------------------------------
+Aucune idée de comment faire pour supertricheur, dans l'état je donne le proxy au joueur et c'est son attribut strategie qui décide de la prise.
+Il faudrait probablement changer le fonctionnement que j'ai, en déplacer la fonction des classes strategie vers la classe Jouer.
 ...
 
 --------------------------------------------------------------------------------
