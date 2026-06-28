@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deroulement SYSTEM "deroulement.dtd">
+<deroulement>
+  <coup numero="1" joueur="Toto" nbAllumette="1" />
+  <coup numero="2" joueur="bot" nbAllumette="3" />
+  <coup numero="3" joueur="Toto" nbAllumette="1" />
+  <coup numero="4" joueur="bot" nbAllumette="3" />
+  <coup numero="5" joueur="Toto" nbAllumette="1" />
+  <coup numero="6" joueur="bot" nbAllumette="3" />
+  <coup numero="7" joueur="Toto" nbAllumette="1" />
+  <gagnant>bot</gagnant>
+</deroulement>
