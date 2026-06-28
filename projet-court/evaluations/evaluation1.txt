@@ -1,4 +1,4 @@
-Date de l'évaluation : dim. 28 juin 2026 12:46:38 CEST
+Date de l'évaluation : dim. 28 juin 2026 13:30:41 CEST
 
 Nombre de similitudes : 4	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
@@ -42,11 +42,12 @@ Utilisation de '3' : Ne pas utiliser de constante littérale hors -1, 0 ou 1 (pe
 Affichage de 'Impossible !' : ok
 
 Utilisation de 'System.exit' : INTERDIT d'utiliser System.exit(), sauf celui fourni dans Jouer.java
-  | allumettes/Arbitre.java:47:                System.exit(0);
+  | allumettes/Arbitre.java:51:                System.exit(0);
   | allumettes/Jouer.java:40:           System.exit(1);
 
 Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
+Compilation de StrategieRapideTest.java : OK.
 Compilation de AllumettesInterface.java : OK.
 Test exemplePresqueSujet : ok
 Test exempleTricheurSujet : ok
@@ -69,4 +70,6 @@ Test FormeC14Test : OK (1 test)	(voir evaluation1/FormeC14Test.txt)
 Test FormeExceptionsTest : OK (1 test)	(voir evaluation1/FormeExceptionsTest.txt)
 Test FormeProxyTest : OK (2 tests)	(voir evaluation1/FormeProxyTest.txt)
 
-Aucune classe de test (fichier *Test.java ou Test*.java) !
+Compilation de StrategieRapideTest.java : OK.
+Test allumettes.StrategieRapideTest : OK (5 tests)	(voir evaluation1/allumettes.StrategieRapideTest.txt)
+Tous les tests réussissent

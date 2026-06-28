@@ -1,5 +1,6 @@
-16,17c15
-< Xavier, combien d'allumettes ? 
+15,16c14,15
+< Xavier, combien d'allumettes ? [Une allumette en moins, plus que 4. Chut !]Xavier, combien d'allumettes ? 
 < Xavier prend 3 allumettes.
 ---
+> Xavier, combien d'allumettes ? [Une allumette en moins, plus que 4. Chut !]
 > Xavier, combien d'allumettes ? Xavier prend 3 allumettes.
