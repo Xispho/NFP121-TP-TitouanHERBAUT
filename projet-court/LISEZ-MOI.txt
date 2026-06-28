@@ -17,7 +17,7 @@ Il faut remplacer les ... par des nombres.
 
 
 * Temps passé sur la V1 : 10 heures 00 minutes
-* Temps passé sur la V2 : 3 heures 00 minutes
+* Temps passé sur la V2 : 4 heures 00 minutes
 
 Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
 
@@ -28,7 +28,7 @@ Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
 Pourquoi l'exception OperationInterditeException ne peut pas être définie
 comme vérifiée par le compilateur ?
 --------------------------------------------------------------------------------
-
+Parce que c'est une runtime exception, appelé dans le proxy.
 ...
 
 

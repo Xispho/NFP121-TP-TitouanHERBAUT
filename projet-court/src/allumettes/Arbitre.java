@@ -7,6 +7,7 @@ public class Arbitre {
     private final Joueur joueur1;
     private final Joueur joueur2;
     private final boolean confiant;
+    private final Deroulement deroulement;
 
     private Joueur current;
 
@@ -19,6 +20,7 @@ public class Arbitre {
         this.joueur2 = joueur2;
         this.confiant = confiant;
         this.current = joueur1;
+        this.deroulement = new Deroulement();
     }
 
      public void arbitrer(Jeu jeu) throws CoupInvalideException {
@@ -29,15 +31,19 @@ public class Arbitre {
                 break;
             } else {
                 jeu.retirer(prise);
+                deroulement.addCoup(current.getNom(),prise);
                 toggleCurrentJoueur();
             }
         }
         if (prise == -1) {
             System.out.println("Abandon de la partie car "
                     + current.getNom() + " triche !");
+            deroulement.setTricheur(current.getNom());
         } else {
+            deroulement.setGagnant(current.getNom());
             displayEndMessage(current);
         }
+        ExportXML.exportXML(deroulement);
     }
 
     private int priseJoueur(Jeu jeu, Joueur joueur)

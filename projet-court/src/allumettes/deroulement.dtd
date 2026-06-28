@@ -1,0 +1,9 @@
+<!ELEMENT deroulement (coup*, gagnant?, tricheur?)>
+<!ELEMENT coup EMPTY>
+<!ATTLIST coup
+        numero CDATA #REQUIRED
+        joueur CDATA #REQUIRED
+        nbAllumette CDATA #REQUIRED>
+
+<!ELEMENT gagnant (#PCDATA)>
+<!ELEMENT tricheur (#PCDATA)>
