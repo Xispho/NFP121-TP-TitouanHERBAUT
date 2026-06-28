@@ -9,15 +9,13 @@ public class StrategieHumain implements Strategie {
     @Override
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
         boolean notEntier = true;
-        int prise = 0;
-        while (notEntier) {
+        int prise = -1;
+        while (notEntier && (prise == -1)) {
             System.out.print(joueur.getNom() + ", combien d'allumettes ? ");
             String input = SCANNER.nextLine();
             if (input.equals("triche")) {
                 tricher(jeu);
-                System.out.println("[Une allumette en moins, plus que 4. Chut !]"
-                        + joueur.getNom() + ", combien d'allumettes ? ");
-                return Jeu.PRISE_MAX;
+                System.out.println("[Une allumette en moins, plus que 4. Chut !]");
             } else {
                 try {
                     prise = Integer.parseInt(input);

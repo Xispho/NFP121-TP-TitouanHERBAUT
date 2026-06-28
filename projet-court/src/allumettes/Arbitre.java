@@ -22,15 +22,26 @@ public class Arbitre {
     }
 
      public void arbitrer(Jeu jeu) throws CoupInvalideException {
+        int prise = -1;
         while (jeu.getNombreAllumettes() > 0) {
-            priseJoueur(jeu, current);
-            toggleCurrentJoueur();
+            prise = priseJoueur(jeu, current);
+            if (prise == -1) {
+                break;
+            } else {
+                jeu.retirer(prise);
+                toggleCurrentJoueur();
+            }
         }
-        displayEndMessage(current);
+        if (prise == -1) {
+            System.out.println("Abandon de la partie car "
+                    + current.getNom() + " triche !");
+        } else {
+            displayEndMessage(current);
+        }
     }
 
-    private void priseJoueur(Jeu jeu, Joueur joueur)
-            throws CoupInvalideException, OperationInterditeException {
+    private int priseJoueur(Jeu jeu, Joueur joueur)
+            throws OperationInterditeException {
         boolean isPriseOk = false;
         int prise = -1;
         Jeu jeuProxy = new JeuProxy(jeu);
@@ -46,12 +57,13 @@ public class Arbitre {
                         + (prise > 1 ? "s" : "") + ".\n");
                 isPriseOk = checkPrise(jeuProxy, prise);
             } catch (OperationInterditeException e) {
-                System.out.println("Abandon de la partie car "
-                        + joueur.getNom() + " triche !");
-                System.exit(0);
+                break;
             }
         }
-        jeu.retirer(prise);
+        if (isPriseOk) {
+            return prise;
+        }
+        return -1;
     }
 
     private boolean checkPrise(Jeu jeu, int prise) {
