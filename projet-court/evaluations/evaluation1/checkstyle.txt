@@ -1,4 +1,9 @@
 Début de la vérification...
+[ERROR] Deroulement.java:12:25: Il manque une espace avant '{'. [WhitespaceAround]
+[ERROR] Arbitre.java:34:53: Il manque une espace après ','. [WhitespaceAfter]
+[ERROR] ExportXML.java:18: La ligne excède 90 caractères (trouvé 94). [LineLength]
+[ERROR] ExportXML.java:20: La ligne excède 90 caractères (trouvé 96). [LineLength]
+[ERROR] ExportXML.java:38: La ligne excède 90 caractères (trouvé 91). [LineLength]
 [ERROR] AllumettesInterface.java:1: Il manque un caractère NewLine à la fin du fichier. [NewlineAtEndOfFile]
 [ERROR] AllumettesInterface.java:3: L'utilisation des import.* est prohibé - javax.swing.*. [AvoidStarImport]
 [ERROR] AllumettesInterface.java:4: L'utilisation des import.* est prohibé - java.awt.*. [AvoidStarImport]

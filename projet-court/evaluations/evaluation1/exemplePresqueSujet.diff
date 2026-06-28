@@ -1,0 +1,9 @@
+27,34d25
+< java.io.FileNotFoundException: ./projet-court/deroulement.xml (Aucun fichier ou dossier de ce nom)
+< 	at java.base/java.io.FileOutputStream.open0(Native Method)
+< 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:255)
+< 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:210)
+< 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:120)
+< 	at allumettes.ExportXML.exportXML(ExportXML.java:38)
+< 	at allumettes.Arbitre.arbitrer(Arbitre.java:46)
+< 	at allumettes.Jouer.main(Jouer.java:35)

@@ -1,7 +1,9 @@
-File allumettes/Arbitre.java: 469 tokens, 100 lines
+File allumettes/Deroulement.java: 178 tokens, 62 lines
+File allumettes/Arbitre.java: 519 tokens, 106 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
 File allumettes/Joueur.java: 80 tokens, 28 lines
 File allumettes/OperationInterditeException.java: 21 tokens, 7 lines
+File allumettes/ExportXML.java: 230 tokens, 45 lines
 File allumettes/StrategieHumain.java: 189 tokens, 41 lines
 File allumettes/StrategieRapide.java: 37 tokens, 9 lines
 File allumettes/Game.java: 107 tokens, 28 lines
@@ -15,7 +17,7 @@ File allumettes/StrategieNaif.java: 56 tokens, 15 lines
 File allumettes/Strategie.java: 19 tokens, 12 lines
 File allumettes/StrategieTricheur.java: 103 tokens, 22 lines
 File allumettes/StrategieSwing.java: 55 tokens, 16 lines
-Total input: 17 files (17 new, 0 old), 2399 tokens
+Total input: 19 files (19 new, 0 old), 2857 tokens
 
 allumettes/Jouer.java: line 71-77 [28]
 allumettes/Jouer.java: line 78-84
@@ -56,21 +58,35 @@ allumettes/StrategieTricheur.java: line 15-22
 >     }
 > }
 
-allumettes/Jouer.java: line 91-96 [24]
-allumettes/Jouer.java: line 97-102
-< 			case "naif":
-< 				return new StrategieNaif();
-< 			case "rapide":
-< 				return new StrategieRapide();
-< 			case "expert":
-< 				return new StrategieExpert();
+allumettes/ExportXML.java: line 23-27 [26]
+allumettes/ExportXML.java: line 27-31
+<         if (!deroulement.getGagnant().isEmpty()) {
+<             Element gagnantElement = new Element("gagnant");
+<             gagnantElement.setText(deroulement.getGagnant());
+<             racine.addContent(gagnantElement);
+<         } else {
 ---
-> 			case "humain":
-> 				return new StrategieHumain();
-> 			case "tricheur":
-> 				return new StrategieTricheur();
-> 			case "swing":
-> 				return new StrategieSwing();
+>         } else {
+>             Element tricheurElement = new Element("tricheur");
+>             tricheurElement.setText(deroulement.getTricheur());
+>             racine.addContent(tricheurElement);
+>         }
+
+allumettes/StrategieExpert.java: line 1-6 [24]
+allumettes/StrategieTricheur.java: line 1-6
+< package allumettes;
+< 
+< public class StrategieExpert implements Strategie {
+< 
+<     @Override
+<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+---
+> package allumettes;
+> 
+> public class StrategieTricheur implements Strategie {
+> 
+>     @Override
+>     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
 
 allumettes/StrategieRapide.java: line 1-6 [24]
 allumettes/StrategieExpert.java: line 1-6
@@ -88,19 +104,19 @@ allumettes/StrategieExpert.java: line 1-6
 >     @Override
 >     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
 
-allumettes/StrategieExpert.java: line 1-6 [24]
-allumettes/StrategieTricheur.java: line 1-6
-< package allumettes;
-< 
-< public class StrategieExpert implements Strategie {
-< 
-<     @Override
-<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+allumettes/Jouer.java: line 91-96 [24]
+allumettes/Jouer.java: line 97-102
+< 			case "naif":
+< 				return new StrategieNaif();
+< 			case "rapide":
+< 				return new StrategieRapide();
+< 			case "expert":
+< 				return new StrategieExpert();
 ---
-> package allumettes;
-> 
-> public class StrategieTricheur implements Strategie {
-> 
->     @Override
->     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+> 			case "humain":
+> 				return new StrategieHumain();
+> 			case "tricheur":
+> 				return new StrategieTricheur();
+> 			case "swing":
+> 				return new StrategieSwing();
 

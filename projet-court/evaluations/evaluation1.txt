@@ -1,9 +1,9 @@
-Date de l'évaluation : dim. 28 juin 2026 16:24:10 CEST
+Date de l'évaluation : dim. 28 juin 2026 19:33:19 CEST
 
-Nombre de similitudes : 5	(voir evaluation1/sim_java.txt)
+Nombre de similitudes : 6	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 9/6	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 14/8	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : OperationInterditeException (ok)
 
@@ -17,6 +17,7 @@ Throwable, Exception et RuntimeException ne devraient pas être récupérées ca
 AssertionError ne doit pas être récupérée... ok
 
 Autres exceptions récupérées :
+  | allumettes/ExportXML.java:40:        } catch (IOException e) {
   | allumettes/StrategieHumain.java:23:                } catch (NumberFormatException e) {
   | allumettes/StrategieHumain.java:36:        } catch (CoupInvalideException e) {
   | allumettes/Jouer.java:36:       } catch (ConfigurationException e) {
@@ -48,19 +49,16 @@ Utilisation de 'System.exit' : ok
 Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
 Compilation de StrategieRapideTest.java : OK.
-Test exemplePresqueSujet : ok
-Test exempleTricheurSujet : ok
-Test exempleConfiantTricheurSujet : ok
-Test exempleRobustesse : ok
-Test exempleHumainTricheurExpert : ok
-Test exempleMaxLou : ok
-Test exempleRapideRapide : ok
-Test exempleTricheurExpert : ok
+Test exemplePresqueSujet : NON CONFORME	(voir evaluation1/exemplePresqueSujet.diff)
+Test exempleTricheurSujet : NON CONFORME	(voir evaluation1/exempleTricheurSujet.diff)
+Test exempleConfiantTricheurSujet : NON CONFORME	(voir evaluation1/exempleConfiantTricheurSujet.diff)
+Test exempleRobustesse : NON CONFORME	(voir evaluation1/exempleRobustesse.diff)
+Test exempleHumainTricheurExpert : NON CONFORME	(voir evaluation1/exempleHumainTricheurExpert.diff)
+Test exempleMaxLou : NON CONFORME	(voir evaluation1/exempleMaxLou.diff)
+Test exempleRapideRapide : NON CONFORME	(voir evaluation1/exempleRapideRapide.diff)
+Test exempleTricheurExpert : NON CONFORME	(voir evaluation1/exempleTricheurExpert.diff)
 
 Test RobustesseTest : OK (24 tests)	(voir evaluation1/RobustesseTest.txt)
-
-On recommence avec les classes/interfaces fournies : Jeu ConfigurationException CoupInvalideException
-Test exemplePresqueSujet : ok
 
 Vérification du respect du diagramme de classe...
 Test FormeC7Test : OK (1 test)	(voir evaluation1/FormeC7Test.txt)
