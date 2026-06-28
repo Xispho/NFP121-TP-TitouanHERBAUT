@@ -1,6 +1,6 @@
 JUnit version 4.12
 .....
-Time: 0,004
+Time: 0,006
 
 OK (5 tests)
 

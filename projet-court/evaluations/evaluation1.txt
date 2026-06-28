@@ -1,4 +1,4 @@
-Date de l'évaluation : dim. 28 juin 2026 13:30:41 CEST
+Date de l'évaluation : dim. 28 juin 2026 13:52:02 CEST
 
 Nombre de similitudes : 4	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
@@ -17,8 +17,8 @@ Throwable, Exception et RuntimeException ne devraient pas être récupérées ca
 AssertionError ne doit pas être récupérée... ok
 
 Autres exceptions récupérées :
-  | allumettes/StrategieHumain.java:25:                } catch (NumberFormatException e) {
-  | allumettes/StrategieHumain.java:38:        } catch (CoupInvalideException e) {
+  | allumettes/StrategieHumain.java:23:                } catch (NumberFormatException e) {
+  | allumettes/StrategieHumain.java:36:        } catch (CoupInvalideException e) {
   | allumettes/Jouer.java:36:       } catch (ConfigurationException e) {
   | allumettes/Jouer.java:41:       } catch (CoupInvalideException e) {
   | allumettes/AllumettesInterface.java:77:            } catch (InterruptedException e) {
@@ -41,9 +41,7 @@ Utilisation de '3' : Ne pas utiliser de constante littérale hors -1, 0 ou 1 (pe
 
 Affichage de 'Impossible !' : ok
 
-Utilisation de 'System.exit' : INTERDIT d'utiliser System.exit(), sauf celui fourni dans Jouer.java
-  | allumettes/Arbitre.java:51:                System.exit(0);
-  | allumettes/Jouer.java:40:           System.exit(1);
+Utilisation de 'System.exit' : ok
 
 Compilation de Jouer.java : OK.
 Compilation de Arbitre.java : OK.
@@ -53,7 +51,7 @@ Test exemplePresqueSujet : ok
 Test exempleTricheurSujet : ok
 Test exempleConfiantTricheurSujet : ok
 Test exempleRobustesse : ok
-Test exempleHumainTricheurExpert : NON CONFORME	(voir evaluation1/exempleHumainTricheurExpert.diff)
+Test exempleHumainTricheurExpert : ok
 Test exempleMaxLou : ok
 Test exempleRapideRapide : ok
 Test exempleTricheurExpert : ok
