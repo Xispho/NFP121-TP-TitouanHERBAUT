@@ -4,8 +4,9 @@ public class StrategieTricheur implements Strategie {
 
     @Override
     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+        System.out.println("[Je triche...]");
         tricher(jeu);
-        System.out.println("[je triche...]");
+        System.out.println("[Allumettes restantes : " + jeu.getNombreAllumettes() + "]");
         return 1;
     }
 

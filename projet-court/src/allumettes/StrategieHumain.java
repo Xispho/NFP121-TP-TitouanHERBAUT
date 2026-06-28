@@ -1,6 +1,5 @@
 package allumettes;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class StrategieHumain implements Strategie {
@@ -17,6 +16,7 @@ public class StrategieHumain implements Strategie {
             if (input.equals("triche")) {
                 tricher(jeu);
                 System.out.println("[Une allumette en moins, plus que 4. Chut !]");
+                System.out.println(joueur.getNom() + ", combien d'allumettes ? ");
                 return Jeu.PRISE_MAX;
             } else {
                 try {
