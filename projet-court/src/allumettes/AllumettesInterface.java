@@ -31,7 +31,7 @@ public class AllumettesInterface extends JFrame {
         add(mainPanel);
 
         btnTricher = new JButton("tricher");
-        nbTriche = new JTextField();
+        nbTriche = new JTextField("",2);
         JPanel topPanel = new JPanel();
         topPanel.add(btnTricher);
         topPanel.add(nbTriche);
@@ -79,6 +79,7 @@ public class AllumettesInterface extends JFrame {
     private void handleButtonTricher(Jeu jeu) {
         synchronized (verrou) {
             int nb = Integer.parseInt(nbTriche.getText());
+            System.out.println("[Je triche... " + nb + " allumettes en moins]\n");
             for (int i = 0; i < nb; i++) {
                 try {
                     jeu.retirer(1);
@@ -100,7 +101,6 @@ public class AllumettesInterface extends JFrame {
 
     private void updateNbAllumette(Jeu jeu) {
         nbAllumetteLabel.setText(String.valueOf(jeu.getNombreAllumettes()));
-        System.out.println("[Je triche..." + jeu.getNombreAllumettes() + "allumettes en moins]\n");
     }
 
     private void updateButtons(Jeu jeu) {
