@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deroulement SYSTEM "deroulement.dtd">
+<deroulement>
+  <coup numero="1" joueur="Xavier" nbAllumette="2" />
+  <coup numero="2" joueur="Ordinateur" nbAllumette="3" />
+  <coup numero="3" joueur="Xavier" nbAllumette="3" />
+  <coup numero="4" joueur="Ordinateur" nbAllumette="3" />
+  <coup numero="5" joueur="Xavier" nbAllumette="1" />
+  <coup numero="6" joueur="Ordinateur" nbAllumette="1" />
+  <gagnant>Xavier</gagnant>
+</deroulement>

@@ -3,7 +3,7 @@ File allumettes/Arbitre.java: 519 tokens, 106 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
 File allumettes/Joueur.java: 80 tokens, 28 lines
 File allumettes/OperationInterditeException.java: 21 tokens, 7 lines
-File allumettes/ExportXML.java: 230 tokens, 45 lines
+File allumettes/ExportXML.java: 230 tokens, 46 lines
 File allumettes/StrategieHumain.java: 189 tokens, 41 lines
 File allumettes/StrategieRapide.java: 37 tokens, 9 lines
 File allumettes/Game.java: 107 tokens, 28 lines
@@ -58,8 +58,8 @@ allumettes/StrategieTricheur.java: line 15-22
 >     }
 > }
 
-allumettes/ExportXML.java: line 23-27 [26]
-allumettes/ExportXML.java: line 27-31
+allumettes/ExportXML.java: line 24-28 [26]
+allumettes/ExportXML.java: line 28-32
 <         if (!deroulement.getGagnant().isEmpty()) {
 <             Element gagnantElement = new Element("gagnant");
 <             gagnantElement.setText(deroulement.getGagnant());
