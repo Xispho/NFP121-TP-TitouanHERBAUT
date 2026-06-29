@@ -31,7 +31,7 @@ public class Arbitre {
                 break;
             } else {
                 jeu.retirer(prise);
-                deroulement.addCoup(current.getNom(),prise);
+                deroulement.addCoup(current.getNom(), prise);
                 toggleCurrentJoueur();
             }
         }

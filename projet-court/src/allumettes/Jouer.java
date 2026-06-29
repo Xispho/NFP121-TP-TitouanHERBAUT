@@ -68,22 +68,22 @@ public class Jouer {
 							+ description
 			);
 		}
-		nom = parts[0].trim();
+		nom = getPart("nom", description, 0);
+		strategie = getStrategieInstance(getPart("stratégie", description, 1));
+		return new Joueur(nom, strategie);
+	}
+
+	private static String getPart(String attribute, String description, int part) {
+		String nom;
+		String[] parts = description.split("@", 2);
+		nom = parts[part].trim();
 		if (nom.isEmpty()) {
 			throw new ConfigurationException(
-					"Nom de joueur vide dans la description : "
+					attribute + " vide dans la description : "
 							+ description
 			);
 		}
-		String nomStrategie = parts[1].trim();
-		if (nomStrategie.isEmpty()) {
-			throw new ConfigurationException(
-					"Stratégie manquante dans la description : "
-							+ description
-			);
-		}
-		strategie = getStrategieInstance(nomStrategie);
-		return new Joueur(nom, strategie);
+		return nom;
 	}
 
 	public static Strategie getStrategieInstance(String strategie) {

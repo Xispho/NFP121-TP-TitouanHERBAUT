@@ -1,15 +1,15 @@
 package allumettes;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 
 public class AllumettesInterface extends JFrame {
-
-    // Constante
-    private final static int WIDTH = 300;
-    private final static int HEIGHT = 300;
 
     private final Object verrou = new Object();
     private int choix = 0;
@@ -22,6 +22,12 @@ public class AllumettesInterface extends JFrame {
     private JButton btnPriseTrois;
 
     public AllumettesInterface() {
+        //Constantes
+        int WIDTH = 300;
+        int HEIGHT = 300;
+        int GRID_COLUMNS = 3;
+        int GRID_HGAP = 5;
+
         setTitle("[joueur] ?");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
@@ -31,7 +37,7 @@ public class AllumettesInterface extends JFrame {
         add(mainPanel);
 
         btnTricher = new JButton("tricher");
-        nbTriche = new JTextField("",2);
+        nbTriche = new JTextField("", 2);
         JPanel topPanel = new JPanel();
         topPanel.add(btnTricher);
         topPanel.add(nbTriche);
@@ -40,7 +46,7 @@ public class AllumettesInterface extends JFrame {
         nbAllumetteLabel = new JLabel("13", SwingConstants.CENTER);
         mainPanel.add(nbAllumetteLabel, BorderLayout.CENTER);
 
-        JPanel buttonPanel = new JPanel(new GridLayout(1, 3, 5, 0));
+        JPanel buttonPanel = new JPanel(new GridLayout(1, GRID_COLUMNS, GRID_HGAP, 0));
         mainPanel.add(buttonPanel, BorderLayout.SOUTH);
 
         btnPriseUn = new JButton("1");

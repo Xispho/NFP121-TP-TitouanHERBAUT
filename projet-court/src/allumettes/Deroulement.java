@@ -9,7 +9,7 @@ public class Deroulement {
     private String gagnant;
     private String tricheur;
 
-    public Deroulement(){
+    public Deroulement() {
         this.coups = new ArrayList<>();
         this.gagnant = "";
         this.tricheur = "";
