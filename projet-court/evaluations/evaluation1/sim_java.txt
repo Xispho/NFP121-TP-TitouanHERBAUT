@@ -3,39 +3,21 @@ File allumettes/Arbitre.java: 519 tokens, 106 lines
 File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
 File allumettes/Joueur.java: 80 tokens, 28 lines
 File allumettes/OperationInterditeException.java: 21 tokens, 7 lines
-File allumettes/ExportXML.java: 230 tokens, 46 lines
+File allumettes/ExportXML.java: 222 tokens, 51 lines
 File allumettes/StrategieHumain.java: 189 tokens, 41 lines
 File allumettes/StrategieRapide.java: 37 tokens, 9 lines
 File allumettes/Game.java: 107 tokens, 28 lines
 File allumettes/ConfigurationException.java: 21 tokens, 16 lines
 File allumettes/JeuProxy.java: 58 tokens, 21 lines
-File allumettes/Jouer.java: 473 tokens, 122 lines
+File allumettes/Jouer.java: 496 tokens, 122 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
 File allumettes/StrategieExpert.java: 91 tokens, 18 lines
-File allumettes/AllumettesInterface.java: 528 tokens, 112 lines (not NL-terminated)
+File allumettes/AllumettesInterface.java: 530 tokens, 118 lines
 File allumettes/StrategieNaif.java: 56 tokens, 15 lines
 File allumettes/Strategie.java: 19 tokens, 12 lines
 File allumettes/StrategieTricheur.java: 103 tokens, 22 lines
 File allumettes/StrategieSwing.java: 55 tokens, 16 lines
-Total input: 19 files (19 new, 0 old), 2856 tokens
-
-allumettes/Jouer.java: line 71-77 [28]
-allumettes/Jouer.java: line 78-84
-< 		nom = parts[0].trim();
-< 		if (nom.isEmpty()) {
-< 			throw new ConfigurationException(
-< 					"Nom de joueur vide dans la description : "
-< 							+ description
-< 			);
-< 		}
----
-> 		String nomStrategie = parts[1].trim();
-> 		if (nomStrategie.isEmpty()) {
-> 			throw new ConfigurationException(
-> 					"Stratégie manquante dans la description : "
-> 							+ description
-> 			);
-> 		}
+Total input: 19 files (19 new, 0 old), 2873 tokens
 
 allumettes/StrategieHumain.java: line 33-41 [26]
 allumettes/StrategieTricheur.java: line 15-22
@@ -57,20 +39,6 @@ allumettes/StrategieTricheur.java: line 15-22
 >         }
 >     }
 > }
-
-allumettes/ExportXML.java: line 24-28 [26]
-allumettes/ExportXML.java: line 28-32
-<         if (!deroulement.getGagnant().isEmpty()) {
-<             Element gagnantElement = new Element("gagnant");
-<             gagnantElement.setText(deroulement.getGagnant());
-<             racine.addContent(gagnantElement);
-<         } else {
----
->         } else {
->             Element tricheurElement = new Element("tricheur");
->             tricheurElement.setText(deroulement.getTricheur());
->             racine.addContent(tricheurElement);
->         }
 
 allumettes/StrategieExpert.java: line 1-6 [24]
 allumettes/StrategieTricheur.java: line 1-6
