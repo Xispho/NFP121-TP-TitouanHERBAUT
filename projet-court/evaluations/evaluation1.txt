@@ -1,9 +1,9 @@
-Date de l'évaluation : dim. 28 juin 2026 19:33:19 CEST
+Date de l'évaluation : lun. 29 juin 2026 11:10:31 CEST
 
 Nombre de similitudes : 6	(voir evaluation1/sim_java.txt)
 Les similitudes indiquent généralement du code à restructurer.
 
-Erreurs checkstyle (différentes/types) : 14/8	(voir evaluation1//checkstyle.txt)
+Erreurs checkstyle (différentes/types) : 13/8	(voir evaluation1//checkstyle.txt)
 
 Classe OperationInterditeException : OperationInterditeException (ok)
 
@@ -23,7 +23,7 @@ Autres exceptions récupérées :
   | allumettes/Jouer.java:36:       } catch (ConfigurationException e) {
   | allumettes/Jouer.java:41:       } catch (CoupInvalideException e) {
   | allumettes/AllumettesInterface.java:70:                } catch (InterruptedException e) {
-  | allumettes/AllumettesInterface.java:85:                } catch (CoupInvalideException e) {
+  | allumettes/AllumettesInterface.java:86:                } catch (CoupInvalideException e) {
   | allumettes/StrategieTricheur.java:18:        } catch (CoupInvalideException e) {
 
 Utilisation de 'Scanner' : ok

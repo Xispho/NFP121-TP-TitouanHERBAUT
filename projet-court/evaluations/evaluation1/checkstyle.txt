@@ -11,9 +11,9 @@ Début de la vérification...
 [ERROR] AllumettesInterface.java:6:8: Import inutilisé - java.awt.event.ActionListener. [UnusedImports]
 [ERROR] AllumettesInterface.java:11:19: Le mot-clef 'static' n'apparaît pas dans l'ordre préconisé par les JLS. [ModifierOrder]
 [ERROR] AllumettesInterface.java:12:19: Le mot-clef 'static' n'apparaît pas dans l'ordre préconisé par les JLS. [ModifierOrder]
+[ERROR] AllumettesInterface.java:34:37: Il manque une espace après ','. [WhitespaceAfter]
 [ERROR] AllumettesInterface.java:43:59: '3' devrait être défini comme une constante. [MagicNumber]
 [ERROR] AllumettesInterface.java:43:62: '5' devrait être défini comme une constante. [MagicNumber]
 [ERROR] AllumettesInterface.java:52:64: '3' devrait être défini comme une constante. [MagicNumber]
-[ERROR] AllumettesInterface.java:103: La ligne excède 90 caractères (trouvé 99). [LineLength]
 [ERROR] AllumettesInterface.java:110:39: '3' devrait être défini comme une constante. [MagicNumber]
 Vérification terminée.

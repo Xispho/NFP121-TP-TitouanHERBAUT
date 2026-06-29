@@ -12,12 +12,12 @@ File allumettes/JeuProxy.java: 58 tokens, 21 lines
 File allumettes/Jouer.java: 473 tokens, 122 lines
 File allumettes/Jeu.java: 23 tokens, 21 lines
 File allumettes/StrategieExpert.java: 91 tokens, 18 lines
-File allumettes/AllumettesInterface.java: 529 tokens, 112 lines (not NL-terminated)
+File allumettes/AllumettesInterface.java: 528 tokens, 112 lines (not NL-terminated)
 File allumettes/StrategieNaif.java: 56 tokens, 15 lines
 File allumettes/Strategie.java: 19 tokens, 12 lines
 File allumettes/StrategieTricheur.java: 103 tokens, 22 lines
 File allumettes/StrategieSwing.java: 55 tokens, 16 lines
-Total input: 19 files (19 new, 0 old), 2857 tokens
+Total input: 19 files (19 new, 0 old), 2856 tokens
 
 allumettes/Jouer.java: line 71-77 [28]
 allumettes/Jouer.java: line 78-84
