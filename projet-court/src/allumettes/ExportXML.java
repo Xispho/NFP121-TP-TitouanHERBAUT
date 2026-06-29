@@ -6,6 +6,7 @@ import org.jdom2.Element;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -35,7 +36,7 @@ public final class ExportXML {
 
         XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
         try {
-            FileOutputStream file = new FileOutputStream("./projet-court/deroulement.xml");
+            FileOutputStream file = new FileOutputStream("./deroulement.xml");
             sortie.output(document, file);
         } catch (IOException e) {
             e.printStackTrace();
