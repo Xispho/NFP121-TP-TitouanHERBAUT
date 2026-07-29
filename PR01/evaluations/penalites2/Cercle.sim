@@ -1,0 +1,27 @@
+File Cercle.java: 675 tokens, 178 lines (not NL-terminated)
+Total input: 1 file (1 new, 0 old), 675 tokens
+
+Cercle.java: line 34-43 [126]
+Cercle.java: line 52-61
+<     public Cercle(Point p, Point p1) throws AssertionError {
+<         if (p == null || p1 == null)
+<             throw new AssertionError("Les points ne peuvent pas être nuls");
+<         if (p.getX() == p1.getX() && p.getY() == p1.getY())
+<             throw new AssertionError("Les points doivent être différents");
+<         double x = (p.getX() + p1.getX()) / 2;
+<         double y = (p.getY() + p1.getY()) / 2;
+<         this.centre = new Point(x, y);
+<         this.rayon = p.distance(p1) / 2;
+<         this.couleur = Color.BLUE;
+---
+>     public Cercle(Point p, Point p1, Color c) throws AssertionError {
+>         if (p == null || p1 == null)
+>             throw new AssertionError("Les points ne peuvent pas être nuls");
+>         if (p.getX() == p1.getX() && p.getY() == p1.getY())
+>             throw new AssertionError("Les points doivent être différents");
+>         double x = (p.getX() + p1.getX()) / 2;
+>         double y = (p.getY() + p1.getY()) / 2;
+>         this.centre = new Point(x, y);
+>         this.rayon = p.distance(p1) / 2;
+>         this.couleur = c;
+
