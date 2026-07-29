@@ -1,0 +1,15 @@
+=====[ Relecture du code ]======================================================
+
+Remarque : n points de pénalité ==> n points perdus sur la note.
+
+Fichier LISEZ-MOI.txt :
+    question 1 : relation UML !			1 pt
+    question 2 : private ne suffit pas ! 	1 pt
+
+Autres erreurs (total <= 2 pt) :
+    * C'est `assert` qu'il faut utiliser (et non `throw`)
+
+
+Total pénalités :  2.00
+
+--------------------------------------------------------------------------------
