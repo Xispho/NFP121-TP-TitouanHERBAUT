@@ -1,0 +1,90 @@
+File allumettes/Deroulement.java: 178 tokens, 62 lines
+File allumettes/Arbitre.java: 519 tokens, 106 lines
+File allumettes/CoupInvalideException.java: 68 tokens, 39 lines
+File allumettes/Joueur.java: 80 tokens, 28 lines
+File allumettes/OperationInterditeException.java: 21 tokens, 7 lines
+File allumettes/ExportXML.java: 222 tokens, 51 lines
+File allumettes/StrategieHumain.java: 189 tokens, 41 lines
+File allumettes/StrategieRapide.java: 37 tokens, 9 lines
+File allumettes/Game.java: 107 tokens, 28 lines
+File allumettes/ConfigurationException.java: 21 tokens, 16 lines
+File allumettes/JeuProxy.java: 58 tokens, 21 lines
+File allumettes/Jouer.java: 496 tokens, 122 lines
+File allumettes/Jeu.java: 23 tokens, 21 lines
+File allumettes/StrategieExpert.java: 91 tokens, 18 lines
+File allumettes/AllumettesInterface.java: 530 tokens, 118 lines
+File allumettes/StrategieNaif.java: 56 tokens, 15 lines
+File allumettes/Strategie.java: 19 tokens, 12 lines
+File allumettes/StrategieTricheur.java: 103 tokens, 22 lines
+File allumettes/StrategieSwing.java: 55 tokens, 16 lines
+Total input: 19 files (19 new, 0 old), 2873 tokens
+
+allumettes/StrategieHumain.java: line 33-41 [26]
+allumettes/StrategieTricheur.java: line 15-22
+<             while (jeu.getNombreAllumettes() > Jeu.PRISE_MAX + 1) {
+<                 jeu.retirer(1);
+<             }
+<         } catch (CoupInvalideException e) {
+<             throw new RuntimeException(e);
+<         }
+<     }
+< 
+< }
+---
+>             while (jeu.getNombreAllumettes() > Jeu.PRISE_MAX - 1) {
+>                 jeu.retirer(1);
+>             }
+>         } catch (CoupInvalideException e) {
+>             throw new RuntimeException(e);
+>         }
+>     }
+> }
+
+allumettes/StrategieExpert.java: line 1-6 [24]
+allumettes/StrategieTricheur.java: line 1-6
+< package allumettes;
+< 
+< public class StrategieExpert implements Strategie {
+< 
+<     @Override
+<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+---
+> package allumettes;
+> 
+> public class StrategieTricheur implements Strategie {
+> 
+>     @Override
+>     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+
+allumettes/StrategieRapide.java: line 1-6 [24]
+allumettes/StrategieExpert.java: line 1-6
+< package allumettes;
+< 
+< public class StrategieRapide implements Strategie {
+< 
+<     @Override
+<     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+---
+> package allumettes;
+> 
+> public class StrategieExpert implements Strategie {
+> 
+>     @Override
+>     public int choisirNombreAllumettes(Jeu jeu, Joueur joueur, int nombreAllumettes) {
+
+allumettes/Jouer.java: line 91-96 [24]
+allumettes/Jouer.java: line 97-102
+< 			case "naif":
+< 				return new StrategieNaif();
+< 			case "rapide":
+< 				return new StrategieRapide();
+< 			case "expert":
+< 				return new StrategieExpert();
+---
+> 			case "humain":
+> 				return new StrategieHumain();
+> 			case "tricheur":
+> 				return new StrategieTricheur();
+> 			case "swing":
+> 				return new StrategieSwing();
+

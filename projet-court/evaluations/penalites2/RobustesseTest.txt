@@ -1,0 +1,463 @@
+JUnit version 4.12
+.
+================================================================================
+> java allumettes.Jouer -confiant x yyy@rapide
+--------------------------------------------------------------------------------
+
+Erreur : Description invalide (format attendu: nom@strategie) : x
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant yyy@rapide xxx@rapide@naif
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : rapide@naif
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer x yyy@rapide
+--------------------------------------------------------------------------------
+
+Erreur : Description invalide (format attendu: nom@strategie) : x
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant yyy@rapide xxx@xyz
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : xyz
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer yyy@rapide xxx@ville@naif
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : ville@naif
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer @humain ordi@rapide
+--------------------------------------------------------------------------------
+
+Erreur : nom vide dans la description : @humain
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer xxx@xyz yyy@rapide
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : xyz
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant xxx@rapide@naif yyy@rapide
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : rapide@naif
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant yyy@rapide xxx@ville@naif
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : ville@naif
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer yyy@rapide xxx@xyz
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : xyz
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant @humain ordi@rapide
+--------------------------------------------------------------------------------
+
+Erreur : nom vide dans la description : @humain
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer xxx@rapide@naif yyy@rapide
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : rapide@naif
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant
+--------------------------------------------------------------------------------
+
+Erreur : Trop peu d'arguments : 1
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant xxx@ville@naif yyy@rapide
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : ville@naif
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer xxx@ville@naif yyy@rapide
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : ville@naif
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer yyy@rapide x
+--------------------------------------------------------------------------------
+
+Erreur : Description invalide (format attendu: nom@strategie) : x
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant -confiant
+--------------------------------------------------------------------------------
+
+Erreur : Description invalide (format attendu: nom@strategie) : -confiant
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer
+--------------------------------------------------------------------------------
+
+Erreur : Trop peu d'arguments : 0
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant yyy@rapide x
+--------------------------------------------------------------------------------
+
+Erreur : Description invalide (format attendu: nom@strategie) : x
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant xxx@xyz yyy@rapide
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : xyz
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant ordi@rapide @humain
+--------------------------------------------------------------------------------
+
+Erreur : nom vide dans la description : @humain
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer yyy@rapide xxx@rapide@naif
+--------------------------------------------------------------------------------
+
+Erreur : Stratégie non gérée : rapide@naif
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer -confiant
+--------------------------------------------------------------------------------
+
+Erreur : Trop peu d'arguments : 1
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+.
+================================================================================
+> java allumettes.Jouer ordi@rapide @humain
+--------------------------------------------------------------------------------
+
+Erreur : nom vide dans la description : @humain
+
+Usage :
+	java allumettes.Jouer [-confiant] joueur1 joueur2
+		joueur est de la forme nom@stratégie
+		strategie = naif | rapide | expert | humain | tricheur
+
+	Exemple :
+		java allumettes.Jouer Xavier@humain Ordinateur@naif
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+Time: 2,579
+
+OK (24 tests)
+

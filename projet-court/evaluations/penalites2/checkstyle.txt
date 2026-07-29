@@ -1,0 +1,12 @@
+Début de la vérification...
+[ERROR] AllumettesInterface.java:26:13: Le nom 'WIDTH' n'est pas conforme à l'expression '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] AllumettesInterface.java:26:21: '300' devrait être défini comme une constante. [MagicNumber]
+[ERROR] AllumettesInterface.java:27:13: Le nom 'HEIGHT' n'est pas conforme à l'expression '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] AllumettesInterface.java:27:22: '300' devrait être défini comme une constante. [MagicNumber]
+[ERROR] AllumettesInterface.java:28:13: Le nom 'GRID_COLUMNS' n'est pas conforme à l'expression '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] AllumettesInterface.java:28:28: '3' devrait être défini comme une constante. [MagicNumber]
+[ERROR] AllumettesInterface.java:29:13: Le nom 'GRID_HGAP' n'est pas conforme à l'expression '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] AllumettesInterface.java:29:25: '5' devrait être défini comme une constante. [MagicNumber]
+[ERROR] AllumettesInterface.java:58:64: '3' devrait être défini comme une constante. [MagicNumber]
+[ERROR] AllumettesInterface.java:116:39: '3' devrait être défini comme une constante. [MagicNumber]
+Vérification terminée.

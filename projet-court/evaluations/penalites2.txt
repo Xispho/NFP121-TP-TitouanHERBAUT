@@ -1,0 +1,84 @@
+Date de l'évaluation : mar. 14 juil. 2026 21:02:13 CEST
+
+Nombre de similitudes : 4	(voir penalites2/sim_java.txt)
+Les similitudes indiquent généralement du code à restructurer.
+
+Erreurs checkstyle (différentes/types) : 7/2	(voir penalites2//checkstyle.txt)
+
+Classe OperationInterditeException : OperationInterditeException (ok)
+
+Procuration sur le jeu réel : allumettes/JeuProxy.java (ok)
+
+OperationInterditeException, levée dans : allumettes/JeuProxy.java (ok)
+OperationInterditeException, récupérée dans : allumettes/Arbitre.java (ok)
+
+Throwable, Exception et RuntimeException ne devraient pas être récupérées car trop générales... ok
+
+AssertionError ne doit pas être récupérée... ok
+
+Autres exceptions récupérées :
+  | allumettes/ExportXML.java:46:        } catch (IOException e) {
+  | allumettes/StrategieHumain.java:23:                } catch (NumberFormatException e) {
+  | allumettes/StrategieHumain.java:36:        } catch (CoupInvalideException e) {
+  | allumettes/Jouer.java:36:       } catch (ConfigurationException e) {
+  | allumettes/Jouer.java:41:       } catch (CoupInvalideException e) {
+  | allumettes/AllumettesInterface.java:76:                } catch (InterruptedException e) {
+  | allumettes/AllumettesInterface.java:92:                } catch (CoupInvalideException e) {
+  | allumettes/StrategieTricheur.java:18:        } catch (CoupInvalideException e) {
+
+Utilisation de 'Scanner' : ok
+  | allumettes/StrategieHumain.java:7:    public static final Scanner SCANNER = new Scanner(System.in);
+
+Utilisation de 'split' : ok mais un seul split devrait suffir !  Code à restructurer...
+  | allumettes/Jouer.java:64:       String[] parts = description.split("@", 2);
+  | allumettes/Jouer.java:78:       String[] parts = description.split("@", 2);
+
+Utilisation de 'Random' : ok
+  | allumettes/StrategieNaif.java:3:import java.util.Random;
+  | allumettes/StrategieNaif.java:7:    private Random random = new Random();
+
+Utilisation de '3' : Ne pas utiliser de constante littérale hors -1, 0 ou 1 (peut-être PRISE_MAX ?)	(pénalité : 2)
+  |     allumettes/AllumettesInterface.java:28:        int GRID_COLUMNS = 3;
+  |     allumettes/AllumettesInterface.java:54:        btnPriseTrois = new JButton("3");
+  |     allumettes/AllumettesInterface.java:58:        btnPriseTrois.addActionListener(e -> handleButtonClick(3));
+  |     allumettes/AllumettesInterface.java:116:        btnPriseTrois.setEnabled(n >= 3);
+
+Affichage de 'Impossible !' : ok
+
+Utilisation de 'System.exit' : ok
+
+Compilation de Jouer.java : OK.
+Compilation de Arbitre.java : OK.
+Compilation de StrategieRapideTest.java : OK.
+Test exemplePresqueSujet : NON CONFORME	(pénalité : 2)	(voir penalites2/exemplePresqueSujet.diff)
+Test exempleTricheurSujet : NON CONFORME	(pénalité : 2)	(voir penalites2/exempleTricheurSujet.diff)
+Test exempleConfiantTricheurSujet : NON CONFORME	(pénalité : 2)	(voir penalites2/exempleConfiantTricheurSujet.diff)
+Test exempleRobustesse : NON CONFORME	(pénalité : 2)	(voir penalites2/exempleRobustesse.diff)
+Test exempleHumainTricheurExpert : NON CONFORME	(pénalité : 2)	(voir penalites2/exempleHumainTricheurExpert.diff)
+Test exempleMaxLou : NON CONFORME	(pénalité : 2)	(voir penalites2/exempleMaxLou.diff)
+Test exempleRapideRapide : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleRapideRapide.diff)
+Test exempleTricheurExpert : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleTricheurExpert.diff)
+Test exempleExpertTest : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleExpertTest.diff)
+Test exempleExpertTest2 : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleExpertTest2.diff)
+Test exempleExpertTest3 : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleExpertTest3.diff)
+Test exempleExpertTest4 : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleExpertTest4.diff)
+Test exempleRapideTest : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleRapideTest.diff)
+Test exempleRapideTest1 : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleRapideTest1.diff)
+Test exempleRapideTest2 : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleRapideTest2.diff)
+Test exempleRapideTest3 : NON CONFORME	(pénalité : 1)	(voir penalites2/exempleRapideTest3.diff)
+Tests en boîte noire : pénalités limitées à 10 (au lieu de 22).
+
+Test RobustesseTest : OK (24 tests)	(voir penalites2/RobustesseTest.txt)
+
+Vérification du respect du diagramme de classe...
+Test FormeC7Test : OK (1 test)	(voir penalites2/FormeC7Test.txt)
+Test FormeC9Test : OK (1 test)	(voir penalites2/FormeC9Test.txt)
+Test FormeC14Test : OK (1 test)	(voir penalites2/FormeC14Test.txt)
+Test FormeExceptionsTest : OK (1 test)	(voir penalites2/FormeExceptionsTest.txt)
+Test FormeProxyTest : OK (2 tests)	(voir penalites2/FormeProxyTest.txt)
+
+Compilation de StrategieRapideTest.java : OK.
+Test allumettes.StrategieRapideTest : OK (5 tests)	(voir penalites2/allumettes.StrategieRapideTest.txt)
+Tous les tests réussissent
+
+Total pénalités : 12
